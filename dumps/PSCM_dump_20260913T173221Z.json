@@ -1,0 +1,27 @@
+{
+  "stamp": "20260913T173221Z",
+  "f188": "CV6T-14C217-AR",
+  "f124": "CV6T-14C218-AX",
+  "regions": {
+    "pflash": {
+      "ok": true,
+      "addr": 0,
+      "len": 524288,
+      "path": "/home/gl/Projects/ford/PSCM/Research/dumps/PSCM_pflash_00000000_20260913T173221Z.bin",
+      "sha256": "80bc3857294a71931cb3edc1f7020643d15cebfc34bb6bce01ddf45c9830b80b",
+      "blank_pct": 0.89
+    },
+    "bootflash": {
+      "ok": false,
+      "error": "RequestUpload @0x00080000 len 0x4000: NRC 31 requestOutOfRange"
+    },
+    "dflash": {
+      "ok": true,
+      "addr": 67141632,
+      "len": 32768,
+      "path": "/home/gl/Projects/ford/PSCM/Research/dumps/PSCM_dflash_04008000_20260913T173221Z.bin",
+      "sha256": "c815600a4ad30b53fa5343726022585a40f89289c8d1cffa3e61af9527588cb3",
+      "blank_pct": 48.81
+    }
+  }
+}

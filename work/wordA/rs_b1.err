@@ -1,0 +1,5 @@
+== set blk1_full nver=3 len=0x64000 step=2 poly=0x1021
+   tr=plain done hits=17
+   tr=bswap16 done hits=14
+   tr=rev8 done hits=11
+   tr=bswap16+rev8 done hits=17

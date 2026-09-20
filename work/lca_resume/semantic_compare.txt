@@ -1,0 +1,84 @@
+STRUCTURAL SEMANTIC COMPARISON
+BV6T-AF LCA consumers: 0x26D5A, 0x26DD9, 0x26E11, 0x26E4D
+CV6T-AH LCA consumers: 0x29170, 0x291EF, 0x29227, 0x29263
+CV6T-AR LCA consumers: 0x2ABF7, 0x2AC76, 0x2ACAE, 0x2ACEA
+
+[state_machine]
+  CV6T-AH -> CV6T-AR: 264 vs 264 insns; semantic equal 263; edits 1; raw-after-align other=0
+    X-address deltas: {'+0x508': 98, '+0x19a': 5, '+0x464': 3, '+0x4bf': 2, '+0x1a870000': 1}
+    replace: A=[{'addr': '0x29283', 'text': 'MOVE.W  #$5D7E,Y0', 'words': '874A 5D7E'}] B=[{'addr': '0x2AD0A', 'text': 'MOVE.W  #$5DEA,Y0', 'words': '874A 5DEA'}]
+  BV6T-AF -> CV6T-AR: 260 vs 264 insns; semantic equal 257; edits 3; raw-after-align other=0
+    X-address deltas: {'+0x9fa': 97, '+0x2fa': 5, '+0x9a9': 2, '+0x7cb': 1, '+0x3e9d0000': 1, '+0x7d5': 1}
+    replace: A=[{'addr': '0x26E6D', 'text': 'MOVE.W  #$5D7C,Y0', 'words': '874A 5D7C'}, {'addr': '0x26E6F', 'text': 'MOVE.W  #$00D0,C1', 'words': '8745 00D0'}] B=[{'addr': '0x2AD0A', 'text': 'MOVE.W  #$5DEA,Y0', 'words': '874A 5DEA'}, {'addr': '0x2AD0C', 'text': 'MOVE.W  #$00CB,C1', 'words': '8745 00CB'}]
+    replace: A=[{'addr': '0x26E9A', 'text': 'Bne     P:$26EA3', 'words': 'A208'}] B=[{'addr': '0x2AD37', 'text': 'Beq     P:$2AD3B', 'words': 'A303'}, {'addr': '0x2AD38', 'text': 'TST.W   X:$2260', 'words': 'FF7C 2260'}, {'addr': '0x2AD3A', 'text': 'Beq     P:$2AD43', 'words': 'A308'}]
+    insert: A=[] B=[{'addr': '0x2AD55', 'text': 'TST.W   X:$2DDE', 'words': 'FF7C 2DDE'}, {'addr': '0x2AD57', 'text': 'Bne     P:$2AD61', 'words': 'A209'}]
+
+[state_immediate_callee]
+  CV6T-AH -> CV6T-AR: 90 vs 90 insns; semantic equal 90; edits 0; raw-after-align other=0
+    X-address deltas: {}
+  BV6T-AF -> CV6T-AR: 90 vs 90 insns; semantic equal 90; edits 0; raw-after-align other=0
+    X-address deltas: {}
+
+[torque_caller]
+  CV6T-AH -> CV6T-AR: 34 vs 34 insns; semantic equal 33; edits 1; raw-after-align other=0
+    X-address deltas: {'+0x4bf': 3, '+0x234': 1}
+    replace: A=[{'addr': '0x2956F', 'text': 'ASRR.L  #$08,fff', 'words': '4C68'}] B=[{'addr': '0x2B065', 'text': 'ASRR.L  #$0A,fff', 'words': '4C6A'}]
+  BV6T-AF -> CV6T-AR: 16 vs 34 insns; semantic equal 12; edits 3; raw-after-align other=0
+    X-address deltas: {'+0x9a9': 1, '+0xb59': 1}
+    replace: A=[{'addr': '0x27460', 'text': 'JSR     P:$27346', 'words': 'E256 7346'}] B=[{'addr': '0x2B054', 'text': 'ADDA    #<0–15>,Rn', 'words': '827B'}, {'addr': '0x2B055', 'text': 'MOVE.L  C10.L,X:(R7)', 'words': 'D23F'}, {'addr': '0x2B056', 'text': 'MOVE.W  X:$03B4,C', 'words': 'F27C 03B4'}]
+    replace: A=[{'addr': '0x2746F', 'text': 'ASRR.L  #$08,fff', 'words': '4C68'}, {'addr': '0x27470', 'text': 'MOVE.W  A,HHHHH', 'words': '8016'}, {'addr': '0x27471', 'text': 'MOVE.W  A1,X:$21F0', 'words': 'D07C 21F0'}] B=[{'addr': '0x2B065', 'text': 'ASRR.L  #$0A,fff', 'words': '4C6A'}, {'addr': '0x2B066', 'text': 'MOVE.W  Y0,HHHHH', 'words': '8512'}, {'addr': '0x2B067', 'text': 'NEG     B', 'words': '7EDF'}, {'addr': '0x2B068', 'text': 'MOVE.W  B,HHHHH', 'words': '8116'}, {'addr': '0x2B069', 'text': 'CMP.W   Y0,Y0', 'words': '7A96'}, {'addr': '0x2B06A', 'text': 'Ble     P:$2B06E', 'words': 'A703'}, {'addr': '0x2B06B', 'text': 'NOP     ', 'words': 'E700'}, {'addr': '0x2B06C', 'text': 'NOP     ', 'words': 'E700'}, {'addr': '0x2B06D', 'text': 'BRA     P:$2B076', 'words': 'A908'}, {'addr': '0x2B06E', 'text': 'MOVE.W  B,HHHHH', 'words': '8116'}, {'addr': '0x2B06F', 'text': 'CMP.W   C,C', 'words': '7916'}, {'addr': '0x2B070', 'text': 'Bge     P:$2B074', 'words': 'A403'}, {'addr': '0x2B071', 'text': 'NOP     ', 'words': 'E700'}, {'addr': '0x2B072', 'text': 'NOP     ', 'words': 'E700'}, {'addr': '0x2B073', 'text': 'BRA     P:$2B075', 'words': 'A901'}, {'addr': '0x2B074', 'text': 'MOVE.W  C,HHHHH', 'words': '8216'}, {'addr': '0x2B075', 'text': 'MOVE.W  Y0,HHHHH', 'words': '8512'}, {'addr': '0x2B076', 'text': 'MOVE.W  Y0,X:$2D49', 'words': 'D57C 2D49'}]
+    insert: A=[] B=[{'addr': '0x2B07A', 'text': 'MOVE.L  X:(R7)-,C.L', 'words': 'F23B'}]
+
+[torque_caller_helper]
+  CV6T-AH -> CV6T-AR: 72 vs 88 insns; semantic equal 63; edits 9; raw-after-align other=0
+    X-address deltas: {'+0x4bf': 12, '+0x508': 1, '+0x1ac70000': 1, '+0x2c29': 1, '+0x300': 1, '+0x234': 1}
+    replace: A=[{'addr': '0x294DD', 'text': 'MOVE.W  HHH,X:(Rn+x)', 'words': '950B'}] B=[{'addr': '0x2AFA4', 'text': 'BRSET   #<MASK8>,X:<<pp,AA', 'words': 'AFE7'}]
+    replace: A=[{'addr': '0x294DF', 'text': 'MOVE.L  ??.L,X:(SP–xx)', 'words': '94E9'}] B=[{'addr': '0x2AFA6', 'text': 'BRSET   #<MASK8>,X:aa,AA', 'words': 'AFB0'}]
+    replace: A=[{'addr': '0x294E1', 'text': 'MOVE.L  ??.L,X:(SP–xx)', 'words': '94F3'}] B=[{'addr': '0x2AFA8', 'text': 'BRSET   #<MASK8>,X:<<pp,AA', 'words': 'AFCF'}]
+    replace: A=[{'addr': '0x294E3', 'text': 'MOVE.L  ??.L,X:(SP–xx)', 'words': '94F8'}] B=[{'addr': '0x2AFAA', 'text': 'BRSET   #<MASK8>,X:<<pp,AA', 'words': 'AFD4'}]
+    replace: A=[{'addr': '0x294E5', 'text': 'MOVE.L  ??.L,X:(SP–xx)', 'words': '94FC'}] B=[{'addr': '0x2AFAC', 'text': 'BRSET   #<MASK8>,X:<<pp,AA', 'words': 'AFD8'}]
+    replace: A=[{'addr': '0x294E7', 'text': 'MOVE.W  HHH,X:(Rn+x)', 'words': '9506'}] B=[{'addr': '0x2AFAE', 'text': 'BRSET   #<MASK8>,X:<<pp,AA', 'words': 'AFE2'}]
+    replace: A=[{'addr': '0x294E9', 'text': 'MOVE.W  #$0100,C1', 'words': '8745 0100'}] B=[{'addr': '0x2AFB0', 'text': 'MOVE.W  X:$03AF,A', 'words': 'F07C 03AF'}, {'addr': '0x2AFB2', 'text': 'MOVE.W  B,HHHHH', 'words': '8110'}, {'addr': '0x2AFB3', 'text': 'MOVE.W  X:$2D9A,A', 'words': 'F07C 2D9A'}, {'addr': '0x2AFB5', 'text': 'LSRR.L  #$10,fff', 'words': '4CB0'}, {'addr': '0x2AFB6', 'text': 'LSRR.L  #$10,fff', 'words': '4C30'}, {'addr': '0x2AFB7', 'text': 'NOP     ', 'words': 'E700'}, {'addr': '0x2AFB8', 'text': 'IMPYUU  q1.h,q2.l,Y', 'words': '7317'}, {'addr': '0x2AFB9', 'text': 'IMACUU  q1.l,q2.h,Y', 'words': '7397'}, {'addr': '0x2AFBA', 'text': 'IMPYUU  q1.l,q2.l,A', 'words': '7017'}, {'addr': '0x2AFBB', 'text': 'ADD     A,A', 'words': '7850'}, {'addr': '0x2AFBC', 'text': 'LSRR.L  #$08,fff', 'words': '4C28'}, {'addr': '0x2AFBD', 'text': 'MOVE.W  A,HHHHH', 'words': '8016'}, {'addr': '0x2AFBE', 'text': 'MOVE.W  A1,X:$2DA4', 'words': 'D07C 2DA4'}, {'addr': '0x2AFC0', 'text': 'TST.W   X:$2DA4', 'words': 'FF7C 2DA4'}, {'addr': '0x2AFC2', 'text': 'Bne     P:$2AFC5', 'words': 'A202'}, {'addr': '0x2AFC3', 'text': 'MOVE.W  #<–64,63>,X:$2DA4', 'words': 'E681 2DA4'}, {'addr': '0x2AFC5', 'text': 'MOVE.W  #$2D46,X:$0400', 'words': '8654 2D46 0400'}, {'addr': '0x2AFC8', 'text': 'MOVE.W  #$0400,C1', 'words': '8745 0400'}]
+    delete: A=[{'addr': '0x294ED', 'text': 'MOVE.W  #$2887,X:$0100', 'words': '8654 2887 0100'}] B=[]
+    replace: A=[{'addr': '0x294FC', 'text': 'MOVE.W  #$0100,C1', 'words': '8745 0100'}] B=[{'addr': '0x2AFD8', 'text': 'MOVE.W  #$0400,C1', 'words': '8745 0400'}]
+  BV6T-AF -> CV6T-AR: 72 vs 88 insns; semantic equal 63; edits 9; raw-after-align other=0
+    X-address deltas: {'+0xb59': 10, '+0x9a9': 2, '+0x9fa': 1, '+0x3bd40000': 1, '+0x2872': 1, '+0x300': 1, '-0x183': 1}
+    replace: A=[{'addr': '0x273D0', 'text': 'ASLL.W  Q1,Q2,D', 'words': '73FE'}] B=[{'addr': '0x2AFA4', 'text': 'BRSET   #<MASK8>,X:<<pp,AA', 'words': 'AFE7'}]
+    replace: A=[{'addr': '0x273D2', 'text': 'MPYR    Q3,Q4,B X:(R0)+N,reg1', 'words': '73DC'}] B=[{'addr': '0x2AFA6', 'text': 'BRSET   #<MASK8>,X:aa,AA', 'words': 'AFB0'}]
+    replace: A=[{'addr': '0x273D4', 'text': '.word   $73E6', 'words': '73E6'}] B=[{'addr': '0x2AFA8', 'text': 'BRSET   #<MASK8>,X:<<pp,AA', 'words': 'AFCF'}]
+    replace: A=[{'addr': '0x273D6', 'text': 'ASR     D', 'words': '73EB'}] B=[{'addr': '0x2AFAA', 'text': 'BRSET   #<MASK8>,X:<<pp,AA', 'words': 'AFD4'}]
+    replace: A=[{'addr': '0x273D8', 'text': '.word   $73EF', 'words': '73EF'}] B=[{'addr': '0x2AFAC', 'text': 'BRSET   #<MASK8>,X:<<pp,AA', 'words': 'AFD8'}]
+    replace: A=[{'addr': '0x273DA', 'text': 'MPYR    Q3,Q4,B X:(R0)+,reg1', 'words': '73F9'}] B=[{'addr': '0x2AFAE', 'text': 'BRSET   #<MASK8>,X:<<pp,AA', 'words': 'AFE2'}]
+    replace: A=[{'addr': '0x273DC', 'text': 'MOVE.W  #$0100,C1', 'words': '8745 0100'}] B=[{'addr': '0x2AFB0', 'text': 'MOVE.W  X:$03AF,A', 'words': 'F07C 03AF'}, {'addr': '0x2AFB2', 'text': 'MOVE.W  B,HHHHH', 'words': '8110'}, {'addr': '0x2AFB3', 'text': 'MOVE.W  X:$2D9A,A', 'words': 'F07C 2D9A'}, {'addr': '0x2AFB5', 'text': 'LSRR.L  #$10,fff', 'words': '4CB0'}, {'addr': '0x2AFB6', 'text': 'LSRR.L  #$10,fff', 'words': '4C30'}, {'addr': '0x2AFB7', 'text': 'NOP     ', 'words': 'E700'}, {'addr': '0x2AFB8', 'text': 'IMPYUU  q1.h,q2.l,Y', 'words': '7317'}, {'addr': '0x2AFB9', 'text': 'IMACUU  q1.l,q2.h,Y', 'words': '7397'}, {'addr': '0x2AFBA', 'text': 'IMPYUU  q1.l,q2.l,A', 'words': '7017'}, {'addr': '0x2AFBB', 'text': 'ADD     A,A', 'words': '7850'}, {'addr': '0x2AFBC', 'text': 'LSRR.L  #$08,fff', 'words': '4C28'}, {'addr': '0x2AFBD', 'text': 'MOVE.W  A,HHHHH', 'words': '8016'}, {'addr': '0x2AFBE', 'text': 'MOVE.W  A1,X:$2DA4', 'words': 'D07C 2DA4'}, {'addr': '0x2AFC0', 'text': 'TST.W   X:$2DA4', 'words': 'FF7C 2DA4'}, {'addr': '0x2AFC2', 'text': 'Bne     P:$2AFC5', 'words': 'A202'}, {'addr': '0x2AFC3', 'text': 'MOVE.W  #<–64,63>,X:$2DA4', 'words': 'E681 2DA4'}, {'addr': '0x2AFC5', 'text': 'MOVE.W  #$2D46,X:$0400', 'words': '8654 2D46 0400'}, {'addr': '0x2AFC8', 'text': 'MOVE.W  #$0400,C1', 'words': '8745 0400'}]
+    delete: A=[{'addr': '0x273E0', 'text': 'MOVE.W  #$21ED,X:$0100', 'words': '8654 21ED 0100'}] B=[]
+    replace: A=[{'addr': '0x273EF', 'text': 'MOVE.W  #$0100,C1', 'words': '8745 0100'}] B=[{'addr': '0x2AFD8', 'text': 'MOVE.W  #$0400,C1', 'words': '8745 0400'}]
+
+[torque_function]
+  CV6T-AH -> CV6T-AR: 92 vs 92 insns; semantic equal 92; edits 0; raw-after-align other=0
+    X-address deltas: {'+0x4bf': 12, '+0x508': 1}
+  BV6T-AF -> CV6T-AR: 92 vs 92 insns; semantic equal 92; edits 0; raw-after-align other=0
+    X-address deltas: {'+0xb59': 7, '+0x9a9': 5, '+0x9fa': 1}
+
+[torque_function_callee]
+  CV6T-AH -> CV6T-AR: 37 vs 60 insns; semantic equal 31; edits 8; raw-after-align other=0
+    X-address deltas: {'+0x19a': 3, '+0x508': 2, '+0x1adc0000': 1, '+0x264c': 1, '+0x4bf': 1}
+    replace: A=[{'addr': '0x29549', 'text': 'MOVE.W  Y0,X:(SP–xx)', 'words': '9559'}] B=[{'addr': '0x2B025', 'text': 'MOVE.W  X:(SP–xx),A', 'words': 'B04F'}]
+    replace: A=[{'addr': '0x2954B', 'text': 'MOVE.W  Y0,X:(SP–xx)', 'words': '9555'}] B=[{'addr': '0x2B027', 'text': 'MOVE.W  X:(Rn+x),HHH', 'words': 'B031'}]
+    replace: A=[{'addr': '0x2954D', 'text': 'MOVE.W  Y0,X:(SP–xx)', 'words': '9558'}] B=[{'addr': '0x2B029', 'text': 'MOVE.W  X:(SP–xx),A', 'words': 'B04E'}]
+    replace: A=[{'addr': '0x2954F', 'text': 'MOVE.W  Y0,X:(SP–xx)', 'words': '9559'}] B=[{'addr': '0x2B02B', 'text': 'MOVE.W  X:(SP–xx),A', 'words': 'B04F'}]
+    replace: A=[{'addr': '0x29551', 'text': 'MOVE.W  Y0,X:(SP–xx)', 'words': '9555'}] B=[{'addr': '0x2B02D', 'text': 'MOVE.W  X:(Rn+x),HHH', 'words': 'B031'}]
+    replace: A=[{'addr': '0x29553', 'text': 'MOVE.W  Y0,X:(SP–xx)', 'words': '9558'}] B=[{'addr': '0x2B02F', 'text': 'MOVE.W  X:(SP–xx),A', 'words': 'B04E'}]
+    insert: A=[] B=[{'addr': '0x2B031', 'text': 'MOVE.W  X:$08F4,A', 'words': 'F07C 08F4'}, {'addr': '0x2B033', 'text': 'ASR16   B,B', 'words': '7C86'}, {'addr': '0x2B034', 'text': 'MOVE.W  X:$2DA0,A', 'words': 'F07C 2DA0'}, {'addr': '0x2B036', 'text': 'LSRR.L  #$10,fff', 'words': '4C30'}, {'addr': '0x2B037', 'text': 'NOP     ', 'words': 'E700'}, {'addr': '0x2B038', 'text': 'IMPYSU  q1.h,q2.l,Y', 'words': '7217'}, {'addr': '0x2B039', 'text': 'IMACUS  q1.l,q2.h,Y', 'words': '7297'}, {'addr': '0x2B03A', 'text': 'IMPYUU  q1.l,q2.l,A', 'words': '7017'}, {'addr': '0x2B03B', 'text': 'ADD     A,A', 'words': '7850'}, {'addr': '0x2B03C', 'text': 'ASRR.L  #$08,fff', 'words': '4C68'}, {'addr': '0x2B03D', 'text': 'MOVE.W  A,HHHHH', 'words': '8016'}, {'addr': '0x2B03E', 'text': 'TST.W   R0', 'words': '8F10'}, {'addr': '0x2B03F', 'text': 'Bge     P:$2B043', 'words': 'A403'}, {'addr': '0x2B040', 'text': 'NOP     ', 'words': 'E700'}, {'addr': '0x2B041', 'text': 'MOVE.W  #<–64,63>,B', 'words': 'E180'}, {'addr': '0x2B042', 'text': 'BRA     P:$2B04B', 'words': 'A908'}]
+    insert: A=[] B=[{'addr': '0x2B045', 'text': 'CMP.W   B,B', 'words': '7886'}, {'addr': '0x2B046', 'text': 'Bge     P:$2B04A', 'words': 'A403'}, {'addr': '0x2B047', 'text': 'NOP     ', 'words': 'E700'}, {'addr': '0x2B048', 'text': 'NOP     ', 'words': 'E700'}, {'addr': '0x2B049', 'text': 'BRA     P:$2B04B', 'words': 'A901'}, {'addr': '0x2B04A', 'text': 'MOVE.W  B,HHHHH', 'words': '8110'}, {'addr': '0x2B04B', 'text': 'MOVE.W  B1,X:$2DA5', 'words': 'D17C 2DA5'}]
+  BV6T-AF -> CV6T-AR: 49 vs 60 insns; semantic equal 30; edits 10; raw-after-align other=0
+    X-address deltas: {'+0x2fa': 3, '+0x9fa': 2, '+0x3be70000': 1, '+0x27ac': 1}
+    delete: A=[{'addr': '0x27422', 'text': 'ADDA    #<0–15>,Rn', 'words': '827B'}, {'addr': '0x27423', 'text': 'MOVE.L  C10.L,X:(R7)', 'words': 'D23F'}] B=[]
+    replace: A=[{'addr': '0x2743E', 'text': 'MACSU   Q2,Q1,A', 'words': '744E'}] B=[{'addr': '0x2B025', 'text': 'MOVE.W  X:(SP–xx),A', 'words': 'B04F'}]
+    replace: A=[{'addr': '0x27440', 'text': 'MPYSU   Q2,Q1,A', 'words': '744A'}] B=[{'addr': '0x2B027', 'text': 'MOVE.W  X:(Rn+x),HHH', 'words': 'B031'}]
+    replace: A=[{'addr': '0x27442', 'text': 'MACR    Q3,Q4,A X:(R0)+N,reg1', 'words': '744D'}] B=[{'addr': '0x2B029', 'text': 'MOVE.W  X:(SP–xx),A', 'words': 'B04E'}]
+    replace: A=[{'addr': '0x27444', 'text': 'MACSU   Q2,Q1,A', 'words': '744E'}] B=[{'addr': '0x2B02B', 'text': 'MOVE.W  X:(SP–xx),A', 'words': 'B04F'}]
+    replace: A=[{'addr': '0x27446', 'text': 'MPYSU   Q2,Q1,A', 'words': '744A'}] B=[{'addr': '0x2B02D', 'text': 'MOVE.W  X:(Rn+x),HHH', 'words': 'B031'}]
+    replace: A=[{'addr': '0x27448', 'text': 'MACR    Q3,Q4,A X:(R0)+N,reg1', 'words': '744D'}] B=[{'addr': '0x2B02F', 'text': 'MOVE.W  X:(SP–xx),A', 'words': 'B04E'}]
+    insert: A=[] B=[{'addr': '0x2B031', 'text': 'MOVE.W  X:$08F4,A', 'words': 'F07C 08F4'}, {'addr': '0x2B033', 'text': 'ASR16   B,B', 'words': '7C86'}, {'addr': '0x2B034', 'text': 'MOVE.W  X:$2DA0,A', 'words': 'F07C 2DA0'}, {'addr': '0x2B036', 'text': 'LSRR.L  #$10,fff', 'words': '4C30'}, {'addr': '0x2B037', 'text': 'NOP     ', 'words': 'E700'}, {'addr': '0x2B038', 'text': 'IMPYSU  q1.h,q2.l,Y', 'words': '7217'}, {'addr': '0x2B039', 'text': 'IMACUS  q1.l,q2.h,Y', 'words': '7297'}, {'addr': '0x2B03A', 'text': 'IMPYUU  q1.l,q2.l,A', 'words': '7017'}, {'addr': '0x2B03B', 'text': 'ADD     A,A', 'words': '7850'}, {'addr': '0x2B03C', 'text': 'ASRR.L  #$08,fff', 'words': '4C68'}, {'addr': '0x2B03D', 'text': 'MOVE.W  A,HHHHH', 'words': '8016'}, {'addr': '0x2B03E', 'text': 'TST.W   R0', 'words': '8F10'}, {'addr': '0x2B03F', 'text': 'Bge     P:$2B043', 'words': 'A403'}, {'addr': '0x2B040', 'text': 'NOP     ', 'words': 'E700'}, {'addr': '0x2B041', 'text': 'MOVE.W  #<–64,63>,B', 'words': 'E180'}, {'addr': '0x2B042', 'text': 'BRA     P:$2B04B', 'words': 'A908'}]
+    insert: A=[] B=[{'addr': '0x2B045', 'text': 'CMP.W   B,B', 'words': '7886'}, {'addr': '0x2B046', 'text': 'Bge     P:$2B04A', 'words': 'A403'}, {'addr': '0x2B047', 'text': 'NOP     ', 'words': 'E700'}, {'addr': '0x2B048', 'text': 'NOP     ', 'words': 'E700'}, {'addr': '0x2B049', 'text': 'BRA     P:$2B04B', 'words': 'A901'}, {'addr': '0x2B04A', 'text': 'MOVE.W  B,HHHHH', 'words': '8110'}, {'addr': '0x2B04B', 'text': 'MOVE.W  B1,X:$2DA5', 'words': 'D17C 2DA5'}]
+    replace: A=[{'addr': '0x27450', 'text': 'TFR     FFF,fff', 'words': '7D10'}, {'addr': '0x27451', 'text': 'ASRR.L  #$06,fff', 'words': '4D66'}, {'addr': '0x27452', 'text': 'MOVE.L  #$10624DD3,B.L', 'words': 'E411 4DD3 1062'}, {'addr': '0x27455', 'text': 'TFR     FFF,fff', 'words': '7C20'}, {'addr': '0x27456', 'text': 'JSR     P:$001B1', 'words': 'E254 01B1'}, {'addr': '0x27458', 'text': 'ASRR.L  #$06,fff', 'words': '4C66'}, {'addr': '0x27459', 'text': 'LSRR.L  #$1F,fff', 'words': '4D3F'}, {'addr': '0x2745A', 'text': 'ADD     A,A', 'words': '7820'}, {'addr': '0x2745B', 'text': 'MOVE.W  A,HHHHH', 'words': '8016'}, {'addr': '0x2745C', 'text': 'MOVE.W  A1,X:$21F1', 'words': 'D07C 21F1'}, {'addr': '0x2745E', 'text': 'MOVE.L  X:(R7)-,C.L', 'words': 'F23B'}] B=[{'addr': '0x2B051', 'text': 'MOVE.W  B1,X:$2D4A', 'words': 'D17C 2D4A'}]

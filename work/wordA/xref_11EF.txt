@@ -1,0 +1,74 @@
+==============================================================================
+BV6T-14C217-AF
+
+-- X:$11EF: 6 referencing instruction(s) --
+   read  blk1 word 0x04101 byte 0x08202 P:$12101  MOVE.W  X:$11EF,Y1
+   STORE blk1 word 0x0410A byte 0x08214 P:$1210A  MOVE.W  Y0,X:$11EF
+   read  blk1 word 0x0413A byte 0x08274 P:$1213A  MOVE.W  X:$11EF,X:$11E8
+   read  blk1 word 0x0413D byte 0x0827A P:$1213D  MOVE.W  #$11EF,X:$FFFF
+   read  blk1 word 0x04154 byte 0x082A8 P:$12154  CMP.W   X:$11EF,A
+   read  blk1 word 0x0442F byte 0x0885E P:$1242F  MOVE.W  #$11EF,X:$FFFF
+   -> 1 store(s)
+
+### function writing X:$11EF  (store at byte 0x08214)
+    entry after RTS at word 0x040D5 (byte 0x081AA)
+  P:$120D5 b0x081AA  827B                   ADDA    #<0–15>,Rn
+  P:$120D6 b0x081AC  D23F                   MOVE.L  C10.L,X:(R7)
+  P:$120D7 b0x081AE  827B                   ADDA    #<0–15>,Rn
+  P:$120D8 b0x081B0  F27D 08F3              MOVE.L  X:$08F3,C.L
+  P:$120DA b0x081B4  E410 FFF5 0003         MOVE.L  #$0003FFF5,A.L
+  P:$120DD b0x081BA  D51F                   MOVE.W  Y0,X:(R7)
+  P:$120DE b0x081BC  7827                   CMP.L   A,A
+  P:$120DF b0x081BE  AD2F                   .word   $AD2F
+  P:$120E0 b0x081C0  8054 162A              BFCLR   #<MASK16>,X:$162A
+  P:$120E2 b0x081C4  1000                   SUB     ~A,A A,X:(R0)+  ;2enc
+  P:$120E3 b0x081C6  5D43 4C00              CMP.L   #$4C00,fff
+  P:$120E5 b0x081CA  A004                   .word   $A004
+  P:$120E6 b0x081CC  E401 4C00              MOVE.L  #$4C00,B.L
+  P:$120E8 b0x081D0  78A1                   SUB     B,B
+  P:$120E9 b0x081D2  A910                   BRA     <OAASET7>
+  P:$120EA b0x081D4  E410 E800 0000         MOVE.L  #$0000E800,A.L
+  P:$120ED b0x081DA  7827                   CMP.L   A,A
+  P:$120EE b0x081DC  A005                   .word   $A005
+  P:$120EF b0x081DE  E411 FFF5 0003         MOVE.L  #$0003FFF5,B.L
+  P:$120F2 b0x081E4  78A1                   SUB     B,B
+  P:$120F3 b0x081E6  A906                   BRA     <OAASET7>
+  P:$120F4 b0x081E8  E412 E800 0000         MOVE.L  #$0000E800,C.L
+  P:$120F7 b0x081EE  E411 17F5 0003         MOVE.L  #$000317F5,B.L
+  P:$120FA b0x081F4  F01F                   MOVE.W  X:(R7),A  ;2enc
+  P:$120FB b0x081F6  4C30                   LSRR.L  #$10,fff
+  P:$120FC b0x081F8  7817                   CMP.L   A,A
+  P:$120FD b0x081FA  E700                   NOP     
+  P:$120FE b0x081FC  AD02                   .word   $AD02
+  P:$120FF b0x081FE  8017                   MOVE.W  A,HHHHH  ;2enc
+  P:$12100 b0x08200  D01F                   MOVE.W  A1,X:(R7)
+  P:$12101 b0x08202  F77C 11EF              MOVE.W  X:$11EF,Y1  ;2enc
+  P:$12103 b0x08206  7C20                   TFR     FFF,fff
+  P:$12104 b0x08208  F51F                   MOVE.W  X:(R7),Y0  ;2enc
+  P:$12105 b0x0820A  E255 6216              JSR     P:$16216
+  P:$12107 b0x0820E  F01F                   MOVE.W  X:(R7),A  ;2enc
+  P:$12108 b0x08210  4C30                   LSRR.L  #$10,fff
+  P:$12109 b0x08212  7820                   ADD     A,A
+  P:$1210A b0x08214  D57C 11EF              MOVE.W  Y0,X:$11EF   <<<< STORE
+  P:$1210C b0x08218  D07D 08F3              MOVE.L  A10.L,X:$08F3
+  P:$1210E b0x0821C  A939                   BRA     <OAASET7>
+  P:$1210F b0x0821E  8748 73FA              MOVE.W  #$73FA,X0  ;2enc
+  P:$12111 b0x08222  8008                   MOVE.W  A,HHHHH  ;2enc
+  P:$12112 b0x08224  8110                   MOVE.W  B,HHHHH  ;2enc
+  P:$12113 b0x08226  4CB0                   LSRR.L  #$10,fff
+  P:$12114 b0x08228  F27D 08F6              MOVE.L  X:$08F6,C.L
+  P:$12116 b0x0822C  78A7                   CMP.L   B,B
+  P:$12117 b0x0822E  AD1E                   .word   $AD1E
+  P:$12118 b0x08230  F01F                   MOVE.W  X:(R7),A  ;2enc
+  P:$12119 b0x08232  445F                   ADD.W   X:(Rn),A
+  P:$1211A b0x08234  D01F                   MOVE.W  A1,X:(R7)
+  P:$1211B b0x08236  4C30                   LSRR.L  #$10,fff
+  P:$1211C b0x08238  78A1                   SUB     B,B
+  P:$1211D b0x0823A  8054 162A              BFCLR   #<MASK16>,X:$162A
+  P:$1211F b0x0823E  1000                   SUB     ~A,A A,X:(R0)+  ;2enc
+  P:$12120 b0x08240  7817                   CMP.L   A,A
+  P:$12121 b0x08242  AD02                   .word   $AD02
+  P:$12122 b0x08244  8017                   MOVE.W  A,HHHHH  ;2enc
+  P:$12123 b0x08246  D01F                   MOVE.W  A1,X:(R7)
+  P:$12124 b0x08248  8748 8C00              MOVE.W  #$8C00,X0  ;2enc
+  P:$12126 b0x0824C  8008                   MOVE.W  A,HHHHH  ;2enc

@@ -1,0 +1,3017 @@
+{
+  "builds": [
+    "BV6T-AF",
+    "CV6T-AH",
+    "CV6T-AR"
+  ],
+  "consumers": {
+    "BV6T-AF": [
+      "0x26D5A",
+      "0x26DD9",
+      "0x26E11",
+      "0x26E4D"
+    ],
+    "CV6T-AH": [
+      "0x29170",
+      "0x291EF",
+      "0x29227",
+      "0x29263"
+    ],
+    "CV6T-AR": [
+      "0x2ABF7",
+      "0x2AC76",
+      "0x2ACAE",
+      "0x2ACEA"
+    ]
+  },
+  "groups": {
+    "state_machine": {
+      "CV6T-AH_to_CV6T-AR": {
+        "alignment": {
+          "a_insn": 264,
+          "b_insn": 264,
+          "equal": 263,
+          "deleted": 1,
+          "inserted": 1,
+          "replaced_span": 1,
+          "edits": [
+            {
+              "tag": "replace",
+              "a": [
+                {
+                  "addr": "0x29283",
+                  "text": "MOVE.W  #$5D7E,Y0",
+                  "words": "874A 5D7E"
+                }
+              ],
+              "b": [
+                {
+                  "addr": "0x2AD0A",
+                  "text": "MOVE.W  #$5DEA,Y0",
+                  "words": "874A 5DEA"
+                }
+              ]
+            }
+          ],
+          "xaddr_delta_hist": {
+            "+0x508": 98,
+            "+0x19a": 5,
+            "+0x464": 3,
+            "+0x4bf": 2,
+            "+0x1a870000": 1
+          }
+        },
+        "post_alignment_raw_classification": {
+          "same": 153,
+          "xaddr_relocation": 109,
+          "call_target_relocation": 1,
+          "branch_displacement": 0,
+          "other": 0,
+          "examples": [
+            {
+              "kind": "X-address relocation",
+              "a": "0x2912E F07C 28A7",
+              "b": "0x2ABB5 F07C 2DAF"
+            },
+            {
+              "kind": "X-address relocation",
+              "a": "0x29131 F17C 1DAB",
+              "b": "0x2ABB8 F17C 220F"
+            },
+            {
+              "kind": "X-address relocation",
+              "a": "0x2913C E032 83B0 9144",
+              "b": "0x2ABC3 E032 83B0 ABCB"
+            },
+            {
+              "kind": "X-address relocation",
+              "a": "0x29156 F57C 28B0",
+              "b": "0x2ABDD F57C 2DB8"
+            },
+            {
+              "kind": "X-address relocation",
+              "a": "0x2915A FF7C 28BB",
+              "b": "0x2ABE1 FF7C 2DC3"
+            },
+            {
+              "kind": "X-address relocation",
+              "a": "0x2915D F07C 28D6",
+              "b": "0x2ABE4 F07C 2DDE"
+            },
+            {
+              "kind": "X-address relocation",
+              "a": "0x29166 E681 28B1",
+              "b": "0x2ABED E681 2DB9"
+            },
+            {
+              "kind": "X-address relocation",
+              "a": "0x29168 E680 28AA",
+              "b": "0x2ABEF E680 2DB2"
+            },
+            {
+              "kind": "X-address relocation",
+              "a": "0x2916A E682 28A7",
+              "b": "0x2ABF1 E682 2DAF"
+            },
+            {
+              "kind": "X-address relocation",
+              "a": "0x29170 F07C 28D6",
+              "b": "0x2ABF7 F07C 2DDE"
+            },
+            {
+              "kind": "X-address relocation",
+              "a": "0x29174 FF7C 28B9",
+              "b": "0x2ABFB FF7C 2DC1"
+            },
+            {
+              "kind": "X-address relocation",
+              "a": "0x2917A E685 28A7",
+              "b": "0x2AC01 E685 2DAF"
+            }
+          ]
+        },
+        "calls_a": [
+          [
+            "0x29289",
+            "0x0F618"
+          ]
+        ],
+        "calls_b": [
+          [
+            "0x2AD10",
+            "0x0FACE"
+          ]
+        ]
+      },
+      "BV6T-AF_to_CV6T-AR": {
+        "alignment": {
+          "a_insn": 260,
+          "b_insn": 264,
+          "equal": 257,
+          "deleted": 3,
+          "inserted": 7,
+          "replaced_span": 5,
+          "edits": [
+            {
+              "tag": "replace",
+              "a": [
+                {
+                  "addr": "0x26E6D",
+                  "text": "MOVE.W  #$5D7C,Y0",
+                  "words": "874A 5D7C"
+                },
+                {
+                  "addr": "0x26E6F",
+                  "text": "MOVE.W  #$00D0,C1",
+                  "words": "8745 00D0"
+                }
+              ],
+              "b": [
+                {
+                  "addr": "0x2AD0A",
+                  "text": "MOVE.W  #$5DEA,Y0",
+                  "words": "874A 5DEA"
+                },
+                {
+                  "addr": "0x2AD0C",
+                  "text": "MOVE.W  #$00CB,C1",
+                  "words": "8745 00CB"
+                }
+              ]
+            },
+            {
+              "tag": "replace",
+              "a": [
+                {
+                  "addr": "0x26E9A",
+                  "text": "Bne     P:$26EA3",
+                  "words": "A208"
+                }
+              ],
+              "b": [
+                {
+                  "addr": "0x2AD37",
+                  "text": "Beq     P:$2AD3B",
+                  "words": "A303"
+                },
+                {
+                  "addr": "0x2AD38",
+                  "text": "TST.W   X:$2260",
+                  "words": "FF7C 2260"
+                },
+                {
+                  "addr": "0x2AD3A",
+                  "text": "Beq     P:$2AD43",
+                  "words": "A308"
+                }
+              ]
+            },
+            {
+              "tag": "insert",
+              "a": [],
+              "b": [
+                {
+                  "addr": "0x2AD55",
+                  "text": "TST.W   X:$2DDE",
+                  "words": "FF7C 2DDE"
+                },
+                {
+                  "addr": "0x2AD57",
+                  "text": "Bne     P:$2AD61",
+                  "words": "A209"
+                }
+              ]
+            }
+          ],
+          "xaddr_delta_hist": {
+            "+0x9fa": 97,
+            "+0x2fa": 5,
+            "+0x9a9": 2,
+            "+0x7cb": 1,
+            "+0x3e9d0000": 1,
+            "+0x7d5": 1
+          }
+        },
+        "post_alignment_raw_classification": {
+          "same": 121,
+          "xaddr_relocation": 107,
+          "call_target_relocation": 1,
+          "branch_displacement": 28,
+          "other": 0,
+          "examples": [
+            {
+              "kind": "X-address relocation",
+              "a": "0x26D18 F07C 23B5",
+              "b": "0x2ABB5 F07C 2DAF"
+            },
+            {
+              "kind": "X-address relocation",
+              "a": "0x26D1B F17C 1A44",
+              "b": "0x2ABB8 F17C 220F"
+            },
+            {
+              "kind": "branch displacement relocation",
+              "a": "0x26D1D E668 018A",
+              "b": "0x2ABBA E668 018D"
+            },
+            {
+              "kind": "branch displacement relocation",
+              "a": "0x26D21 E568 0186",
+              "b": "0x2ABBE E568 0189"
+            },
+            {
+              "kind": "X-address relocation",
+              "a": "0x26D26 E032 83B0 6D2E",
+              "b": "0x2ABC3 E032 83B0 ABCB"
+            },
+            {
+              "kind": "X-address relocation",
+              "a": "0x26D40 F57C 23BE",
+              "b": "0x2ABDD F57C 2DB8"
+            },
+            {
+              "kind": "X-address relocation",
+              "a": "0x26D44 FF7C 23C9",
+              "b": "0x2ABE1 FF7C 2DC3"
+            },
+            {
+              "kind": "X-address relocation",
+              "a": "0x26D47 F07C 23E4",
+              "b": "0x2ABE4 F07C 2DDE"
+            },
+            {
+              "kind": "X-address relocation",
+              "a": "0x26D50 E681 23BF",
+              "b": "0x2ABED E681 2DB9"
+            },
+            {
+              "kind": "X-address relocation",
+              "a": "0x26D52 E680 23B8",
+              "b": "0x2ABEF E680 2DB2"
+            },
+            {
+              "kind": "X-address relocation",
+              "a": "0x26D54 E682 23B5",
+              "b": "0x2ABF1 E682 2DAF"
+            },
+            {
+              "kind": "branch displacement relocation",
+              "a": "0x26D56 E16C 0167",
+              "b": "0x2ABF3 E16C 016D"
+            }
+          ]
+        },
+        "calls_a": [
+          [
+            "0x26E73",
+            "0x0ECA6"
+          ]
+        ],
+        "calls_b": [
+          [
+            "0x2AD10",
+            "0x0FACE"
+          ]
+        ]
+      }
+    },
+    "state_immediate_callee": {
+      "CV6T-AH_to_CV6T-AR": {
+        "alignment": {
+          "a_insn": 90,
+          "b_insn": 90,
+          "equal": 90,
+          "deleted": 0,
+          "inserted": 0,
+          "replaced_span": 0,
+          "edits": [],
+          "xaddr_delta_hist": {}
+        },
+        "post_alignment_raw_classification": {
+          "same": 83,
+          "xaddr_relocation": 0,
+          "call_target_relocation": 7,
+          "branch_displacement": 0,
+          "other": 0,
+          "examples": [
+            {
+              "kind": "call target relocation",
+              "a": "0x0F648 E255 7A29",
+              "b": "0x0FAFE E255 879B"
+            },
+            {
+              "kind": "call target relocation",
+              "a": "0x0F653 E255 7A93",
+              "b": "0x0FB09 E255 8805"
+            },
+            {
+              "kind": "call target relocation",
+              "a": "0x0F656 E255 7C6D",
+              "b": "0x0FB0C E255 89DF"
+            },
+            {
+              "kind": "call target relocation",
+              "a": "0x0F664 E255 1143",
+              "b": "0x0FB1A E255 15FE"
+            },
+            {
+              "kind": "call target relocation",
+              "a": "0x0F66B E255 7B07",
+              "b": "0x0FB21 E255 8879"
+            },
+            {
+              "kind": "call target relocation",
+              "a": "0x0F672 E254 F680",
+              "b": "0x0FB28 E254 FB36"
+            },
+            {
+              "kind": "call target relocation",
+              "a": "0x0F676 E255 7A51",
+              "b": "0x0FB2C E255 87C3"
+            }
+          ]
+        },
+        "calls_a": [
+          [
+            "0x0F648",
+            "0x17A29"
+          ],
+          [
+            "0x0F653",
+            "0x17A93"
+          ],
+          [
+            "0x0F656",
+            "0x17C6D"
+          ],
+          [
+            "0x0F664",
+            "0x11143"
+          ],
+          [
+            "0x0F66B",
+            "0x17B07"
+          ],
+          [
+            "0x0F672",
+            "0x0F680"
+          ],
+          [
+            "0x0F676",
+            "0x17A51"
+          ]
+        ],
+        "calls_b": [
+          [
+            "0x0FAFE",
+            "0x1879B"
+          ],
+          [
+            "0x0FB09",
+            "0x18805"
+          ],
+          [
+            "0x0FB0C",
+            "0x189DF"
+          ],
+          [
+            "0x0FB1A",
+            "0x115FE"
+          ],
+          [
+            "0x0FB21",
+            "0x18879"
+          ],
+          [
+            "0x0FB28",
+            "0x0FB36"
+          ],
+          [
+            "0x0FB2C",
+            "0x187C3"
+          ]
+        ]
+      },
+      "BV6T-AF_to_CV6T-AR": {
+        "alignment": {
+          "a_insn": 90,
+          "b_insn": 90,
+          "equal": 90,
+          "deleted": 0,
+          "inserted": 0,
+          "replaced_span": 0,
+          "edits": [],
+          "xaddr_delta_hist": {}
+        },
+        "post_alignment_raw_classification": {
+          "same": 83,
+          "xaddr_relocation": 0,
+          "call_target_relocation": 7,
+          "branch_displacement": 0,
+          "other": 0,
+          "examples": [
+            {
+              "kind": "call target relocation",
+              "a": "0x0ECD6 E255 6F43",
+              "b": "0x0FAFE E255 879B"
+            },
+            {
+              "kind": "call target relocation",
+              "a": "0x0ECE1 E255 6FAB",
+              "b": "0x0FB09 E255 8805"
+            },
+            {
+              "kind": "call target relocation",
+              "a": "0x0ECE4 E255 7185",
+              "b": "0x0FB0C E255 89DF"
+            },
+            {
+              "kind": "call target relocation",
+              "a": "0x0ECF2 E255 07AB",
+              "b": "0x0FB1A E255 15FE"
+            },
+            {
+              "kind": "call target relocation",
+              "a": "0x0ECF9 E255 701F",
+              "b": "0x0FB21 E255 8879"
+            },
+            {
+              "kind": "call target relocation",
+              "a": "0x0ED00 E254 ED0E",
+              "b": "0x0FB28 E254 FB36"
+            },
+            {
+              "kind": "call target relocation",
+              "a": "0x0ED04 E255 6F6A",
+              "b": "0x0FB2C E255 87C3"
+            }
+          ]
+        },
+        "calls_a": [
+          [
+            "0x0ECD6",
+            "0x16F43"
+          ],
+          [
+            "0x0ECE1",
+            "0x16FAB"
+          ],
+          [
+            "0x0ECE4",
+            "0x17185"
+          ],
+          [
+            "0x0ECF2",
+            "0x107AB"
+          ],
+          [
+            "0x0ECF9",
+            "0x1701F"
+          ],
+          [
+            "0x0ED00",
+            "0x0ED0E"
+          ],
+          [
+            "0x0ED04",
+            "0x16F6A"
+          ]
+        ],
+        "calls_b": [
+          [
+            "0x0FAFE",
+            "0x1879B"
+          ],
+          [
+            "0x0FB09",
+            "0x18805"
+          ],
+          [
+            "0x0FB0C",
+            "0x189DF"
+          ],
+          [
+            "0x0FB1A",
+            "0x115FE"
+          ],
+          [
+            "0x0FB21",
+            "0x18879"
+          ],
+          [
+            "0x0FB28",
+            "0x0FB36"
+          ],
+          [
+            "0x0FB2C",
+            "0x187C3"
+          ]
+        ]
+      }
+    },
+    "torque_caller": {
+      "CV6T-AH_to_CV6T-AR": {
+        "alignment": {
+          "a_insn": 34,
+          "b_insn": 34,
+          "equal": 33,
+          "deleted": 1,
+          "inserted": 1,
+          "replaced_span": 1,
+          "edits": [
+            {
+              "tag": "replace",
+              "a": [
+                {
+                  "addr": "0x2956F",
+                  "text": "ASRR.L  #$08,fff",
+                  "words": "4C68"
+                }
+              ],
+              "b": [
+                {
+                  "addr": "0x2B065",
+                  "text": "ASRR.L  #$0A,fff",
+                  "words": "4C6A"
+                }
+              ]
+            }
+          ],
+          "xaddr_delta_hist": {
+            "+0x4bf": 3,
+            "+0x234": 1
+          }
+        },
+        "post_alignment_raw_classification": {
+          "same": 27,
+          "xaddr_relocation": 4,
+          "call_target_relocation": 2,
+          "branch_displacement": 0,
+          "other": 0,
+          "examples": [
+            {
+              "kind": "X-address relocation",
+              "a": "0x29560 F27C 0180",
+              "b": "0x2B056 F27C 03B4"
+            },
+            {
+              "kind": "call target relocation",
+              "a": "0x29562 E256 94CB",
+              "b": "0x2B058 E256 AF90"
+            },
+            {
+              "kind": "X-address relocation",
+              "a": "0x29564 F07C 2895",
+              "b": "0x2B05A F07C 2D54"
+            },
+            {
+              "kind": "X-address relocation",
+              "a": "0x29567 F07C 2888",
+              "b": "0x2B05D F07C 2D47"
+            },
+            {
+              "kind": "X-address relocation",
+              "a": "0x29580 D57C 288A",
+              "b": "0x2B076 D57C 2D49"
+            },
+            {
+              "kind": "call target relocation",
+              "a": "0x29582 E256 9586",
+              "b": "0x2B078 E256 B07C"
+            }
+          ]
+        },
+        "calls_a": [
+          [
+            "0x29562",
+            "0x294CB"
+          ],
+          [
+            "0x29582",
+            "0x29586"
+          ]
+        ],
+        "calls_b": [
+          [
+            "0x2B058",
+            "0x2AF90"
+          ],
+          [
+            "0x2B078",
+            "0x2B07C"
+          ]
+        ]
+      },
+      "BV6T-AF_to_CV6T-AR": {
+        "alignment": {
+          "a_insn": 16,
+          "b_insn": 34,
+          "equal": 12,
+          "deleted": 4,
+          "inserted": 22,
+          "replaced_span": 21,
+          "edits": [
+            {
+              "tag": "replace",
+              "a": [
+                {
+                  "addr": "0x27460",
+                  "text": "JSR     P:$27346",
+                  "words": "E256 7346"
+                }
+              ],
+              "b": [
+                {
+                  "addr": "0x2B054",
+                  "text": "ADDA    #<0\u201315>,Rn",
+                  "words": "827B"
+                },
+                {
+                  "addr": "0x2B055",
+                  "text": "MOVE.L  C10.L,X:(R7)",
+                  "words": "D23F"
+                },
+                {
+                  "addr": "0x2B056",
+                  "text": "MOVE.W  X:$03B4,C",
+                  "words": "F27C 03B4"
+                }
+              ]
+            },
+            {
+              "tag": "replace",
+              "a": [
+                {
+                  "addr": "0x2746F",
+                  "text": "ASRR.L  #$08,fff",
+                  "words": "4C68"
+                },
+                {
+                  "addr": "0x27470",
+                  "text": "MOVE.W  A,HHHHH",
+                  "words": "8016"
+                },
+                {
+                  "addr": "0x27471",
+                  "text": "MOVE.W  A1,X:$21F0",
+                  "words": "D07C 21F0"
+                }
+              ],
+              "b": [
+                {
+                  "addr": "0x2B065",
+                  "text": "ASRR.L  #$0A,fff",
+                  "words": "4C6A"
+                },
+                {
+                  "addr": "0x2B066",
+                  "text": "MOVE.W  Y0,HHHHH",
+                  "words": "8512"
+                },
+                {
+                  "addr": "0x2B067",
+                  "text": "NEG     B",
+                  "words": "7EDF"
+                },
+                {
+                  "addr": "0x2B068",
+                  "text": "MOVE.W  B,HHHHH",
+                  "words": "8116"
+                },
+                {
+                  "addr": "0x2B069",
+                  "text": "CMP.W   Y0,Y0",
+                  "words": "7A96"
+                },
+                {
+                  "addr": "0x2B06A",
+                  "text": "Ble     P:$2B06E",
+                  "words": "A703"
+                },
+                {
+                  "addr": "0x2B06B",
+                  "text": "NOP     ",
+                  "words": "E700"
+                },
+                {
+                  "addr": "0x2B06C",
+                  "text": "NOP     ",
+                  "words": "E700"
+                },
+                {
+                  "addr": "0x2B06D",
+                  "text": "BRA     P:$2B076",
+                  "words": "A908"
+                },
+                {
+                  "addr": "0x2B06E",
+                  "text": "MOVE.W  B,HHHHH",
+                  "words": "8116"
+                },
+                {
+                  "addr": "0x2B06F",
+                  "text": "CMP.W   C,C",
+                  "words": "7916"
+                },
+                {
+                  "addr": "0x2B070",
+                  "text": "Bge     P:$2B074",
+                  "words": "A403"
+                },
+                {
+                  "addr": "0x2B071",
+                  "text": "NOP     ",
+                  "words": "E700"
+                },
+                {
+                  "addr": "0x2B072",
+                  "text": "NOP     ",
+                  "words": "E700"
+                },
+                {
+                  "addr": "0x2B073",
+                  "text": "BRA     P:$2B075",
+                  "words": "A901"
+                },
+                {
+                  "addr": "0x2B074",
+                  "text": "MOVE.W  C,HHHHH",
+                  "words": "8216"
+                },
+                {
+                  "addr": "0x2B075",
+                  "text": "MOVE.W  Y0,HHHHH",
+                  "words": "8512"
+                },
+                {
+                  "addr": "0x2B076",
+                  "text": "MOVE.W  Y0,X:$2D49",
+                  "words": "D57C 2D49"
+                }
+              ]
+            },
+            {
+              "tag": "insert",
+              "a": [],
+              "b": [
+                {
+                  "addr": "0x2B07A",
+                  "text": "MOVE.L  X:(R7)-,C.L",
+                  "words": "F23B"
+                }
+              ]
+            }
+          ],
+          "xaddr_delta_hist": {
+            "+0x9a9": 1,
+            "+0xb59": 1
+          }
+        },
+        "post_alignment_raw_classification": {
+          "same": 8,
+          "xaddr_relocation": 2,
+          "call_target_relocation": 2,
+          "branch_displacement": 0,
+          "other": 0,
+          "examples": [
+            {
+              "kind": "call target relocation",
+              "a": "0x27462 E256 73BE",
+              "b": "0x2B058 E256 AF90"
+            },
+            {
+              "kind": "X-address relocation",
+              "a": "0x27464 F07C 23AB",
+              "b": "0x2B05A F07C 2D54"
+            },
+            {
+              "kind": "X-address relocation",
+              "a": "0x27467 F07C 21EE",
+              "b": "0x2B05D F07C 2D47"
+            },
+            {
+              "kind": "call target relocation",
+              "a": "0x27473 E256 7476",
+              "b": "0x2B078 E256 B07C"
+            }
+          ]
+        },
+        "calls_a": [
+          [
+            "0x27460",
+            "0x27346"
+          ],
+          [
+            "0x27462",
+            "0x273BE"
+          ],
+          [
+            "0x27473",
+            "0x27476"
+          ]
+        ],
+        "calls_b": [
+          [
+            "0x2B058",
+            "0x2AF90"
+          ],
+          [
+            "0x2B078",
+            "0x2B07C"
+          ]
+        ]
+      }
+    },
+    "torque_caller_helper": {
+      "CV6T-AH_to_CV6T-AR": {
+        "alignment": {
+          "a_insn": 72,
+          "b_insn": 88,
+          "equal": 63,
+          "deleted": 9,
+          "inserted": 25,
+          "replaced_span": 25,
+          "edits": [
+            {
+              "tag": "replace",
+              "a": [
+                {
+                  "addr": "0x294DD",
+                  "text": "MOVE.W  HHH,X:(Rn+x)",
+                  "words": "950B"
+                }
+              ],
+              "b": [
+                {
+                  "addr": "0x2AFA4",
+                  "text": "BRSET   #<MASK8>,X:<<pp,AA",
+                  "words": "AFE7"
+                }
+              ]
+            },
+            {
+              "tag": "replace",
+              "a": [
+                {
+                  "addr": "0x294DF",
+                  "text": "MOVE.L  ??.L,X:(SP\u2013xx)",
+                  "words": "94E9"
+                }
+              ],
+              "b": [
+                {
+                  "addr": "0x2AFA6",
+                  "text": "BRSET   #<MASK8>,X:aa,AA",
+                  "words": "AFB0"
+                }
+              ]
+            },
+            {
+              "tag": "replace",
+              "a": [
+                {
+                  "addr": "0x294E1",
+                  "text": "MOVE.L  ??.L,X:(SP\u2013xx)",
+                  "words": "94F3"
+                }
+              ],
+              "b": [
+                {
+                  "addr": "0x2AFA8",
+                  "text": "BRSET   #<MASK8>,X:<<pp,AA",
+                  "words": "AFCF"
+                }
+              ]
+            },
+            {
+              "tag": "replace",
+              "a": [
+                {
+                  "addr": "0x294E3",
+                  "text": "MOVE.L  ??.L,X:(SP\u2013xx)",
+                  "words": "94F8"
+                }
+              ],
+              "b": [
+                {
+                  "addr": "0x2AFAA",
+                  "text": "BRSET   #<MASK8>,X:<<pp,AA",
+                  "words": "AFD4"
+                }
+              ]
+            },
+            {
+              "tag": "replace",
+              "a": [
+                {
+                  "addr": "0x294E5",
+                  "text": "MOVE.L  ??.L,X:(SP\u2013xx)",
+                  "words": "94FC"
+                }
+              ],
+              "b": [
+                {
+                  "addr": "0x2AFAC",
+                  "text": "BRSET   #<MASK8>,X:<<pp,AA",
+                  "words": "AFD8"
+                }
+              ]
+            },
+            {
+              "tag": "replace",
+              "a": [
+                {
+                  "addr": "0x294E7",
+                  "text": "MOVE.W  HHH,X:(Rn+x)",
+                  "words": "9506"
+                }
+              ],
+              "b": [
+                {
+                  "addr": "0x2AFAE",
+                  "text": "BRSET   #<MASK8>,X:<<pp,AA",
+                  "words": "AFE2"
+                }
+              ]
+            },
+            {
+              "tag": "replace",
+              "a": [
+                {
+                  "addr": "0x294E9",
+                  "text": "MOVE.W  #$0100,C1",
+                  "words": "8745 0100"
+                }
+              ],
+              "b": [
+                {
+                  "addr": "0x2AFB0",
+                  "text": "MOVE.W  X:$03AF,A",
+                  "words": "F07C 03AF"
+                },
+                {
+                  "addr": "0x2AFB2",
+                  "text": "MOVE.W  B,HHHHH",
+                  "words": "8110"
+                },
+                {
+                  "addr": "0x2AFB3",
+                  "text": "MOVE.W  X:$2D9A,A",
+                  "words": "F07C 2D9A"
+                },
+                {
+                  "addr": "0x2AFB5",
+                  "text": "LSRR.L  #$10,fff",
+                  "words": "4CB0"
+                },
+                {
+                  "addr": "0x2AFB6",
+                  "text": "LSRR.L  #$10,fff",
+                  "words": "4C30"
+                },
+                {
+                  "addr": "0x2AFB7",
+                  "text": "NOP     ",
+                  "words": "E700"
+                },
+                {
+                  "addr": "0x2AFB8",
+                  "text": "IMPYUU  q1.h,q2.l,Y",
+                  "words": "7317"
+                },
+                {
+                  "addr": "0x2AFB9",
+                  "text": "IMACUU  q1.l,q2.h,Y",
+                  "words": "7397"
+                },
+                {
+                  "addr": "0x2AFBA",
+                  "text": "IMPYUU  q1.l,q2.l,A",
+                  "words": "7017"
+                },
+                {
+                  "addr": "0x2AFBB",
+                  "text": "ADD     A,A",
+                  "words": "7850"
+                },
+                {
+                  "addr": "0x2AFBC",
+                  "text": "LSRR.L  #$08,fff",
+                  "words": "4C28"
+                },
+                {
+                  "addr": "0x2AFBD",
+                  "text": "MOVE.W  A,HHHHH",
+                  "words": "8016"
+                },
+                {
+                  "addr": "0x2AFBE",
+                  "text": "MOVE.W  A1,X:$2DA4",
+                  "words": "D07C 2DA4"
+                },
+                {
+                  "addr": "0x2AFC0",
+                  "text": "TST.W   X:$2DA4",
+                  "words": "FF7C 2DA4"
+                },
+                {
+                  "addr": "0x2AFC2",
+                  "text": "Bne     P:$2AFC5",
+                  "words": "A202"
+                },
+                {
+                  "addr": "0x2AFC3",
+                  "text": "MOVE.W  #<\u201364,63>,X:$2DA4",
+                  "words": "E681 2DA4"
+                },
+                {
+                  "addr": "0x2AFC5",
+                  "text": "MOVE.W  #$2D46,X:$0400",
+                  "words": "8654 2D46 0400"
+                },
+                {
+                  "addr": "0x2AFC8",
+                  "text": "MOVE.W  #$0400,C1",
+                  "words": "8745 0400"
+                }
+              ]
+            },
+            {
+              "tag": "delete",
+              "a": [
+                {
+                  "addr": "0x294ED",
+                  "text": "MOVE.W  #$2887,X:$0100",
+                  "words": "8654 2887 0100"
+                }
+              ],
+              "b": []
+            },
+            {
+              "tag": "replace",
+              "a": [
+                {
+                  "addr": "0x294FC",
+                  "text": "MOVE.W  #$0100,C1",
+                  "words": "8745 0100"
+                }
+              ],
+              "b": [
+                {
+                  "addr": "0x2AFD8",
+                  "text": "MOVE.W  #$0400,C1",
+                  "words": "8745 0400"
+                }
+              ]
+            }
+          ],
+          "xaddr_delta_hist": {
+            "+0x4bf": 12,
+            "+0x508": 1,
+            "+0x1ac70000": 1,
+            "+0x2c29": 1,
+            "+0x300": 1,
+            "+0x234": 1
+          }
+        },
+        "post_alignment_raw_classification": {
+          "same": 44,
+          "xaddr_relocation": 17,
+          "call_target_relocation": 0,
+          "branch_displacement": 2,
+          "other": 0,
+          "examples": [
+            {
+              "kind": "X-address relocation",
+              "a": "0x294CB F07C 28B1",
+              "b": "0x2AF90 F07C 2DB9"
+            },
+            {
+              "kind": "branch displacement relocation",
+              "a": "0x294CE A63C",
+              "b": "0x2AF93 E668 0053"
+            },
+            {
+              "kind": "branch displacement relocation",
+              "a": "0x294D1 A539",
+              "b": "0x2AF97 E568 004F"
+            },
+            {
+              "kind": "X-address relocation",
+              "a": "0x294D5 E032 83B0 94DD",
+              "b": "0x2AF9C E032 83B0 AFA4"
+            },
+            {
+              "kind": "X-address relocation",
+              "a": "0x294EB F77C 017B",
+              "b": "0x2AFCA F77C 2DA4"
+            },
+            {
+              "kind": "X-address relocation",
+              "a": "0x294F3 8654 2887 0100",
+              "b": "0x2AFCF 8654 2D46 0400"
+            },
+            {
+              "kind": "X-address relocation",
+              "a": "0x294F8 E680 2887",
+              "b": "0x2AFD4 E680 2D46"
+            },
+            {
+              "kind": "X-address relocation",
+              "a": "0x294FE F77C 017C",
+              "b": "0x2AFDA F77C 03B0"
+            },
+            {
+              "kind": "X-address relocation",
+              "a": "0x29500 F67C 2891 2887",
+              "b": "0x2AFDC F67C 2D50 2D46"
+            },
+            {
+              "kind": "X-address relocation",
+              "a": "0x29506 F67C 2891 2887",
+              "b": "0x2AFE2 F67C 2D50 2D46"
+            },
+            {
+              "kind": "X-address relocation",
+              "a": "0x2950B E680 2887",
+              "b": "0x2AFE7 E680 2D46"
+            },
+            {
+              "kind": "X-address relocation",
+              "a": "0x2950E F17C 2887",
+              "b": "0x2AFEA F17C 2D46"
+            }
+          ]
+        },
+        "calls_a": [
+          [
+            "0x294F0",
+            "0x0011F"
+          ],
+          [
+            "0x29503",
+            "0x0011F"
+          ]
+        ],
+        "calls_b": [
+          [
+            "0x2AFCC",
+            "0x0011F"
+          ],
+          [
+            "0x2AFDF",
+            "0x0011F"
+          ]
+        ]
+      },
+      "BV6T-AF_to_CV6T-AR": {
+        "alignment": {
+          "a_insn": 72,
+          "b_insn": 88,
+          "equal": 63,
+          "deleted": 9,
+          "inserted": 25,
+          "replaced_span": 25,
+          "edits": [
+            {
+              "tag": "replace",
+              "a": [
+                {
+                  "addr": "0x273D0",
+                  "text": "ASLL.W  Q1,Q2,D",
+                  "words": "73FE"
+                }
+              ],
+              "b": [
+                {
+                  "addr": "0x2AFA4",
+                  "text": "BRSET   #<MASK8>,X:<<pp,AA",
+                  "words": "AFE7"
+                }
+              ]
+            },
+            {
+              "tag": "replace",
+              "a": [
+                {
+                  "addr": "0x273D2",
+                  "text": "MPYR    Q3,Q4,B X:(R0)+N,reg1",
+                  "words": "73DC"
+                }
+              ],
+              "b": [
+                {
+                  "addr": "0x2AFA6",
+                  "text": "BRSET   #<MASK8>,X:aa,AA",
+                  "words": "AFB0"
+                }
+              ]
+            },
+            {
+              "tag": "replace",
+              "a": [
+                {
+                  "addr": "0x273D4",
+                  "text": ".word   $73E6",
+                  "words": "73E6"
+                }
+              ],
+              "b": [
+                {
+                  "addr": "0x2AFA8",
+                  "text": "BRSET   #<MASK8>,X:<<pp,AA",
+                  "words": "AFCF"
+                }
+              ]
+            },
+            {
+              "tag": "replace",
+              "a": [
+                {
+                  "addr": "0x273D6",
+                  "text": "ASR     D",
+                  "words": "73EB"
+                }
+              ],
+              "b": [
+                {
+                  "addr": "0x2AFAA",
+                  "text": "BRSET   #<MASK8>,X:<<pp,AA",
+                  "words": "AFD4"
+                }
+              ]
+            },
+            {
+              "tag": "replace",
+              "a": [
+                {
+                  "addr": "0x273D8",
+                  "text": ".word   $73EF",
+                  "words": "73EF"
+                }
+              ],
+              "b": [
+                {
+                  "addr": "0x2AFAC",
+                  "text": "BRSET   #<MASK8>,X:<<pp,AA",
+                  "words": "AFD8"
+                }
+              ]
+            },
+            {
+              "tag": "replace",
+              "a": [
+                {
+                  "addr": "0x273DA",
+                  "text": "MPYR    Q3,Q4,B X:(R0)+,reg1",
+                  "words": "73F9"
+                }
+              ],
+              "b": [
+                {
+                  "addr": "0x2AFAE",
+                  "text": "BRSET   #<MASK8>,X:<<pp,AA",
+                  "words": "AFE2"
+                }
+              ]
+            },
+            {
+              "tag": "replace",
+              "a": [
+                {
+                  "addr": "0x273DC",
+                  "text": "MOVE.W  #$0100,C1",
+                  "words": "8745 0100"
+                }
+              ],
+              "b": [
+                {
+                  "addr": "0x2AFB0",
+                  "text": "MOVE.W  X:$03AF,A",
+                  "words": "F07C 03AF"
+                },
+                {
+                  "addr": "0x2AFB2",
+                  "text": "MOVE.W  B,HHHHH",
+                  "words": "8110"
+                },
+                {
+                  "addr": "0x2AFB3",
+                  "text": "MOVE.W  X:$2D9A,A",
+                  "words": "F07C 2D9A"
+                },
+                {
+                  "addr": "0x2AFB5",
+                  "text": "LSRR.L  #$10,fff",
+                  "words": "4CB0"
+                },
+                {
+                  "addr": "0x2AFB6",
+                  "text": "LSRR.L  #$10,fff",
+                  "words": "4C30"
+                },
+                {
+                  "addr": "0x2AFB7",
+                  "text": "NOP     ",
+                  "words": "E700"
+                },
+                {
+                  "addr": "0x2AFB8",
+                  "text": "IMPYUU  q1.h,q2.l,Y",
+                  "words": "7317"
+                },
+                {
+                  "addr": "0x2AFB9",
+                  "text": "IMACUU  q1.l,q2.h,Y",
+                  "words": "7397"
+                },
+                {
+                  "addr": "0x2AFBA",
+                  "text": "IMPYUU  q1.l,q2.l,A",
+                  "words": "7017"
+                },
+                {
+                  "addr": "0x2AFBB",
+                  "text": "ADD     A,A",
+                  "words": "7850"
+                },
+                {
+                  "addr": "0x2AFBC",
+                  "text": "LSRR.L  #$08,fff",
+                  "words": "4C28"
+                },
+                {
+                  "addr": "0x2AFBD",
+                  "text": "MOVE.W  A,HHHHH",
+                  "words": "8016"
+                },
+                {
+                  "addr": "0x2AFBE",
+                  "text": "MOVE.W  A1,X:$2DA4",
+                  "words": "D07C 2DA4"
+                },
+                {
+                  "addr": "0x2AFC0",
+                  "text": "TST.W   X:$2DA4",
+                  "words": "FF7C 2DA4"
+                },
+                {
+                  "addr": "0x2AFC2",
+                  "text": "Bne     P:$2AFC5",
+                  "words": "A202"
+                },
+                {
+                  "addr": "0x2AFC3",
+                  "text": "MOVE.W  #<\u201364,63>,X:$2DA4",
+                  "words": "E681 2DA4"
+                },
+                {
+                  "addr": "0x2AFC5",
+                  "text": "MOVE.W  #$2D46,X:$0400",
+                  "words": "8654 2D46 0400"
+                },
+                {
+                  "addr": "0x2AFC8",
+                  "text": "MOVE.W  #$0400,C1",
+                  "words": "8745 0400"
+                }
+              ]
+            },
+            {
+              "tag": "delete",
+              "a": [
+                {
+                  "addr": "0x273E0",
+                  "text": "MOVE.W  #$21ED,X:$0100",
+                  "words": "8654 21ED 0100"
+                }
+              ],
+              "b": []
+            },
+            {
+              "tag": "replace",
+              "a": [
+                {
+                  "addr": "0x273EF",
+                  "text": "MOVE.W  #$0100,C1",
+                  "words": "8745 0100"
+                }
+              ],
+              "b": [
+                {
+                  "addr": "0x2AFD8",
+                  "text": "MOVE.W  #$0400,C1",
+                  "words": "8745 0400"
+                }
+              ]
+            }
+          ],
+          "xaddr_delta_hist": {
+            "+0xb59": 10,
+            "+0x9a9": 2,
+            "+0x9fa": 1,
+            "+0x3bd40000": 1,
+            "+0x2872": 1,
+            "+0x300": 1,
+            "-0x183": 1
+          }
+        },
+        "post_alignment_raw_classification": {
+          "same": 44,
+          "xaddr_relocation": 17,
+          "call_target_relocation": 0,
+          "branch_displacement": 2,
+          "other": 0,
+          "examples": [
+            {
+              "kind": "X-address relocation",
+              "a": "0x273BE F07C 23BF",
+              "b": "0x2AF90 F07C 2DB9"
+            },
+            {
+              "kind": "branch displacement relocation",
+              "a": "0x273C1 A63C",
+              "b": "0x2AF93 E668 0053"
+            },
+            {
+              "kind": "branch displacement relocation",
+              "a": "0x273C4 A539",
+              "b": "0x2AF97 E568 004F"
+            },
+            {
+              "kind": "X-address relocation",
+              "a": "0x273C8 E032 83B0 73D0",
+              "b": "0x2AF9C E032 83B0 AFA4"
+            },
+            {
+              "kind": "X-address relocation",
+              "a": "0x273DE F77C 0532",
+              "b": "0x2AFCA F77C 2DA4"
+            },
+            {
+              "kind": "X-address relocation",
+              "a": "0x273E6 8654 21ED 0100",
+              "b": "0x2AFCF 8654 2D46 0400"
+            },
+            {
+              "kind": "X-address relocation",
+              "a": "0x273EB E680 21ED",
+              "b": "0x2AFD4 E680 2D46"
+            },
+            {
+              "kind": "X-address relocation",
+              "a": "0x273F1 F77C 0533",
+              "b": "0x2AFDA F77C 03B0"
+            },
+            {
+              "kind": "X-address relocation",
+              "a": "0x273F3 F67C 23A7 21ED",
+              "b": "0x2AFDC F67C 2D50 2D46"
+            },
+            {
+              "kind": "X-address relocation",
+              "a": "0x273F9 F67C 23A7 21ED",
+              "b": "0x2AFE2 F67C 2D50 2D46"
+            },
+            {
+              "kind": "X-address relocation",
+              "a": "0x273FE E680 21ED",
+              "b": "0x2AFE7 E680 2D46"
+            },
+            {
+              "kind": "X-address relocation",
+              "a": "0x27401 F17C 21ED",
+              "b": "0x2AFEA F17C 2D46"
+            }
+          ]
+        },
+        "calls_a": [
+          [
+            "0x273E3",
+            "0x0011F"
+          ],
+          [
+            "0x273F6",
+            "0x0011F"
+          ]
+        ],
+        "calls_b": [
+          [
+            "0x2AFCC",
+            "0x0011F"
+          ],
+          [
+            "0x2AFDF",
+            "0x0011F"
+          ]
+        ]
+      }
+    },
+    "torque_function": {
+      "CV6T-AH_to_CV6T-AR": {
+        "alignment": {
+          "a_insn": 92,
+          "b_insn": 92,
+          "equal": 92,
+          "deleted": 0,
+          "inserted": 0,
+          "replaced_span": 0,
+          "edits": [],
+          "xaddr_delta_hist": {
+            "+0x4bf": 12,
+            "+0x508": 1
+          }
+        },
+        "post_alignment_raw_classification": {
+          "same": 78,
+          "xaddr_relocation": 13,
+          "call_target_relocation": 1,
+          "branch_displacement": 0,
+          "other": 0,
+          "examples": [
+            {
+              "kind": "X-address relocation",
+              "a": "0x29588 F27C 2894",
+              "b": "0x2B07E F27C 2D53"
+            },
+            {
+              "kind": "call target relocation",
+              "a": "0x2958A E256 952F",
+              "b": "0x2B080 E256 B00B"
+            },
+            {
+              "kind": "X-address relocation",
+              "a": "0x2958C F17C 288A",
+              "b": "0x2B082 F17C 2D49"
+            },
+            {
+              "kind": "X-address relocation",
+              "a": "0x29594 F07C 288B",
+              "b": "0x2B08A F07C 2D4A"
+            },
+            {
+              "kind": "X-address relocation",
+              "a": "0x29596 4444 288C",
+              "b": "0x2B08C 4444 2D4B"
+            },
+            {
+              "kind": "X-address relocation",
+              "a": "0x29598 D07C 288D",
+              "b": "0x2B08E D07C 2D4C"
+            },
+            {
+              "kind": "X-address relocation",
+              "a": "0x295AB F07C 288A",
+              "b": "0x2B0A1 F07C 2D49"
+            },
+            {
+              "kind": "X-address relocation",
+              "a": "0x295AD D17C 288C",
+              "b": "0x2B0A3 D17C 2D4B"
+            },
+            {
+              "kind": "X-address relocation",
+              "a": "0x295B8 F07C 288C",
+              "b": "0x2B0AE F07C 2D4B"
+            },
+            {
+              "kind": "X-address relocation",
+              "a": "0x295BC D07C 2894",
+              "b": "0x2B0B2 D07C 2D53"
+            },
+            {
+              "kind": "X-address relocation",
+              "a": "0x295BE F07C 28B1",
+              "b": "0x2B0B4 F07C 2DB9"
+            },
+            {
+              "kind": "X-address relocation",
+              "a": "0x295C9 F07C 2894",
+              "b": "0x2B0BF F07C 2D53"
+            }
+          ]
+        },
+        "calls_a": [
+          [
+            "0x2958A",
+            "0x2952F"
+          ]
+        ],
+        "calls_b": [
+          [
+            "0x2B080",
+            "0x2B00B"
+          ]
+        ]
+      },
+      "BV6T-AF_to_CV6T-AR": {
+        "alignment": {
+          "a_insn": 92,
+          "b_insn": 92,
+          "equal": 92,
+          "deleted": 0,
+          "inserted": 0,
+          "replaced_span": 0,
+          "edits": [],
+          "xaddr_delta_hist": {
+            "+0xb59": 7,
+            "+0x9a9": 5,
+            "+0x9fa": 1
+          }
+        },
+        "post_alignment_raw_classification": {
+          "same": 78,
+          "xaddr_relocation": 13,
+          "call_target_relocation": 1,
+          "branch_displacement": 0,
+          "other": 0,
+          "examples": [
+            {
+              "kind": "X-address relocation",
+              "a": "0x27478 F27C 23AA",
+              "b": "0x2B07E F27C 2D53"
+            },
+            {
+              "kind": "call target relocation",
+              "a": "0x2747A E256 7422",
+              "b": "0x2B080 E256 B00B"
+            },
+            {
+              "kind": "X-address relocation",
+              "a": "0x2747C F17C 21F0",
+              "b": "0x2B082 F17C 2D49"
+            },
+            {
+              "kind": "X-address relocation",
+              "a": "0x27484 F07C 21F1",
+              "b": "0x2B08A F07C 2D4A"
+            },
+            {
+              "kind": "X-address relocation",
+              "a": "0x27486 4444 21F2",
+              "b": "0x2B08C 4444 2D4B"
+            },
+            {
+              "kind": "X-address relocation",
+              "a": "0x27488 D07C 21F3",
+              "b": "0x2B08E D07C 2D4C"
+            },
+            {
+              "kind": "X-address relocation",
+              "a": "0x2749B F07C 21F0",
+              "b": "0x2B0A1 F07C 2D49"
+            },
+            {
+              "kind": "X-address relocation",
+              "a": "0x2749D D17C 21F2",
+              "b": "0x2B0A3 D17C 2D4B"
+            },
+            {
+              "kind": "X-address relocation",
+              "a": "0x274A8 F07C 21F2",
+              "b": "0x2B0AE F07C 2D4B"
+            },
+            {
+              "kind": "X-address relocation",
+              "a": "0x274AC D07C 23AA",
+              "b": "0x2B0B2 D07C 2D53"
+            },
+            {
+              "kind": "X-address relocation",
+              "a": "0x274AE F07C 23BF",
+              "b": "0x2B0B4 F07C 2DB9"
+            },
+            {
+              "kind": "X-address relocation",
+              "a": "0x274B9 F07C 23AA",
+              "b": "0x2B0BF F07C 2D53"
+            }
+          ]
+        },
+        "calls_a": [
+          [
+            "0x2747A",
+            "0x27422"
+          ]
+        ],
+        "calls_b": [
+          [
+            "0x2B080",
+            "0x2B00B"
+          ]
+        ]
+      }
+    },
+    "torque_function_callee": {
+      "CV6T-AH_to_CV6T-AR": {
+        "alignment": {
+          "a_insn": 37,
+          "b_insn": 60,
+          "equal": 31,
+          "deleted": 6,
+          "inserted": 29,
+          "replaced_span": 6,
+          "edits": [
+            {
+              "tag": "replace",
+              "a": [
+                {
+                  "addr": "0x29549",
+                  "text": "MOVE.W  Y0,X:(SP\u2013xx)",
+                  "words": "9559"
+                }
+              ],
+              "b": [
+                {
+                  "addr": "0x2B025",
+                  "text": "MOVE.W  X:(SP\u2013xx),A",
+                  "words": "B04F"
+                }
+              ]
+            },
+            {
+              "tag": "replace",
+              "a": [
+                {
+                  "addr": "0x2954B",
+                  "text": "MOVE.W  Y0,X:(SP\u2013xx)",
+                  "words": "9555"
+                }
+              ],
+              "b": [
+                {
+                  "addr": "0x2B027",
+                  "text": "MOVE.W  X:(Rn+x),HHH",
+                  "words": "B031"
+                }
+              ]
+            },
+            {
+              "tag": "replace",
+              "a": [
+                {
+                  "addr": "0x2954D",
+                  "text": "MOVE.W  Y0,X:(SP\u2013xx)",
+                  "words": "9558"
+                }
+              ],
+              "b": [
+                {
+                  "addr": "0x2B029",
+                  "text": "MOVE.W  X:(SP\u2013xx),A",
+                  "words": "B04E"
+                }
+              ]
+            },
+            {
+              "tag": "replace",
+              "a": [
+                {
+                  "addr": "0x2954F",
+                  "text": "MOVE.W  Y0,X:(SP\u2013xx)",
+                  "words": "9559"
+                }
+              ],
+              "b": [
+                {
+                  "addr": "0x2B02B",
+                  "text": "MOVE.W  X:(SP\u2013xx),A",
+                  "words": "B04F"
+                }
+              ]
+            },
+            {
+              "tag": "replace",
+              "a": [
+                {
+                  "addr": "0x29551",
+                  "text": "MOVE.W  Y0,X:(SP\u2013xx)",
+                  "words": "9555"
+                }
+              ],
+              "b": [
+                {
+                  "addr": "0x2B02D",
+                  "text": "MOVE.W  X:(Rn+x),HHH",
+                  "words": "B031"
+                }
+              ]
+            },
+            {
+              "tag": "replace",
+              "a": [
+                {
+                  "addr": "0x29553",
+                  "text": "MOVE.W  Y0,X:(SP\u2013xx)",
+                  "words": "9558"
+                }
+              ],
+              "b": [
+                {
+                  "addr": "0x2B02F",
+                  "text": "MOVE.W  X:(SP\u2013xx),A",
+                  "words": "B04E"
+                }
+              ]
+            },
+            {
+              "tag": "insert",
+              "a": [],
+              "b": [
+                {
+                  "addr": "0x2B031",
+                  "text": "MOVE.W  X:$08F4,A",
+                  "words": "F07C 08F4"
+                },
+                {
+                  "addr": "0x2B033",
+                  "text": "ASR16   B,B",
+                  "words": "7C86"
+                },
+                {
+                  "addr": "0x2B034",
+                  "text": "MOVE.W  X:$2DA0,A",
+                  "words": "F07C 2DA0"
+                },
+                {
+                  "addr": "0x2B036",
+                  "text": "LSRR.L  #$10,fff",
+                  "words": "4C30"
+                },
+                {
+                  "addr": "0x2B037",
+                  "text": "NOP     ",
+                  "words": "E700"
+                },
+                {
+                  "addr": "0x2B038",
+                  "text": "IMPYSU  q1.h,q2.l,Y",
+                  "words": "7217"
+                },
+                {
+                  "addr": "0x2B039",
+                  "text": "IMACUS  q1.l,q2.h,Y",
+                  "words": "7297"
+                },
+                {
+                  "addr": "0x2B03A",
+                  "text": "IMPYUU  q1.l,q2.l,A",
+                  "words": "7017"
+                },
+                {
+                  "addr": "0x2B03B",
+                  "text": "ADD     A,A",
+                  "words": "7850"
+                },
+                {
+                  "addr": "0x2B03C",
+                  "text": "ASRR.L  #$08,fff",
+                  "words": "4C68"
+                },
+                {
+                  "addr": "0x2B03D",
+                  "text": "MOVE.W  A,HHHHH",
+                  "words": "8016"
+                },
+                {
+                  "addr": "0x2B03E",
+                  "text": "TST.W   R0",
+                  "words": "8F10"
+                },
+                {
+                  "addr": "0x2B03F",
+                  "text": "Bge     P:$2B043",
+                  "words": "A403"
+                },
+                {
+                  "addr": "0x2B040",
+                  "text": "NOP     ",
+                  "words": "E700"
+                },
+                {
+                  "addr": "0x2B041",
+                  "text": "MOVE.W  #<\u201364,63>,B",
+                  "words": "E180"
+                },
+                {
+                  "addr": "0x2B042",
+                  "text": "BRA     P:$2B04B",
+                  "words": "A908"
+                }
+              ]
+            },
+            {
+              "tag": "insert",
+              "a": [],
+              "b": [
+                {
+                  "addr": "0x2B045",
+                  "text": "CMP.W   B,B",
+                  "words": "7886"
+                },
+                {
+                  "addr": "0x2B046",
+                  "text": "Bge     P:$2B04A",
+                  "words": "A403"
+                },
+                {
+                  "addr": "0x2B047",
+                  "text": "NOP     ",
+                  "words": "E700"
+                },
+                {
+                  "addr": "0x2B048",
+                  "text": "NOP     ",
+                  "words": "E700"
+                },
+                {
+                  "addr": "0x2B049",
+                  "text": "BRA     P:$2B04B",
+                  "words": "A901"
+                },
+                {
+                  "addr": "0x2B04A",
+                  "text": "MOVE.W  B,HHHHH",
+                  "words": "8110"
+                },
+                {
+                  "addr": "0x2B04B",
+                  "text": "MOVE.W  B1,X:$2DA5",
+                  "words": "D17C 2DA5"
+                }
+              ]
+            }
+          ],
+          "xaddr_delta_hist": {
+            "+0x19a": 3,
+            "+0x508": 2,
+            "+0x1adc0000": 1,
+            "+0x264c": 1,
+            "+0x4bf": 1
+          }
+        },
+        "post_alignment_raw_classification": {
+          "same": 21,
+          "xaddr_relocation": 8,
+          "call_target_relocation": 0,
+          "branch_displacement": 2,
+          "other": 0,
+          "examples": [
+            {
+              "kind": "X-address relocation",
+              "a": "0x2952F FF7C 28D4",
+              "b": "0x2B00B FF7C 2DDC"
+            },
+            {
+              "kind": "X-address relocation",
+              "a": "0x29532 F17C 075C",
+              "b": "0x2B00E F17C 08F6"
+            },
+            {
+              "kind": "X-address relocation",
+              "a": "0x29535 F17C 075B",
+              "b": "0x2B011 F17C 08F5"
+            },
+            {
+              "kind": "X-address relocation",
+              "a": "0x29537 F07C 28B1",
+              "b": "0x2B013 F07C 2DB9"
+            },
+            {
+              "kind": "branch displacement relocation",
+              "a": "0x2953A A61E",
+              "b": "0x2B016 A638"
+            },
+            {
+              "kind": "branch displacement relocation",
+              "a": "0x2953D A51B",
+              "b": "0x2B019 A535"
+            },
+            {
+              "kind": "X-address relocation",
+              "a": "0x29541 E032 83B0 9549",
+              "b": "0x2B01D E032 83B0 B025"
+            },
+            {
+              "kind": "X-address relocation",
+              "a": "0x29555 F17C 075A",
+              "b": "0x2B043 F17C 2DA6"
+            },
+            {
+              "kind": "X-address relocation",
+              "a": "0x29559 F17C 075B",
+              "b": "0x2B04F F17C 08F5"
+            },
+            {
+              "kind": "X-address relocation",
+              "a": "0x2955B D17C 288B",
+              "b": "0x2B051 D17C 2D4A"
+            }
+          ]
+        },
+        "calls_a": [],
+        "calls_b": []
+      },
+      "BV6T-AF_to_CV6T-AR": {
+        "alignment": {
+          "a_insn": 49,
+          "b_insn": 60,
+          "equal": 30,
+          "deleted": 19,
+          "inserted": 30,
+          "replaced_span": 17,
+          "edits": [
+            {
+              "tag": "delete",
+              "a": [
+                {
+                  "addr": "0x27422",
+                  "text": "ADDA    #<0\u201315>,Rn",
+                  "words": "827B"
+                },
+                {
+                  "addr": "0x27423",
+                  "text": "MOVE.L  C10.L,X:(R7)",
+                  "words": "D23F"
+                }
+              ],
+              "b": []
+            },
+            {
+              "tag": "replace",
+              "a": [
+                {
+                  "addr": "0x2743E",
+                  "text": "MACSU   Q2,Q1,A",
+                  "words": "744E"
+                }
+              ],
+              "b": [
+                {
+                  "addr": "0x2B025",
+                  "text": "MOVE.W  X:(SP\u2013xx),A",
+                  "words": "B04F"
+                }
+              ]
+            },
+            {
+              "tag": "replace",
+              "a": [
+                {
+                  "addr": "0x27440",
+                  "text": "MPYSU   Q2,Q1,A",
+                  "words": "744A"
+                }
+              ],
+              "b": [
+                {
+                  "addr": "0x2B027",
+                  "text": "MOVE.W  X:(Rn+x),HHH",
+                  "words": "B031"
+                }
+              ]
+            },
+            {
+              "tag": "replace",
+              "a": [
+                {
+                  "addr": "0x27442",
+                  "text": "MACR    Q3,Q4,A X:(R0)+N,reg1",
+                  "words": "744D"
+                }
+              ],
+              "b": [
+                {
+                  "addr": "0x2B029",
+                  "text": "MOVE.W  X:(SP\u2013xx),A",
+                  "words": "B04E"
+                }
+              ]
+            },
+            {
+              "tag": "replace",
+              "a": [
+                {
+                  "addr": "0x27444",
+                  "text": "MACSU   Q2,Q1,A",
+                  "words": "744E"
+                }
+              ],
+              "b": [
+                {
+                  "addr": "0x2B02B",
+                  "text": "MOVE.W  X:(SP\u2013xx),A",
+                  "words": "B04F"
+                }
+              ]
+            },
+            {
+              "tag": "replace",
+              "a": [
+                {
+                  "addr": "0x27446",
+                  "text": "MPYSU   Q2,Q1,A",
+                  "words": "744A"
+                }
+              ],
+              "b": [
+                {
+                  "addr": "0x2B02D",
+                  "text": "MOVE.W  X:(Rn+x),HHH",
+                  "words": "B031"
+                }
+              ]
+            },
+            {
+              "tag": "replace",
+              "a": [
+                {
+                  "addr": "0x27448",
+                  "text": "MACR    Q3,Q4,A X:(R0)+N,reg1",
+                  "words": "744D"
+                }
+              ],
+              "b": [
+                {
+                  "addr": "0x2B02F",
+                  "text": "MOVE.W  X:(SP\u2013xx),A",
+                  "words": "B04E"
+                }
+              ]
+            },
+            {
+              "tag": "insert",
+              "a": [],
+              "b": [
+                {
+                  "addr": "0x2B031",
+                  "text": "MOVE.W  X:$08F4,A",
+                  "words": "F07C 08F4"
+                },
+                {
+                  "addr": "0x2B033",
+                  "text": "ASR16   B,B",
+                  "words": "7C86"
+                },
+                {
+                  "addr": "0x2B034",
+                  "text": "MOVE.W  X:$2DA0,A",
+                  "words": "F07C 2DA0"
+                },
+                {
+                  "addr": "0x2B036",
+                  "text": "LSRR.L  #$10,fff",
+                  "words": "4C30"
+                },
+                {
+                  "addr": "0x2B037",
+                  "text": "NOP     ",
+                  "words": "E700"
+                },
+                {
+                  "addr": "0x2B038",
+                  "text": "IMPYSU  q1.h,q2.l,Y",
+                  "words": "7217"
+                },
+                {
+                  "addr": "0x2B039",
+                  "text": "IMACUS  q1.l,q2.h,Y",
+                  "words": "7297"
+                },
+                {
+                  "addr": "0x2B03A",
+                  "text": "IMPYUU  q1.l,q2.l,A",
+                  "words": "7017"
+                },
+                {
+                  "addr": "0x2B03B",
+                  "text": "ADD     A,A",
+                  "words": "7850"
+                },
+                {
+                  "addr": "0x2B03C",
+                  "text": "ASRR.L  #$08,fff",
+                  "words": "4C68"
+                },
+                {
+                  "addr": "0x2B03D",
+                  "text": "MOVE.W  A,HHHHH",
+                  "words": "8016"
+                },
+                {
+                  "addr": "0x2B03E",
+                  "text": "TST.W   R0",
+                  "words": "8F10"
+                },
+                {
+                  "addr": "0x2B03F",
+                  "text": "Bge     P:$2B043",
+                  "words": "A403"
+                },
+                {
+                  "addr": "0x2B040",
+                  "text": "NOP     ",
+                  "words": "E700"
+                },
+                {
+                  "addr": "0x2B041",
+                  "text": "MOVE.W  #<\u201364,63>,B",
+                  "words": "E180"
+                },
+                {
+                  "addr": "0x2B042",
+                  "text": "BRA     P:$2B04B",
+                  "words": "A908"
+                }
+              ]
+            },
+            {
+              "tag": "insert",
+              "a": [],
+              "b": [
+                {
+                  "addr": "0x2B045",
+                  "text": "CMP.W   B,B",
+                  "words": "7886"
+                },
+                {
+                  "addr": "0x2B046",
+                  "text": "Bge     P:$2B04A",
+                  "words": "A403"
+                },
+                {
+                  "addr": "0x2B047",
+                  "text": "NOP     ",
+                  "words": "E700"
+                },
+                {
+                  "addr": "0x2B048",
+                  "text": "NOP     ",
+                  "words": "E700"
+                },
+                {
+                  "addr": "0x2B049",
+                  "text": "BRA     P:$2B04B",
+                  "words": "A901"
+                },
+                {
+                  "addr": "0x2B04A",
+                  "text": "MOVE.W  B,HHHHH",
+                  "words": "8110"
+                },
+                {
+                  "addr": "0x2B04B",
+                  "text": "MOVE.W  B1,X:$2DA5",
+                  "words": "D17C 2DA5"
+                }
+              ]
+            },
+            {
+              "tag": "replace",
+              "a": [
+                {
+                  "addr": "0x27450",
+                  "text": "TFR     FFF,fff",
+                  "words": "7D10"
+                },
+                {
+                  "addr": "0x27451",
+                  "text": "ASRR.L  #$06,fff",
+                  "words": "4D66"
+                },
+                {
+                  "addr": "0x27452",
+                  "text": "MOVE.L  #$10624DD3,B.L",
+                  "words": "E411 4DD3 1062"
+                },
+                {
+                  "addr": "0x27455",
+                  "text": "TFR     FFF,fff",
+                  "words": "7C20"
+                },
+                {
+                  "addr": "0x27456",
+                  "text": "JSR     P:$001B1",
+                  "words": "E254 01B1"
+                },
+                {
+                  "addr": "0x27458",
+                  "text": "ASRR.L  #$06,fff",
+                  "words": "4C66"
+                },
+                {
+                  "addr": "0x27459",
+                  "text": "LSRR.L  #$1F,fff",
+                  "words": "4D3F"
+                },
+                {
+                  "addr": "0x2745A",
+                  "text": "ADD     A,A",
+                  "words": "7820"
+                },
+                {
+                  "addr": "0x2745B",
+                  "text": "MOVE.W  A,HHHHH",
+                  "words": "8016"
+                },
+                {
+                  "addr": "0x2745C",
+                  "text": "MOVE.W  A1,X:$21F1",
+                  "words": "D07C 21F1"
+                },
+                {
+                  "addr": "0x2745E",
+                  "text": "MOVE.L  X:(R7)-,C.L",
+                  "words": "F23B"
+                }
+              ],
+              "b": [
+                {
+                  "addr": "0x2B051",
+                  "text": "MOVE.W  B1,X:$2D4A",
+                  "words": "D17C 2D4A"
+                }
+              ]
+            }
+          ],
+          "xaddr_delta_hist": {
+            "+0x2fa": 3,
+            "+0x9fa": 2,
+            "+0x3be70000": 1,
+            "+0x27ac": 1
+          }
+        },
+        "post_alignment_raw_classification": {
+          "same": 21,
+          "xaddr_relocation": 7,
+          "call_target_relocation": 0,
+          "branch_displacement": 2,
+          "other": 0,
+          "examples": [
+            {
+              "kind": "X-address relocation",
+              "a": "0x27424 FF7C 23E2",
+              "b": "0x2B00B FF7C 2DDC"
+            },
+            {
+              "kind": "X-address relocation",
+              "a": "0x27427 F17C 05FC",
+              "b": "0x2B00E F17C 08F6"
+            },
+            {
+              "kind": "X-address relocation",
+              "a": "0x2742A F17C 05FB",
+              "b": "0x2B011 F17C 08F5"
+            },
+            {
+              "kind": "X-address relocation",
+              "a": "0x2742C F07C 23BF",
+              "b": "0x2B013 F07C 2DB9"
+            },
+            {
+              "kind": "branch displacement relocation",
+              "a": "0x2742F A61E",
+              "b": "0x2B016 A638"
+            },
+            {
+              "kind": "branch displacement relocation",
+              "a": "0x27432 A51B",
+              "b": "0x2B019 A535"
+            },
+            {
+              "kind": "X-address relocation",
+              "a": "0x27436 E032 83B0 743E",
+              "b": "0x2B01D E032 83B0 B025"
+            },
+            {
+              "kind": "X-address relocation",
+              "a": "0x2744A F17C 05FA",
+              "b": "0x2B043 F17C 2DA6"
+            },
+            {
+              "kind": "X-address relocation",
+              "a": "0x2744E F17C 05FB",
+              "b": "0x2B04F F17C 08F5"
+            }
+          ]
+        },
+        "calls_a": [
+          [
+            "0x27456",
+            "0x001B1"
+          ]
+        ],
+        "calls_b": []
+      }
+    }
+  },
+  "long_branch_exit_check": {
+    "BV6T-AF": [
+      {
+        "site": "0x26D56",
+        "pc_plus_1": "0x26EBE",
+        "pc_plus_2": "0x26EBF",
+        "rts": "0x26EBE"
+      },
+      {
+        "site": "0x26D68",
+        "pc_plus_1": "0x26EBE",
+        "pc_plus_2": "0x26EBF",
+        "rts": "0x26EBE"
+      },
+      {
+        "site": "0x26D77",
+        "pc_plus_1": "0x26EBE",
+        "pc_plus_2": "0x26EBF",
+        "rts": "0x26EBE"
+      },
+      {
+        "site": "0x26D9E",
+        "pc_plus_1": "0x26EBE",
+        "pc_plus_2": "0x26EBF",
+        "rts": "0x26EBE"
+      },
+      {
+        "site": "0x26DC0",
+        "pc_plus_1": "0x26EBE",
+        "pc_plus_2": "0x26EBF",
+        "rts": "0x26EBE"
+      },
+      {
+        "site": "0x26DD5",
+        "pc_plus_1": "0x26EBE",
+        "pc_plus_2": "0x26EBF",
+        "rts": "0x26EBE"
+      },
+      {
+        "site": "0x26DEA",
+        "pc_plus_1": "0x26EBE",
+        "pc_plus_2": "0x26EBF",
+        "rts": "0x26EBE"
+      },
+      {
+        "site": "0x26DF4",
+        "pc_plus_1": "0x26EBE",
+        "pc_plus_2": "0x26EBF",
+        "rts": "0x26EBE"
+      },
+      {
+        "site": "0x26DF8",
+        "pc_plus_1": "0x26EBE",
+        "pc_plus_2": "0x26EBF",
+        "rts": "0x26EBE"
+      },
+      {
+        "site": "0x26E0D",
+        "pc_plus_1": "0x26EBE",
+        "pc_plus_2": "0x26EBF",
+        "rts": "0x26EBE"
+      },
+      {
+        "site": "0x26E22",
+        "pc_plus_1": "0x26EBE",
+        "pc_plus_2": "0x26EBF",
+        "rts": "0x26EBE"
+      },
+      {
+        "site": "0x26E2D",
+        "pc_plus_1": "0x26EBE",
+        "pc_plus_2": "0x26EBF",
+        "rts": "0x26EBE"
+      },
+      {
+        "site": "0x26E49",
+        "pc_plus_1": "0x26EBE",
+        "pc_plus_2": "0x26EBF",
+        "rts": "0x26EBE"
+      },
+      {
+        "site": "0x26E5E",
+        "pc_plus_1": "0x26EBE",
+        "pc_plus_2": "0x26EBF",
+        "rts": "0x26EBE"
+      },
+      {
+        "site": "0x26E65",
+        "pc_plus_1": "0x26EBE",
+        "pc_plus_2": "0x26EBF",
+        "rts": "0x26EBE"
+      },
+      {
+        "site": "0x26E7B",
+        "pc_plus_1": "0x26EBE",
+        "pc_plus_2": "0x26EBF",
+        "rts": "0x26EBE"
+      }
+    ],
+    "CV6T-AH": [
+      {
+        "site": "0x2916C",
+        "pc_plus_1": "0x292DA",
+        "pc_plus_2": "0x292DB",
+        "rts": "0x292DA"
+      },
+      {
+        "site": "0x2917E",
+        "pc_plus_1": "0x292DA",
+        "pc_plus_2": "0x292DB",
+        "rts": "0x292DA"
+      },
+      {
+        "site": "0x2918D",
+        "pc_plus_1": "0x292DA",
+        "pc_plus_2": "0x292DB",
+        "rts": "0x292DA"
+      },
+      {
+        "site": "0x291B4",
+        "pc_plus_1": "0x292DA",
+        "pc_plus_2": "0x292DB",
+        "rts": "0x292DA"
+      },
+      {
+        "site": "0x291D6",
+        "pc_plus_1": "0x292DA",
+        "pc_plus_2": "0x292DB",
+        "rts": "0x292DA"
+      },
+      {
+        "site": "0x291EB",
+        "pc_plus_1": "0x292DA",
+        "pc_plus_2": "0x292DB",
+        "rts": "0x292DA"
+      },
+      {
+        "site": "0x29200",
+        "pc_plus_1": "0x292DA",
+        "pc_plus_2": "0x292DB",
+        "rts": "0x292DA"
+      },
+      {
+        "site": "0x2920A",
+        "pc_plus_1": "0x292DA",
+        "pc_plus_2": "0x292DB",
+        "rts": "0x292DA"
+      },
+      {
+        "site": "0x2920E",
+        "pc_plus_1": "0x292DA",
+        "pc_plus_2": "0x292DB",
+        "rts": "0x292DA"
+      },
+      {
+        "site": "0x29223",
+        "pc_plus_1": "0x292DA",
+        "pc_plus_2": "0x292DB",
+        "rts": "0x292DA"
+      },
+      {
+        "site": "0x29238",
+        "pc_plus_1": "0x292DA",
+        "pc_plus_2": "0x292DB",
+        "rts": "0x292DA"
+      },
+      {
+        "site": "0x29243",
+        "pc_plus_1": "0x292DA",
+        "pc_plus_2": "0x292DB",
+        "rts": "0x292DA"
+      },
+      {
+        "site": "0x2925F",
+        "pc_plus_1": "0x292DA",
+        "pc_plus_2": "0x292DB",
+        "rts": "0x292DA"
+      },
+      {
+        "site": "0x29274",
+        "pc_plus_1": "0x292DA",
+        "pc_plus_2": "0x292DB",
+        "rts": "0x292DA"
+      },
+      {
+        "site": "0x2927B",
+        "pc_plus_1": "0x292DA",
+        "pc_plus_2": "0x292DB",
+        "rts": "0x292DA"
+      },
+      {
+        "site": "0x29291",
+        "pc_plus_1": "0x292DA",
+        "pc_plus_2": "0x292DB",
+        "rts": "0x292DA"
+      }
+    ],
+    "CV6T-AR": [
+      {
+        "site": "0x2ABF3",
+        "pc_plus_1": "0x2AD61",
+        "pc_plus_2": "0x2AD62",
+        "rts": "0x2AD61"
+      },
+      {
+        "site": "0x2AC05",
+        "pc_plus_1": "0x2AD61",
+        "pc_plus_2": "0x2AD62",
+        "rts": "0x2AD61"
+      },
+      {
+        "site": "0x2AC14",
+        "pc_plus_1": "0x2AD61",
+        "pc_plus_2": "0x2AD62",
+        "rts": "0x2AD61"
+      },
+      {
+        "site": "0x2AC3B",
+        "pc_plus_1": "0x2AD61",
+        "pc_plus_2": "0x2AD62",
+        "rts": "0x2AD61"
+      },
+      {
+        "site": "0x2AC5D",
+        "pc_plus_1": "0x2AD61",
+        "pc_plus_2": "0x2AD62",
+        "rts": "0x2AD61"
+      },
+      {
+        "site": "0x2AC72",
+        "pc_plus_1": "0x2AD61",
+        "pc_plus_2": "0x2AD62",
+        "rts": "0x2AD61"
+      },
+      {
+        "site": "0x2AC87",
+        "pc_plus_1": "0x2AD61",
+        "pc_plus_2": "0x2AD62",
+        "rts": "0x2AD61"
+      },
+      {
+        "site": "0x2AC91",
+        "pc_plus_1": "0x2AD61",
+        "pc_plus_2": "0x2AD62",
+        "rts": "0x2AD61"
+      },
+      {
+        "site": "0x2AC95",
+        "pc_plus_1": "0x2AD61",
+        "pc_plus_2": "0x2AD62",
+        "rts": "0x2AD61"
+      },
+      {
+        "site": "0x2ACAA",
+        "pc_plus_1": "0x2AD61",
+        "pc_plus_2": "0x2AD62",
+        "rts": "0x2AD61"
+      },
+      {
+        "site": "0x2ACBF",
+        "pc_plus_1": "0x2AD61",
+        "pc_plus_2": "0x2AD62",
+        "rts": "0x2AD61"
+      },
+      {
+        "site": "0x2ACCA",
+        "pc_plus_1": "0x2AD61",
+        "pc_plus_2": "0x2AD62",
+        "rts": "0x2AD61"
+      },
+      {
+        "site": "0x2ACE6",
+        "pc_plus_1": "0x2AD61",
+        "pc_plus_2": "0x2AD62",
+        "rts": "0x2AD61"
+      },
+      {
+        "site": "0x2ACFB",
+        "pc_plus_1": "0x2AD61",
+        "pc_plus_2": "0x2AD62",
+        "rts": "0x2AD61"
+      },
+      {
+        "site": "0x2AD02",
+        "pc_plus_1": "0x2AD61",
+        "pc_plus_2": "0x2AD62",
+        "rts": "0x2AD61"
+      },
+      {
+        "site": "0x2AD18",
+        "pc_plus_1": "0x2AD61",
+        "pc_plus_2": "0x2AD62",
+        "rts": "0x2AD61"
+      }
+    ]
+  },
+  "bv_extra_prehelper": {
+    "entry": "0x27346"
+  },
+  "consumer_neighborhoods": {
+    "BV6T-AF": [
+      {
+        "entry": "0x26D5A",
+        "tokens": [
+          "OP:F07C:MEM:2",
+          "RAW:4C04",
+          "BR:BNE",
+          "OP:FF7C:MEM:2",
+          "BR:BNE",
+          "RAW:E700",
+          "RAW:4C83",
+          "BR:BNE",
+          "OP:E685:MEM:2"
+        ]
+      },
+      {
+        "entry": "0x26DD9",
+        "tokens": [
+          "OP:F07C:MEM:2",
+          "RAW:4C04",
+          "BR:BNE",
+          "OP:F07C:MEM:2",
+          "RAW:4C01",
+          "BR:BEQ",
+          "RAW:E700",
+          "RAW:4C83",
+          "BR:BEQ"
+        ]
+      },
+      {
+        "entry": "0x26E11",
+        "tokens": [
+          "OP:F07C:MEM:2",
+          "RAW:4C04",
+          "BR:BNE",
+          "OP:F07C:MEM:2",
+          "RAW:4C01",
+          "BR:BEQ",
+          "RAW:E700",
+          "RAW:4C83",
+          "BR:BEQ"
+        ]
+      },
+      {
+        "entry": "0x26E4D",
+        "tokens": [
+          "OP:F07C:MEM:2",
+          "RAW:4C04",
+          "BR:BNE",
+          "OP:F07C:MEM:2",
+          "RAW:4C01",
+          "BR:BEQ",
+          "RAW:E700",
+          "RAW:4C83",
+          "BR:BEQ"
+        ]
+      }
+    ],
+    "CV6T-AH": [
+      {
+        "entry": "0x29170",
+        "tokens": [
+          "OP:F07C:MEM:2",
+          "RAW:4C04",
+          "BR:BNE",
+          "OP:FF7C:MEM:2",
+          "BR:BNE",
+          "RAW:E700",
+          "RAW:4C83",
+          "BR:BNE",
+          "OP:E685:MEM:2"
+        ]
+      },
+      {
+        "entry": "0x291EF",
+        "tokens": [
+          "OP:F07C:MEM:2",
+          "RAW:4C04",
+          "BR:BNE",
+          "OP:F07C:MEM:2",
+          "RAW:4C01",
+          "BR:BEQ",
+          "RAW:E700",
+          "RAW:4C83",
+          "BR:BEQ"
+        ]
+      },
+      {
+        "entry": "0x29227",
+        "tokens": [
+          "OP:F07C:MEM:2",
+          "RAW:4C04",
+          "BR:BNE",
+          "OP:F07C:MEM:2",
+          "RAW:4C01",
+          "BR:BEQ",
+          "RAW:E700",
+          "RAW:4C83",
+          "BR:BEQ"
+        ]
+      },
+      {
+        "entry": "0x29263",
+        "tokens": [
+          "OP:F07C:MEM:2",
+          "RAW:4C04",
+          "BR:BNE",
+          "OP:F07C:MEM:2",
+          "RAW:4C01",
+          "BR:BEQ",
+          "RAW:E700",
+          "RAW:4C83",
+          "BR:BEQ"
+        ]
+      }
+    ],
+    "CV6T-AR": [
+      {
+        "entry": "0x2ABF7",
+        "tokens": [
+          "OP:F07C:MEM:2",
+          "RAW:4C04",
+          "BR:BNE",
+          "OP:FF7C:MEM:2",
+          "BR:BNE",
+          "RAW:E700",
+          "RAW:4C83",
+          "BR:BNE",
+          "OP:E685:MEM:2"
+        ]
+      },
+      {
+        "entry": "0x2AC76",
+        "tokens": [
+          "OP:F07C:MEM:2",
+          "RAW:4C04",
+          "BR:BNE",
+          "OP:F07C:MEM:2",
+          "RAW:4C01",
+          "BR:BEQ",
+          "RAW:E700",
+          "RAW:4C83",
+          "BR:BEQ"
+        ]
+      },
+      {
+        "entry": "0x2ACAE",
+        "tokens": [
+          "OP:F07C:MEM:2",
+          "RAW:4C04",
+          "BR:BNE",
+          "OP:F07C:MEM:2",
+          "RAW:4C01",
+          "BR:BEQ",
+          "RAW:E700",
+          "RAW:4C83",
+          "BR:BEQ"
+        ]
+      },
+      {
+        "entry": "0x2ACEA",
+        "tokens": [
+          "OP:F07C:MEM:2",
+          "RAW:4C04",
+          "BR:BNE",
+          "OP:F07C:MEM:2",
+          "RAW:4C01",
+          "BR:BEQ",
+          "RAW:E700",
+          "RAW:4C83",
+          "BR:BEQ"
+        ]
+      }
+    ]
+  },
+  "active_mode_dispatch": {
+    "BV6T-AF": {
+      "helper_code2": "0x273E6",
+      "helper_code5": "0x273F9",
+      "torque_callee_code2": "0x2744D",
+      "torque_callee_code5": "0x2744D",
+      "helper_code2_head": [
+        "MOVE.W  #$21ED,X:$0100",
+        "MOVE.W  #<\u201364,63>,Y0",
+        "BRA     P:$27401"
+      ],
+      "helper_code5_head": [
+        "MOVE.W  X:$23A7,X:$21ED",
+        "MOVE.W  #<\u201364,63>,Y0",
+        "BRA     P:$27401"
+      ],
+      "torque_callee_code2_head": [
+        "BRA     P:$27450",
+        "MOVE.W  X:$05FB,B"
+      ],
+      "torque_callee_code5_head": [
+        "BRA     P:$27450",
+        "MOVE.W  X:$05FB,B"
+      ]
+    },
+    "CV6T-AH": {
+      "helper_code2": "0x294F3",
+      "helper_code5": "0x29506",
+      "torque_callee_code2": "0x29558",
+      "torque_callee_code5": "0x29558",
+      "helper_code2_head": [
+        "MOVE.W  #$2887,X:$0100",
+        "MOVE.W  #<\u201364,63>,Y0",
+        "BRA     P:$2950E"
+      ],
+      "helper_code5_head": [
+        "MOVE.W  X:$2891,X:$2887",
+        "MOVE.W  #<\u201364,63>,Y0",
+        "BRA     P:$2950E"
+      ],
+      "torque_callee_code2_head": [
+        "BRA     P:$2955B",
+        "MOVE.W  X:$075B,B"
+      ],
+      "torque_callee_code5_head": [
+        "BRA     P:$2955B",
+        "MOVE.W  X:$075B,B"
+      ]
+    },
+    "CV6T-AR": {
+      "helper_code2": "0x2AFCF",
+      "helper_code5": "0x2AFE2",
+      "torque_callee_code2": "0x2B04E",
+      "torque_callee_code5": "0x2B04E",
+      "helper_code2_head": [
+        "MOVE.W  #$2D46,X:$0400",
+        "MOVE.W  #<\u201364,63>,Y0",
+        "BRA     P:$2AFEA"
+      ],
+      "helper_code5_head": [
+        "MOVE.W  X:$2D50,X:$2D46",
+        "MOVE.W  #<\u201364,63>,Y0",
+        "BRA     P:$2AFEA"
+      ],
+      "torque_callee_code2_head": [
+        "BRA     P:$2B051",
+        "MOVE.W  X:$08F5,B"
+      ],
+      "torque_callee_code5_head": [
+        "BRA     P:$2B051",
+        "MOVE.W  X:$08F5,B"
+      ]
+    }
+  },
+  "multiply_shift": {
+    "BV6T-AF": [
+      [
+        "0x2746F",
+        "ASRR.L  #$08,fff"
+      ]
+    ],
+    "CV6T-AH": [
+      [
+        "0x2956F",
+        "ASRR.L  #$08,fff"
+      ]
+    ],
+    "CV6T-AR": [
+      [
+        "0x2B065",
+        "ASRR.L  #$0A,fff"
+      ]
+    ]
+  }
+}

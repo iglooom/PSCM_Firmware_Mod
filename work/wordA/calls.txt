@@ -1,0 +1,23 @@
+==============================================================================
+BV6T-14C217-AF
+
+-- JSR P:$16216 (P-space CRC): 2 call site(s) --
+   call at blk1 word 0x04105 byte 0x0820A (P:$12105)
+       b0x081D4  MOVE.L #$0000E800,A   byte 0x01D000
+       b0x081DE  MOVE.L #$0003FFF5,B   byte 0x07FFEA =WORD_A
+       b0x081E8  MOVE.L #$0000E800,C   byte 0x01D000
+       b0x081EE  MOVE.L #$000317F5,B   byte 0x062FEA
+   call at blk1 word 0x0F724 byte 0x1EE48 (P:$1D724)
+
+-- JSR P:$1627C (X-space CRC): 5 call site(s) --
+   call at blk1 word 0x026AA byte 0x04D54 (P:$106AA)
+   call at blk1 word 0x0412C byte 0x08258 (P:$1212C)
+   call at blk1 word 0x0AC5F byte 0x158BE (P:$18C5F)
+   call at blk1 word 0x0B073 byte 0x160E6 (P:$19073)
+   call at blk1 word 0x0B101 byte 0x16202 (P:$19101)
+
+-- X:$11EF accumulator traffic --
+   b0x08202 F77C READ  -> Y1
+   b0x08214 D57C WRITE <- Y0
+   b0x08274 F67C MOVE X:->X:
+   b0x082A8 4C44 CMP   with A

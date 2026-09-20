@@ -1,0 +1,43 @@
+RAM OWNERSHIP EVIDENCE SCAN (read-only)
+
+[CV6T-AR] X-init sha256 4e65a6493cf770d02a125c115a50c7b6b8d58969405bbd0292fafd896750d6c0
+  last non-FFFF X-init word: X:$63A3
+  target erased: True (1808 words)
+  fallback erased: True (32 words)
+  decoded instructions: 99235; indirect-X forms: 18565
+  decoded absolute refs in target/fallback: 0
+  local pointer+explicit-displacement reaches: 0
+  initialized pointer-valued words in target/fallback (ambiguous constants): 13
+  raw preceding-word/literal pairs in full target: 966
+  SP immediate writes: P:$04216->$5555, P:$045C3->$AAFF, P:$04625->$AAFF
+  pointer immediates X:$6300..$66FF: P:$317D9 R0=$6560, P:$317E2 R0=$655E
+  non-FFFF X-init runs >=X:$6000: $6001..$6001, $6003..$6009, $600E..$61A3, $61A6..$63A3
+
+[CV6T-AH] X-init sha256 f3420774100b58d8bfea812e72b9f2c82cb478cb0b4581c4e231b5fbcdecb945
+  last non-FFFF X-init word: X:$62BB
+  target erased: True (1808 words)
+  fallback erased: True (32 words)
+  decoded instructions: 94194; indirect-X forms: 17752
+  decoded absolute refs in target/fallback: 0
+  local pointer+explicit-displacement reaches: 0
+  initialized pointer-valued words in target/fallback (ambiguous constants): 12
+  raw preceding-word/literal pairs in full target: 939
+  SP immediate writes: P:$040CA->$5555, P:$04477->$AAFF, P:$044D9->$AAFF
+  pointer immediates X:$6300..$66FF: none
+  non-FFFF X-init runs >=X:$6000: $6000..$60EF, $60F2..$62BB
+
+[BV6T-AF] X-init sha256 de4327cf738a7e7e88d4f4bd09b18d62efa2ca7e4d9f4b9adfb1dbb0975fde92
+  last non-FFFF X-init word: X:$61F9
+  target erased: True (1808 words)
+  fallback erased: True (32 words)
+  decoded instructions: 86163; indirect-X forms: 16848
+  decoded absolute refs in target/fallback: 0
+  local pointer+explicit-displacement reaches: 0
+  initialized pointer-valued words in target/fallback (ambiguous constants): 16
+  raw preceding-word/literal pairs in full target: 1072
+  SP immediate writes: P:$03C90->$5555, P:$0403D->$AAFF, P:$0409F->$AAFF
+  pointer immediates X:$6300..$66FF: none
+  non-FFFF X-init runs >=X:$6000: $6000..$606B, $606E..$61F9
+
+ASSERTIONS: PASS
+LIMIT: unconstrained X:(Rn), X:(Rn+N), postincrement, stack, and runtime-loaded pointers remain unbounded.

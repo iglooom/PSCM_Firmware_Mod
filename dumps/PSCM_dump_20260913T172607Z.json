@@ -1,0 +1,19 @@
+{
+  "stamp": "20260913T172607Z",
+  "f188": "CV6T-14C217-AR",
+  "f124": "CV6T-14C218-AX",
+  "regions": {
+    "pflash": {
+      "ok": false,
+      "error": "TransferData bc=1 at +0x7F80: NRC 73 wrongBlockSequenceCounter"
+    },
+    "bootflash": {
+      "ok": false,
+      "error": "RequestUpload @0x00080000 len 0x8000: NRC 22 conditionsNotCorrect"
+    },
+    "dflash": {
+      "ok": false,
+      "error": "RequestUpload @0x04008000 len 0x8000: NRC 22 conditionsNotCorrect"
+    }
+  }
+}

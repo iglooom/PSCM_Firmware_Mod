@@ -1,0 +1,12 @@
+wrote msgsets_hyp.bin: 6 sets
+  H_exact    len=0x62FEA
+  H_inclA    len=0x62FEC
+  H_toB      len=0x62FEE
+  H_toend    len=0x63000
+  H_s0FFE    len=0x62FEC
+  H_s1002    len=0x62FE8
+
+target: {'BV6T-14C217-AF': '0xc704', 'CV6T-14C217-AH': '0xa291', 'CV6T-14C217-AR': '0xd110'}
+additive matches: 0
+DONE hits=0
+FINISHED

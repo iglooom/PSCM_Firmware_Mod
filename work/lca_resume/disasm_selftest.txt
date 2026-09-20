@@ -1,0 +1,22 @@
+-- Bcc/Jcc decoder (ERM A-57/A-153, Table A-18) --
+  PASS  BNE <OFFSET7> @0x1000 (+6): 'Bne P:$01007'
+  PASS  BNE <OFFSET7> backward (-2): 4095
+  PASS  offset-0 rejected: None
+  PASS  Jeq <ABS19> target: 9029
+  PASS  Jeq <ABS19> mnemonic: 'Jeq'
+  PASS  Jeq <ABS19> len: 2
+  PASS  JMP not decoded as conditional: None
+  PASS  JSR not decoded as conditional: None
+  PASS  JMPD not decoded as conditional: None
+  PASS  BRA not decoded as conditional: None
+  PASS  BRAD not decoded as conditional: None
+  PASS  BSR not decoded as conditional: None
+-- unconditional flow (cross-checked vs pscm_disasm rules) --
+  PASS  JSR at P:$19C35: ('JSR', 105941)
+-- image load --
+  PASS  reset vector is JSR: 57940
+  PASS  reset vector target: 76745
+  PASS  blk1 present: 42243
+-- FlexCAN map --
+  PASS  MB12_D0 address: 63651
+  PASS  MB13_IDHI address: 63657

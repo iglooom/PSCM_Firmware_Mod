@@ -1,0 +1,10447 @@
+[
+ {
+  "mnem": "ABS",
+  "operands": "F GGG,X:<ea_m>",
+  "bits": "0000 1GGG F010 0mRR",
+  "mask": 63608,
+  "value": 2080,
+  "fields": {
+   "G": [
+    10,
+    9,
+    8
+   ],
+   "F": [
+    7
+   ],
+   "m": [
+    2
+   ],
+   "R": [
+    1,
+    0
+   ]
+  },
+  "line": 18250
+ },
+ {
+  "mnem": "ABS",
+  "operands": "F X:<ea_m>,GGG",
+  "bits": "0010 1GGG F010 0mRR",
+  "mask": 63608,
+  "value": 10272,
+  "fields": {
+   "G": [
+    10,
+    9,
+    8
+   ],
+   "F": [
+    7
+   ],
+   "m": [
+    2
+   ],
+   "R": [
+    1,
+    0
+   ]
+  },
+  "line": 18254
+ },
+ {
+  "mnem": "ABS",
+  "operands": "FFF",
+  "bits": "0111 01FF F010 0111",
+  "mask": 64639,
+  "value": 29735,
+  "fields": {
+   "F": [
+    9,
+    8,
+    7
+   ]
+  },
+  "line": 18258
+ },
+ {
+  "mnem": "ADC",
+  "operands": "Y,F",
+  "bits": "0111 0100 F000 0111",
+  "mask": 65407,
+  "value": 29703,
+  "fields": {
+   "F": [
+    7
+   ]
+  },
+  "line": 18334
+ },
+ {
+  "mnem": "ADD",
+  "operands": "FFF,FFF",
+  "bits": "0111 10FF Fbbb 0000",
+  "mask": 64527,
+  "value": 30720,
+  "fields": {
+   "F": [
+    9,
+    8,
+    7
+   ],
+   "b": [
+    6,
+    5,
+    4
+   ]
+  },
+  "line": 18479
+ },
+ {
+  "mnem": "ADD",
+  "operands": "C,F GGG,X:<ea_m>",
+  "bits": "0000 0GGG F110 0mRR",
+  "mask": 63608,
+  "value": 96,
+  "fields": {
+   "G": [
+    10,
+    9,
+    8
+   ],
+   "F": [
+    7
+   ],
+   "m": [
+    2
+   ],
+   "R": [
+    1,
+    0
+   ]
+  },
+  "line": 18483
+ },
+ {
+  "mnem": "ADD",
+  "operands": "C,F X:<ea_m>,GGG",
+  "bits": "0010 0GGG F110 0mRR",
+  "mask": 63608,
+  "value": 8288,
+  "fields": {
+   "G": [
+    10,
+    9,
+    8
+   ],
+   "F": [
+    7
+   ],
+   "m": [
+    2
+   ],
+   "R": [
+    1,
+    0
+   ]
+  },
+  "line": 18487
+ },
+ {
+  "mnem": "ADD",
+  "operands": "DD,F GGG,X:<ea_m>",
+  "bits": "0000 0GGG FJJJ 0mRR",
+  "mask": 63496,
+  "value": 0,
+  "fields": {
+   "G": [
+    10,
+    9,
+    8
+   ],
+   "F": [
+    7
+   ],
+   "J": [
+    6,
+    5,
+    4
+   ],
+   "m": [
+    2
+   ],
+   "R": [
+    1,
+    0
+   ]
+  },
+  "line": 18491
+ },
+ {
+  "mnem": "ADD",
+  "operands": "DD,F X:<ea_m>,GGG",
+  "bits": "0010 0GGG FJJJ 0mRR",
+  "mask": 63496,
+  "value": 8192,
+  "fields": {
+   "G": [
+    10,
+    9,
+    8
+   ],
+   "F": [
+    7
+   ],
+   "J": [
+    6,
+    5,
+    4
+   ],
+   "m": [
+    2
+   ],
+   "R": [
+    1,
+    0
+   ]
+  },
+  "line": 18495
+ },
+ {
+  "mnem": "ADD",
+  "operands": "DD,F X:<ea_m>,reg1",
+  "bits": "0110 00vv FvJJ 0m0v",
+  "mask": 64522,
+  "value": 24576,
+  "fields": {
+   "v": [
+    9,
+    8,
+    6,
+    0
+   ],
+   "F": [
+    7
+   ],
+   "J": [
+    5,
+    4
+   ],
+   "m": [
+    2
+   ]
+  },
+  "line": 18499
+ },
+ {
+  "mnem": "ADD",
+  "operands": "~F,F GGG,X:<ea_m>",
+  "bits": "0000 0GGG F000 0mRR",
+  "mask": 63608,
+  "value": 0,
+  "fields": {
+   "G": [
+    10,
+    9,
+    8
+   ],
+   "F": [
+    7
+   ],
+   "m": [
+    2
+   ],
+   "R": [
+    1,
+    0
+   ]
+  },
+  "line": 18503
+ },
+ {
+  "mnem": "ADD",
+  "operands": "~F,F X:<ea_m>,GGG",
+  "bits": "0010 0GGG F000 0mRR",
+  "mask": 63608,
+  "value": 8192,
+  "fields": {
+   "G": [
+    10,
+    9,
+    8
+   ],
+   "F": [
+    7
+   ],
+   "m": [
+    2
+   ],
+   "R": [
+    1,
+    0
+   ]
+  },
+  "line": 18507
+ },
+ {
+  "mnem": "ADD",
+  "operands": "~F,F X:<ea_m>,reg1",
+  "bits": "0110 00vv Fv10 0m0v",
+  "mask": 64570,
+  "value": 24608,
+  "fields": {
+   "v": [
+    9,
+    8,
+    6,
+    0
+   ],
+   "F": [
+    7
+   ],
+   "m": [
+    2
+   ]
+  },
+  "line": 18511
+ },
+ {
+  "mnem": "ADD.B",
+  "operands": "#xxx,EEE",
+  "bits": "0100 01EE E100 0010",
+  "mask": 64639,
+  "value": 17474,
+  "fields": {
+   "E": [
+    9,
+    8,
+    7
+   ]
+  },
+  "line": 18571
+ },
+ {
+  "mnem": "ADD.BP",
+  "operands": "X:xxxx,EEE",
+  "bits": "0100 01EE E100 0110",
+  "mask": 64639,
+  "value": 17478,
+  "fields": {
+   "E": [
+    9,
+    8,
+    7
+   ]
+  },
+  "line": 18642
+ },
+ {
+  "mnem": "ADD.BP",
+  "operands": "X:xxxxxx,EEE",
+  "bits": "1110 0AAA 0A11 AAAA",
+  "mask": 63664,
+  "value": 57392,
+  "fields": {
+   "A": [
+    10,
+    9,
+    8,
+    6,
+    3,
+    2,
+    1,
+    0
+   ]
+  },
+  "line": 18647
+ },
+ {
+  "mnem": "ADD.L",
+  "operands": "#xxxx,fff",
+  "bits": "0100 01ff f100 0011",
+  "mask": 64639,
+  "value": 17475,
+  "fields": {
+   "f": [
+    9,
+    8,
+    7
+   ]
+  },
+  "line": 18722
+ },
+ {
+  "mnem": "ADD.L",
+  "operands": "X:xxxx,fff",
+  "bits": "0100 01ff f100 0111",
+  "mask": 64639,
+  "value": 17479,
+  "fields": {
+   "f": [
+    9,
+    8,
+    7
+   ]
+  },
+  "line": 18727
+ },
+ {
+  "mnem": "ADD.L",
+  "operands": "X:xxxxxx,fff",
+  "bits": "1110 0AAA 0A11 AAAA",
+  "mask": 63664,
+  "value": 57392,
+  "fields": {
+   "A": [
+    10,
+    9,
+    8,
+    6,
+    3,
+    2,
+    1,
+    0
+   ]
+  },
+  "line": 18732
+ },
+ {
+  "mnem": "ADD.W",
+  "operands": "#<0\u201331>,EEE",
+  "bits": "0100 01EE E00B BBBB",
+  "mask": 64608,
+  "value": 17408,
+  "fields": {
+   "E": [
+    9,
+    8,
+    7
+   ],
+   "B": [
+    4,
+    3,
+    2,
+    1,
+    0
+   ]
+  },
+  "line": 18816
+ },
+ {
+  "mnem": "ADD.W",
+  "operands": "#xxxx,EEE",
+  "bits": "0100 01EE E100 0000",
+  "mask": 64639,
+  "value": 17472,
+  "fields": {
+   "E": [
+    9,
+    8,
+    7
+   ]
+  },
+  "line": 18820
+ },
+ {
+  "mnem": "ADD.W",
+  "operands": "EEE,X:(SP\u2013xx)",
+  "bits": "0100 00EE E1aa aaaa",
+  "mask": 64576,
+  "value": 16448,
+  "fields": {
+   "E": [
+    9,
+    8,
+    7
+   ],
+   "a": [
+    5,
+    4,
+    3,
+    2,
+    1,
+    0
+   ]
+  },
+  "line": 18825
+ },
+ {
+  "mnem": "ADD.W",
+  "operands": "EEE,X:xxxx",
+  "bits": "0111 01EE E101 0111",
+  "mask": 64639,
+  "value": 29783,
+  "fields": {
+   "E": [
+    9,
+    8,
+    7
+   ]
+  },
+  "line": 18830
+ },
+ {
+  "mnem": "ADD.W",
+  "operands": "X:(Rn),EEE",
+  "bits": "0100 01EE E101 R1RR",
+  "mask": 64628,
+  "value": 17492,
+  "fields": {
+   "E": [
+    9,
+    8,
+    7
+   ],
+   "R": [
+    3,
+    1,
+    0
+   ]
+  },
+  "line": 18835
+ },
+ {
+  "mnem": "ADD.W",
+  "operands": "X:(Rn+xxxx),EEE",
+  "bits": "0100 01EE E101 R0RR",
+  "mask": 64628,
+  "value": 17488,
+  "fields": {
+   "E": [
+    9,
+    8,
+    7
+   ],
+   "R": [
+    3,
+    1,
+    0
+   ]
+  },
+  "line": 18839
+ },
+ {
+  "mnem": "ADD.W",
+  "operands": "X:(SP\u2013xx),EEE",
+  "bits": "0100 00EE E1aa aaaa",
+  "mask": 64576,
+  "value": 16448,
+  "fields": {
+   "E": [
+    9,
+    8,
+    7
+   ],
+   "a": [
+    5,
+    4,
+    3,
+    2,
+    1,
+    0
+   ]
+  },
+  "line": 18844
+ },
+ {
+  "mnem": "ADD.W",
+  "operands": "X:xxxx,EEE",
+  "bits": "0100 01EE E100 0100",
+  "mask": 64639,
+  "value": 17476,
+  "fields": {
+   "E": [
+    9,
+    8,
+    7
+   ]
+  },
+  "line": 18848
+ },
+ {
+  "mnem": "ADD.W",
+  "operands": "X:xxxxxx,EEE",
+  "bits": "1110 0AAA 0A11 AAAA",
+  "mask": 63664,
+  "value": 57392,
+  "fields": {
+   "A": [
+    10,
+    9,
+    8,
+    6,
+    3,
+    2,
+    1,
+    0
+   ]
+  },
+  "line": 18853
+ },
+ {
+  "mnem": "ADDA",
+  "operands": "#<0\u201315>,Rn",
+  "bits": "1000 iiii 0111 R0RR",
+  "mask": 61684,
+  "value": 32880,
+  "fields": {
+   "i": [
+    11,
+    10,
+    9,
+    8
+   ],
+   "R": [
+    3,
+    1,
+    0
+   ]
+  },
+  "line": 18925
+ },
+ {
+  "mnem": "ADDA",
+  "operands": "#<0\u201315>,Rn,N",
+  "bits": "1000 iiii 0111 R1RR",
+  "mask": 61684,
+  "value": 32884,
+  "fields": {
+   "i": [
+    11,
+    10,
+    9,
+    8
+   ],
+   "R": [
+    3,
+    1,
+    0
+   ]
+  },
+  "line": 18929
+ },
+ {
+  "mnem": "ADDA",
+  "operands": "#xxxx,HHH,Rn",
+  "bits": "1000 0110 h01h RhRR",
+  "mask": 65376,
+  "value": 34336,
+  "fields": {
+   "h": [
+    7,
+    4,
+    2
+   ],
+   "R": [
+    3,
+    1,
+    0
+   ]
+  },
+  "line": 18933
+ },
+ {
+  "mnem": "ADDA",
+  "operands": "#xxxx,Rn,Rn",
+  "bits": "1000 V010 n01n RnRR",
+  "mask": 63328,
+  "value": 33312,
+  "fields": {
+   "V": [
+    11
+   ],
+   "n": [
+    7,
+    4,
+    2
+   ],
+   "R": [
+    3,
+    1,
+    0
+   ]
+  },
+  "line": 18938
+ },
+ {
+  "mnem": "ADDA",
+  "operands": "#xxxxxx,HHH,Rn",
+  "bits": "1110 0AAA 0A11 AAAA",
+  "mask": 63664,
+  "value": 57392,
+  "fields": {
+   "A": [
+    10,
+    9,
+    8,
+    6,
+    3,
+    2,
+    1,
+    0
+   ]
+  },
+  "line": 18943
+ },
+ {
+  "mnem": "ADDA",
+  "operands": "#xxxxxx,Rn,Rn",
+  "bits": "1110 0AAA 0A11 AAAA",
+  "mask": 63664,
+  "value": 57392,
+  "fields": {
+   "A": [
+    10,
+    9,
+    8,
+    6,
+    3,
+    2,
+    1,
+    0
+   ]
+  },
+  "line": 18949
+ },
+ {
+  "mnem": "ADDA",
+  "operands": "Rn,Rn",
+  "bits": "1000 1001 n01n RnRR",
+  "mask": 65376,
+  "value": 35104,
+  "fields": {
+   "n": [
+    7,
+    4,
+    2
+   ],
+   "R": [
+    3,
+    1,
+    0
+   ]
+  },
+  "line": 18955
+ },
+ {
+  "mnem": "ADDA",
+  "operands": "Rn,Rn,N",
+  "bits": "1000 1101 n01n RnRR",
+  "mask": 65376,
+  "value": 36128,
+  "fields": {
+   "n": [
+    7,
+    4,
+    2
+   ],
+   "R": [
+    3,
+    1,
+    0
+   ]
+  },
+  "line": 18959
+ },
+ {
+  "mnem": "ADDA.L",
+  "operands": "#xxxx,HHH,Rn",
+  "bits": "1000 0111 h01h RhRR",
+  "mask": 65376,
+  "value": 34592,
+  "fields": {
+   "h": [
+    7,
+    4,
+    2
+   ],
+   "R": [
+    3,
+    1,
+    0
+   ]
+  },
+  "line": 19034
+ },
+ {
+  "mnem": "ADDA.L",
+  "operands": "#xxxx,Rn,Rn",
+  "bits": "1000 0011 n01n RnRR",
+  "mask": 65376,
+  "value": 33568,
+  "fields": {
+   "n": [
+    7,
+    4,
+    2
+   ],
+   "R": [
+    3,
+    1,
+    0
+   ]
+  },
+  "line": 19039
+ },
+ {
+  "mnem": "ADDA.L",
+  "operands": "#xxxxxx,HHH,Rn",
+  "bits": "1110 0AAA 0A11 AAAA",
+  "mask": 63664,
+  "value": 57392,
+  "fields": {
+   "A": [
+    10,
+    9,
+    8,
+    6,
+    3,
+    2,
+    1,
+    0
+   ]
+  },
+  "line": 19044
+ },
+ {
+  "mnem": "ADDA.L",
+  "operands": "#xxxxxx,Rn,Rn",
+  "bits": "1110 0AAA 0A11 AAAA",
+  "mask": 63664,
+  "value": 57392,
+  "fields": {
+   "A": [
+    10,
+    9,
+    8,
+    6,
+    3,
+    2,
+    1,
+    0
+   ]
+  },
+  "line": 19050
+ },
+ {
+  "mnem": "ADDA.L",
+  "operands": "Rn,Rn",
+  "bits": "1000 1000 n01n RnRR",
+  "mask": 65376,
+  "value": 34848,
+  "fields": {
+   "n": [
+    7,
+    4,
+    2
+   ],
+   "R": [
+    3,
+    1,
+    0
+   ]
+  },
+  "line": 19056
+ },
+ {
+  "mnem": "ADDA.L",
+  "operands": "Rn,Rn,N",
+  "bits": "1000 1100 n01n RnRR",
+  "mask": 65376,
+  "value": 35872,
+  "fields": {
+   "n": [
+    7,
+    4,
+    2
+   ],
+   "R": [
+    3,
+    1,
+    0
+   ]
+  },
+  "line": 19060
+ },
+ {
+  "mnem": "ALIGNSP",
+  "operands": "",
+  "bits": "1110 0111 0000 0100",
+  "mask": 65535,
+  "value": 59140,
+  "fields": {},
+  "line": 19116
+ },
+ {
+  "mnem": "AND.L",
+  "operands": "#<0\u201331>,fff",
+  "bits": "0100 01ff f11B BBBB",
+  "mask": 64608,
+  "value": 17504,
+  "fields": {
+   "f": [
+    9,
+    8,
+    7
+   ],
+   "B": [
+    4,
+    3,
+    2,
+    1,
+    0
+   ]
+  },
+  "line": 19187
+ },
+ {
+  "mnem": "AND.L",
+  "operands": "FFF,fff",
+  "bits": "0111 10ff fbbb 1100",
+  "mask": 64527,
+  "value": 30732,
+  "fields": {
+   "f": [
+    9,
+    8,
+    7
+   ],
+   "b": [
+    6,
+    5,
+    4
+   ]
+  },
+  "line": 19191
+ },
+ {
+  "mnem": "AND.W",
+  "operands": "#<0\u201331>,EEE",
+  "bits": "0101 01EE E11B BBBB",
+  "mask": 64608,
+  "value": 21600,
+  "fields": {
+   "E": [
+    9,
+    8,
+    7
+   ],
+   "B": [
+    4,
+    3,
+    2,
+    1,
+    0
+   ]
+  },
+  "line": 19264
+ },
+ {
+  "mnem": "AND.W",
+  "operands": "EEE,EEE",
+  "bits": "0111 10EE Eaaa 1000",
+  "mask": 64527,
+  "value": 30728,
+  "fields": {
+   "E": [
+    9,
+    8,
+    7
+   ],
+   "a": [
+    6,
+    5,
+    4
+   ]
+  },
+  "line": 19268
+ },
+ {
+  "mnem": "ASL",
+  "operands": "F GGG,X:<ea_m>",
+  "bits": "0001 0GGG F011 0mRR",
+  "mask": 63608,
+  "value": 4144,
+  "fields": {
+   "G": [
+    10,
+    9,
+    8
+   ],
+   "F": [
+    7
+   ],
+   "m": [
+    2
+   ],
+   "R": [
+    1,
+    0
+   ]
+  },
+  "line": 19460
+ },
+ {
+  "mnem": "ASL",
+  "operands": "F X:<ea_m>,GGG",
+  "bits": "0011 0GGG F011 0mRR",
+  "mask": 63608,
+  "value": 12336,
+  "fields": {
+   "G": [
+    10,
+    9,
+    8
+   ],
+   "F": [
+    7
+   ],
+   "m": [
+    2
+   ],
+   "R": [
+    1,
+    0
+   ]
+  },
+  "line": 19464
+ },
+ {
+  "mnem": "ASL",
+  "operands": "F X:<ea_m>,reg1",
+  "bits": "0111 01vv Fv11 0m0v",
+  "mask": 64570,
+  "value": 29744,
+  "fields": {
+   "v": [
+    9,
+    8,
+    6,
+    0
+   ],
+   "F": [
+    7
+   ],
+   "m": [
+    2
+   ]
+  },
+  "line": 19468
+ },
+ {
+  "mnem": "ASL",
+  "operands": "fff",
+  "bits": "0111 00ff f110 0011",
+  "mask": 64639,
+  "value": 28771,
+  "fields": {
+   "f": [
+    9,
+    8,
+    7
+   ]
+  },
+  "line": 19472
+ },
+ {
+  "mnem": "ASL.W",
+  "operands": "DD",
+  "bits": "0111 001D D110 0011",
+  "mask": 65151,
+  "value": 29283,
+  "fields": {
+   "D": [
+    8,
+    7
+   ]
+  },
+  "line": 19546
+ },
+ {
+  "mnem": "ASL16",
+  "operands": "FFF,FFF",
+  "bits": "0111 11FF Fbbb 0101",
+  "mask": 64527,
+  "value": 31749,
+  "fields": {
+   "F": [
+    9,
+    8,
+    7
+   ],
+   "b": [
+    6,
+    5,
+    4
+   ]
+  },
+  "line": 19595
+ },
+ {
+  "mnem": "ASLA",
+  "operands": "Rn,Rn",
+  "bits": "1000 0000 n01n RnRR",
+  "mask": 65376,
+  "value": 32800,
+  "fields": {
+   "n": [
+    7,
+    4,
+    2
+   ],
+   "R": [
+    3,
+    1,
+    0
+   ]
+  },
+  "line": 19640
+ },
+ {
+  "mnem": "ASLL.L",
+  "operands": "#<0\u201331>,fff",
+  "bits": "0100 01ff f01B BBBB",
+  "mask": 64608,
+  "value": 17440,
+  "fields": {
+   "f": [
+    9,
+    8,
+    7
+   ],
+   "B": [
+    4,
+    3,
+    2,
+    1,
+    0
+   ]
+  },
+  "line": 19708
+ },
+ {
+  "mnem": "ASLL.L",
+  "operands": "EEE,FFF",
+  "bits": "0111 11FF Faaa 1110",
+  "mask": 64527,
+  "value": 31758,
+  "fields": {
+   "F": [
+    9,
+    8,
+    7
+   ],
+   "a": [
+    6,
+    5,
+    4
+   ]
+  },
+  "line": 19712
+ },
+ {
+  "mnem": "ASLL.W",
+  "operands": "#<0\u201315>,FFF",
+  "bits": "0101 11FF F111 BBBB",
+  "mask": 64624,
+  "value": 23664,
+  "fields": {
+   "F": [
+    9,
+    8,
+    7
+   ],
+   "B": [
+    3,
+    2,
+    1,
+    0
+   ]
+  },
+  "line": 19792
+ },
+ {
+  "mnem": "ASLL.W",
+  "operands": "EEE,FFF",
+  "bits": "0111 11FF Faaa 1010",
+  "mask": 64527,
+  "value": 31754,
+  "fields": {
+   "F": [
+    9,
+    8,
+    7
+   ],
+   "a": [
+    6,
+    5,
+    4
+   ]
+  },
+  "line": 19796
+ },
+ {
+  "mnem": "ASLL.W",
+  "operands": "Q1,Q2,FFF",
+  "bits": "0111 00FF FQQQ 1110",
+  "mask": 64527,
+  "value": 28686,
+  "fields": {
+   "F": [
+    9,
+    8,
+    7
+   ],
+   "Q": [
+    6,
+    5,
+    4
+   ]
+  },
+  "line": 19800
+ },
+ {
+  "mnem": "ASR",
+  "operands": "F GGG,X:<ea_m>",
+  "bits": "0001 1GGG F011 0mRR",
+  "mask": 63608,
+  "value": 6192,
+  "fields": {
+   "G": [
+    10,
+    9,
+    8
+   ],
+   "F": [
+    7
+   ],
+   "m": [
+    2
+   ],
+   "R": [
+    1,
+    0
+   ]
+  },
+  "line": 19933
+ },
+ {
+  "mnem": "ASR",
+  "operands": "F X:<ea_m>,GGG",
+  "bits": "0011 1GGG F011 0mRR",
+  "mask": 63608,
+  "value": 14384,
+  "fields": {
+   "G": [
+    10,
+    9,
+    8
+   ],
+   "F": [
+    7
+   ],
+   "m": [
+    2
+   ],
+   "R": [
+    1,
+    0
+   ]
+  },
+  "line": 19937
+ },
+ {
+  "mnem": "ASR",
+  "operands": "F X:<ea_m>,reg1",
+  "bits": "0111 01vv Fv10 0m0v",
+  "mask": 64570,
+  "value": 29728,
+  "fields": {
+   "v": [
+    9,
+    8,
+    6,
+    0
+   ],
+   "F": [
+    7
+   ],
+   "m": [
+    2
+   ]
+  },
+  "line": 19941
+ },
+ {
+  "mnem": "ASR",
+  "operands": "FFF",
+  "bits": "0111 00FF F110 1011",
+  "mask": 64639,
+  "value": 28779,
+  "fields": {
+   "F": [
+    9,
+    8,
+    7
+   ]
+  },
+  "line": 19945
+ },
+ {
+  "mnem": "ASR16",
+  "operands": "FFF,FFF",
+  "bits": "0111 11FF Fbbb 0110",
+  "mask": 64527,
+  "value": 31750,
+  "fields": {
+   "F": [
+    9,
+    8,
+    7
+   ],
+   "b": [
+    6,
+    5,
+    4
+   ]
+  },
+  "line": 20023
+ },
+ {
+  "mnem": "ASRA",
+  "operands": "Rn",
+  "bits": "1000 0101 0011 R0RR",
+  "mask": 65524,
+  "value": 34096,
+  "fields": {
+   "R": [
+    3,
+    1,
+    0
+   ]
+  },
+  "line": 20063
+ },
+ {
+  "mnem": "ASRAC",
+  "operands": "Q1,Q2,FF",
+  "bits": "0111 000F FQQQ 0110",
+  "mask": 65039,
+  "value": 28678,
+  "fields": {
+   "F": [
+    8,
+    7
+   ],
+   "Q": [
+    6,
+    5,
+    4
+   ]
+  },
+  "line": 20136
+ },
+ {
+  "mnem": "ASRR.L",
+  "operands": "#<0\u201331>,fff",
+  "bits": "0100 11ff f11B BBBB",
+  "mask": 64608,
+  "value": 19552,
+  "fields": {
+   "f": [
+    9,
+    8,
+    7
+   ],
+   "B": [
+    4,
+    3,
+    2,
+    1,
+    0
+   ]
+  },
+  "line": 20206
+ },
+ {
+  "mnem": "ASRR.L",
+  "operands": "EEE,FFF",
+  "bits": "0111 11FF Faaa 1100",
+  "mask": 64527,
+  "value": 31756,
+  "fields": {
+   "F": [
+    9,
+    8,
+    7
+   ],
+   "a": [
+    6,
+    5,
+    4
+   ]
+  },
+  "line": 20210
+ },
+ {
+  "mnem": "ASRR.W",
+  "operands": "#<0\u201315>,FFF",
+  "bits": "0101 11FF F110 BBBB",
+  "mask": 64624,
+  "value": 23648,
+  "fields": {
+   "F": [
+    9,
+    8,
+    7
+   ],
+   "B": [
+    3,
+    2,
+    1,
+    0
+   ]
+  },
+  "line": 20296
+ },
+ {
+  "mnem": "ASRR.W",
+  "operands": "EEE,FFF",
+  "bits": "0111 11FF Faaa 1000",
+  "mask": 64527,
+  "value": 31752,
+  "fields": {
+   "F": [
+    9,
+    8,
+    7
+   ],
+   "a": [
+    6,
+    5,
+    4
+   ]
+  },
+  "line": 20300
+ },
+ {
+  "mnem": "ASRR.W",
+  "operands": "Q1,Q2,FFF",
+  "bits": "0111 00FF FQQQ 0010",
+  "mask": 64527,
+  "value": 28674,
+  "fields": {
+   "F": [
+    9,
+    8,
+    7
+   ],
+   "Q": [
+    6,
+    5,
+    4
+   ]
+  },
+  "line": 20304
+ },
+ {
+  "mnem": "BFCHG",
+  "operands": "#<MASK16>,DDDDD",
+  "bits": "1000 0101 010d dddd",
+  "mask": 65504,
+  "value": 34112,
+  "fields": {
+   "d": [
+    4,
+    3,
+    2,
+    1,
+    0
+   ]
+  },
+  "line": 20482
+ },
+ {
+  "mnem": "BFCHG",
+  "operands": "#<MASK16>,X:(Rn)",
+  "bits": "1000 0100 0100 R0RR",
+  "mask": 65524,
+  "value": 33856,
+  "fields": {
+   "R": [
+    3,
+    1,
+    0
+   ]
+  },
+  "line": 20487
+ },
+ {
+  "mnem": "BFCHG",
+  "operands": "#<MASK16>,X:(Rn+xxxx)",
+  "bits": "1000 0100 0100 R1RR",
+  "mask": 65524,
+  "value": 33860,
+  "fields": {
+   "R": [
+    3,
+    1,
+    0
+   ]
+  },
+  "line": 20492
+ },
+ {
+  "mnem": "BFCHG",
+  "operands": "#<MASK16>,X:(SP\u2013xx)",
+  "bits": "1010 0100 11aa aaaa",
+  "mask": 65472,
+  "value": 42176,
+  "fields": {
+   "a": [
+    5,
+    4,
+    3,
+    2,
+    1,
+    0
+   ]
+  },
+  "line": 20498
+ },
+ {
+  "mnem": "BFCHG",
+  "operands": "#<MASK16>,X:<<pp",
+  "bits": "1010 0101 11pp pppp",
+  "mask": 65472,
+  "value": 42432,
+  "fields": {
+   "p": [
+    5,
+    4,
+    3,
+    2,
+    1,
+    0
+   ]
+  },
+  "line": 20503
+ },
+ {
+  "mnem": "BFCHG",
+  "operands": "#<MASK16>,X:aa",
+  "bits": "1010 0101 10pp pppp",
+  "mask": 65472,
+  "value": 42368,
+  "fields": {
+   "p": [
+    5,
+    4,
+    3,
+    2,
+    1,
+    0
+   ]
+  },
+  "line": 20509
+ },
+ {
+  "mnem": "BFCHG",
+  "operands": "#<MASK16>,X:xxxx",
+  "bits": "1000 0100 0101 0100",
+  "mask": 65535,
+  "value": 33876,
+  "fields": {},
+  "line": 20515
+ },
+ {
+  "mnem": "BFCHG",
+  "operands": "#<MASK16>,X:xxxxxx",
+  "bits": "1110 0AAA 0A11 AAAA",
+  "mask": 63664,
+  "value": 57392,
+  "fields": {
+   "A": [
+    10,
+    9,
+    8,
+    6,
+    3,
+    2,
+    1,
+    0
+   ]
+  },
+  "line": 20521
+ },
+ {
+  "mnem": "BFCHG",
+  "operands": "#<MASK16>,dd",
+  "bits": "1000 0100 0101 00dd",
+  "mask": 65532,
+  "value": 33872,
+  "fields": {
+   "d": [
+    1,
+    0
+   ]
+  },
+  "line": 20528
+ },
+ {
+  "mnem": "BFCLR",
+  "operands": "#<MASK16>,DDDDD",
+  "bits": "1000 0001 010d dddd",
+  "mask": 65504,
+  "value": 33088,
+  "fields": {
+   "d": [
+    4,
+    3,
+    2,
+    1,
+    0
+   ]
+  },
+  "line": 20613
+ },
+ {
+  "mnem": "BFCLR",
+  "operands": "#<MASK16>,X:(Rn)",
+  "bits": "1000 0000 0100 R0RR",
+  "mask": 65524,
+  "value": 32832,
+  "fields": {
+   "R": [
+    3,
+    1,
+    0
+   ]
+  },
+  "line": 20618
+ },
+ {
+  "mnem": "BFCLR",
+  "operands": "#<MASK16>,X:(Rn+xxxx)",
+  "bits": "1000 0000 0100 R1RR",
+  "mask": 65524,
+  "value": 32836,
+  "fields": {
+   "R": [
+    3,
+    1,
+    0
+   ]
+  },
+  "line": 20623
+ },
+ {
+  "mnem": "BFCLR",
+  "operands": "#<MASK16>,X:(SP\u2013xx)",
+  "bits": "1010 0000 11aa aaaa",
+  "mask": 65472,
+  "value": 41152,
+  "fields": {
+   "a": [
+    5,
+    4,
+    3,
+    2,
+    1,
+    0
+   ]
+  },
+  "line": 20629
+ },
+ {
+  "mnem": "BFCLR",
+  "operands": "#<MASK16>,X:<<pp",
+  "bits": "1010 0001 11pp pppp",
+  "mask": 65472,
+  "value": 41408,
+  "fields": {
+   "p": [
+    5,
+    4,
+    3,
+    2,
+    1,
+    0
+   ]
+  },
+  "line": 20634
+ },
+ {
+  "mnem": "BFCLR",
+  "operands": "#<MASK16>,X:aa",
+  "bits": "1010 0001 10pp pppp",
+  "mask": 65472,
+  "value": 41344,
+  "fields": {
+   "p": [
+    5,
+    4,
+    3,
+    2,
+    1,
+    0
+   ]
+  },
+  "line": 20640
+ },
+ {
+  "mnem": "BFCLR",
+  "operands": "#<MASK16>,X:xxxx",
+  "bits": "1000 0000 0101 0100",
+  "mask": 65535,
+  "value": 32852,
+  "fields": {},
+  "line": 20646
+ },
+ {
+  "mnem": "BFCLR",
+  "operands": "#<MASK16>,X:xxxxxx",
+  "bits": "1110 0AAA 0A11 AAAA",
+  "mask": 63664,
+  "value": 57392,
+  "fields": {
+   "A": [
+    10,
+    9,
+    8,
+    6,
+    3,
+    2,
+    1,
+    0
+   ]
+  },
+  "line": 20652
+ },
+ {
+  "mnem": "BFCLR",
+  "operands": "#<MASK16>,dd",
+  "bits": "1000 0000 0101 00dd",
+  "mask": 65532,
+  "value": 32848,
+  "fields": {
+   "d": [
+    1,
+    0
+   ]
+  },
+  "line": 20659
+ },
+ {
+  "mnem": "BFSET",
+  "operands": "#<MASK16>,DDDDD",
+  "bits": "1000 0011 010d dddd",
+  "mask": 65504,
+  "value": 33600,
+  "fields": {
+   "d": [
+    4,
+    3,
+    2,
+    1,
+    0
+   ]
+  },
+  "line": 20745
+ },
+ {
+  "mnem": "BFSET",
+  "operands": "#<MASK16>,X:(Rn)",
+  "bits": "1000 0010 0100 R0RR",
+  "mask": 65524,
+  "value": 33344,
+  "fields": {
+   "R": [
+    3,
+    1,
+    0
+   ]
+  },
+  "line": 20750
+ },
+ {
+  "mnem": "BFSET",
+  "operands": "#<MASK16>,X:(Rn+xxxx)",
+  "bits": "1000 0010 0100 R1RR",
+  "mask": 65524,
+  "value": 33348,
+  "fields": {
+   "R": [
+    3,
+    1,
+    0
+   ]
+  },
+  "line": 20755
+ },
+ {
+  "mnem": "BFSET",
+  "operands": "#<MASK16>,X:(SP\u2013xx)",
+  "bits": "1010 0010 11aa aaaa",
+  "mask": 65472,
+  "value": 41664,
+  "fields": {
+   "a": [
+    5,
+    4,
+    3,
+    2,
+    1,
+    0
+   ]
+  },
+  "line": 20761
+ },
+ {
+  "mnem": "BFSET",
+  "operands": "#<MASK16>,X:<<pp",
+  "bits": "1010 0011 11pp pppp",
+  "mask": 65472,
+  "value": 41920,
+  "fields": {
+   "p": [
+    5,
+    4,
+    3,
+    2,
+    1,
+    0
+   ]
+  },
+  "line": 20766
+ },
+ {
+  "mnem": "BFSET",
+  "operands": "#<MASK16>,X:aa",
+  "bits": "1010 0011 10pp pppp",
+  "mask": 65472,
+  "value": 41856,
+  "fields": {
+   "p": [
+    5,
+    4,
+    3,
+    2,
+    1,
+    0
+   ]
+  },
+  "line": 20771
+ },
+ {
+  "mnem": "BFSET",
+  "operands": "#<MASK16>,X:xxxx",
+  "bits": "1000 0010 0101 0100",
+  "mask": 65535,
+  "value": 33364,
+  "fields": {},
+  "line": 20776
+ },
+ {
+  "mnem": "BFSET",
+  "operands": "#<MASK16>,X:xxxxxx",
+  "bits": "1110 0AAA 0A11 AAAA",
+  "mask": 63664,
+  "value": 57392,
+  "fields": {
+   "A": [
+    10,
+    9,
+    8,
+    6,
+    3,
+    2,
+    1,
+    0
+   ]
+  },
+  "line": 20782
+ },
+ {
+  "mnem": "BFSET",
+  "operands": "#<MASK16>,dd",
+  "bits": "1000 0010 0101 00dd",
+  "mask": 65532,
+  "value": 33360,
+  "fields": {
+   "d": [
+    1,
+    0
+   ]
+  },
+  "line": 20789
+ },
+ {
+  "mnem": "BFTSTH",
+  "operands": "#<MASK16>DDDDD",
+  "bits": "1000 1101 010d dddd",
+  "mask": 65504,
+  "value": 36160,
+  "fields": {
+   "d": [
+    4,
+    3,
+    2,
+    1,
+    0
+   ]
+  },
+  "line": 20869
+ },
+ {
+  "mnem": "BFTSTH",
+  "operands": "#<MASK16>,X:(Rn)",
+  "bits": "1000 1100 0100 R0RR",
+  "mask": 65524,
+  "value": 35904,
+  "fields": {
+   "R": [
+    3,
+    1,
+    0
+   ]
+  },
+  "line": 20874
+ },
+ {
+  "mnem": "BFTSTH",
+  "operands": "#<MASK16>,X:(Rn+xxxx)",
+  "bits": "1000 1100 0100 R1RR",
+  "mask": 65524,
+  "value": 35908,
+  "fields": {
+   "R": [
+    3,
+    1,
+    0
+   ]
+  },
+  "line": 20879
+ },
+ {
+  "mnem": "BFTSTH",
+  "operands": "#<MASK16>,X:(SP\u2013xx)",
+  "bits": "1010 1100 11aa aaaa",
+  "mask": 65472,
+  "value": 44224,
+  "fields": {
+   "a": [
+    5,
+    4,
+    3,
+    2,
+    1,
+    0
+   ]
+  },
+  "line": 20885
+ },
+ {
+  "mnem": "BFTSTH",
+  "operands": "#<MASK16>,X:<<pp",
+  "bits": "1010 1101 11pp pppp",
+  "mask": 65472,
+  "value": 44480,
+  "fields": {
+   "p": [
+    5,
+    4,
+    3,
+    2,
+    1,
+    0
+   ]
+  },
+  "line": 20890
+ },
+ {
+  "mnem": "BFTSTH",
+  "operands": "#<MASK16>,X:aa",
+  "bits": "1010 1101 10pp pppp",
+  "mask": 65472,
+  "value": 44416,
+  "fields": {
+   "p": [
+    5,
+    4,
+    3,
+    2,
+    1,
+    0
+   ]
+  },
+  "line": 20895
+ },
+ {
+  "mnem": "BFTSTH",
+  "operands": "#<MASK16>,X:xxxx",
+  "bits": "1000 1100 0101 0100",
+  "mask": 65535,
+  "value": 35924,
+  "fields": {},
+  "line": 20900
+ },
+ {
+  "mnem": "BFTSTH",
+  "operands": "#<MASK16>,X:xxxxxx",
+  "bits": "1110 0AAA 0A11 AAAA",
+  "mask": 63664,
+  "value": 57392,
+  "fields": {
+   "A": [
+    10,
+    9,
+    8,
+    6,
+    3,
+    2,
+    1,
+    0
+   ]
+  },
+  "line": 20906
+ },
+ {
+  "mnem": "BFTSTH",
+  "operands": "#<MASK16>,dd",
+  "bits": "1000 1100 0101 00dd",
+  "mask": 65532,
+  "value": 35920,
+  "fields": {
+   "d": [
+    1,
+    0
+   ]
+  },
+  "line": 20913
+ },
+ {
+  "mnem": "BFTSTL",
+  "operands": "#<MASK16>DDDDD",
+  "bits": "1000 1001 010d dddd",
+  "mask": 65504,
+  "value": 35136,
+  "fields": {
+   "d": [
+    4,
+    3,
+    2,
+    1,
+    0
+   ]
+  },
+  "line": 20994
+ },
+ {
+  "mnem": "BFTSTL",
+  "operands": "#<MASK16>,X:(Rn)",
+  "bits": "1000 1000 0100 R0RR",
+  "mask": 65524,
+  "value": 34880,
+  "fields": {
+   "R": [
+    3,
+    1,
+    0
+   ]
+  },
+  "line": 20999
+ },
+ {
+  "mnem": "BFTSTL",
+  "operands": "#<MASK16>,X:(Rn+xxxx)",
+  "bits": "1000 1000 0100 R1RR",
+  "mask": 65524,
+  "value": 34884,
+  "fields": {
+   "R": [
+    3,
+    1,
+    0
+   ]
+  },
+  "line": 21004
+ },
+ {
+  "mnem": "BFTSTL",
+  "operands": "#<MASK16>,X:(SP\u2013xx)",
+  "bits": "1010 1000 11aa aaaa",
+  "mask": 65472,
+  "value": 43200,
+  "fields": {
+   "a": [
+    5,
+    4,
+    3,
+    2,
+    1,
+    0
+   ]
+  },
+  "line": 21010
+ },
+ {
+  "mnem": "BFTSTL",
+  "operands": "#<MASK16>,X:<<pp",
+  "bits": "1010 1001 11pp pppp",
+  "mask": 65472,
+  "value": 43456,
+  "fields": {
+   "p": [
+    5,
+    4,
+    3,
+    2,
+    1,
+    0
+   ]
+  },
+  "line": 21015
+ },
+ {
+  "mnem": "BFTSTL",
+  "operands": "#<MASK16>,X:aa",
+  "bits": "1010 1001 10pp pppp",
+  "mask": 65472,
+  "value": 43392,
+  "fields": {
+   "p": [
+    5,
+    4,
+    3,
+    2,
+    1,
+    0
+   ]
+  },
+  "line": 21020
+ },
+ {
+  "mnem": "BFTSTL",
+  "operands": "#<MASK16>,X:xxxx",
+  "bits": "1000 1000 0101 0100",
+  "mask": 65535,
+  "value": 34900,
+  "fields": {},
+  "line": 21025
+ },
+ {
+  "mnem": "BFTSTL",
+  "operands": "#<MASK16>,X:xxxxxx",
+  "bits": "1110 0AAA 0A11 AAAA",
+  "mask": 63664,
+  "value": 57392,
+  "fields": {
+   "A": [
+    10,
+    9,
+    8,
+    6,
+    3,
+    2,
+    1,
+    0
+   ]
+  },
+  "line": 21031
+ },
+ {
+  "mnem": "BFTSTL",
+  "operands": "#<MASK16>,dd",
+  "bits": "1000 1000 0101 00dd",
+  "mask": 65532,
+  "value": 34896,
+  "fields": {
+   "d": [
+    1,
+    0
+   ]
+  },
+  "line": 21038
+ },
+ {
+  "mnem": "BRA",
+  "operands": "<OFFSET7>",
+  "bits": "1010 1001 0Aaa aaaa",
+  "mask": 65408,
+  "value": 43264,
+  "fields": {
+   "A": [
+    6
+   ],
+   "a": [
+    5,
+    4,
+    3,
+    2,
+    1,
+    0
+   ]
+  },
+  "line": 21085
+ },
+ {
+  "mnem": "BRA",
+  "operands": "<OFFSET18>",
+  "bits": "1110 0001 0110 11AA",
+  "mask": 65532,
+  "value": 57708,
+  "fields": {
+   "A": [
+    1,
+    0
+   ]
+  },
+  "line": 21089
+ },
+ {
+  "mnem": "BRA",
+  "operands": "<OFFSET22>",
+  "bits": "1110 0AAA 0A11 AAAA",
+  "mask": 63664,
+  "value": 57392,
+  "fields": {
+   "A": [
+    10,
+    9,
+    8,
+    6,
+    3,
+    2,
+    1,
+    0
+   ]
+  },
+  "line": 21094
+ },
+ {
+  "mnem": "BRAD",
+  "operands": "<OFFSET7>",
+  "bits": "1010 1011 0Aaa aaaa",
+  "mask": 65408,
+  "value": 43776,
+  "fields": {
+   "A": [
+    6
+   ],
+   "a": [
+    5,
+    4,
+    3,
+    2,
+    1,
+    0
+   ]
+  },
+  "line": 21153
+ },
+ {
+  "mnem": "BRAD",
+  "operands": "<OFFSET18>",
+  "bits": "1110 0011 0110 11AA",
+  "mask": 65532,
+  "value": 58220,
+  "fields": {
+   "A": [
+    1,
+    0
+   ]
+  },
+  "line": 21157
+ },
+ {
+  "mnem": "BRAD",
+  "operands": "<OFFSET22>",
+  "bits": "1110 0AAA 0A11 AAAA",
+  "mask": 63664,
+  "value": 57392,
+  "fields": {
+   "A": [
+    10,
+    9,
+    8,
+    6,
+    3,
+    2,
+    1,
+    0
+   ]
+  },
+  "line": 21162
+ },
+ {
+  "mnem": "BRCLR",
+  "operands": "#<MASK8>,DDDDD,AA",
+  "bits": "1000 1011 010d dddd",
+  "mask": 65504,
+  "value": 35648,
+  "fields": {
+   "d": [
+    4,
+    3,
+    2,
+    1,
+    0
+   ]
+  },
+  "line": 21259
+ },
+ {
+  "mnem": "BRCLR",
+  "operands": "#<MASK8>,X:(Rn),AA",
+  "bits": "1000 1010 0100 R0RR",
+  "mask": 65524,
+  "value": 35392,
+  "fields": {
+   "R": [
+    3,
+    1,
+    0
+   ]
+  },
+  "line": 21264
+ },
+ {
+  "mnem": "BRCLR",
+  "operands": "#<MASK8>,X:(Rn+xxxx),AA",
+  "bits": "1000 1010 0100 R1RR",
+  "mask": 65524,
+  "value": 35396,
+  "fields": {
+   "R": [
+    3,
+    1,
+    0
+   ]
+  },
+  "line": 21269
+ },
+ {
+  "mnem": "BRCLR",
+  "operands": "#<MASK8>,X:(SP\u2013xx),AA",
+  "bits": "1010 1010 11aa aaaa",
+  "mask": 65472,
+  "value": 43712,
+  "fields": {
+   "a": [
+    5,
+    4,
+    3,
+    2,
+    1,
+    0
+   ]
+  },
+  "line": 21275
+ },
+ {
+  "mnem": "BRCLR",
+  "operands": "#<MASK8>,X:<<pp,AA",
+  "bits": "1010 1011 11pp pppp",
+  "mask": 65472,
+  "value": 43968,
+  "fields": {
+   "p": [
+    5,
+    4,
+    3,
+    2,
+    1,
+    0
+   ]
+  },
+  "line": 21280
+ },
+ {
+  "mnem": "BRCLR",
+  "operands": "#<MASK8>,X:aa,AA",
+  "bits": "1010 1011 10pp pppp",
+  "mask": 65472,
+  "value": 43904,
+  "fields": {
+   "p": [
+    5,
+    4,
+    3,
+    2,
+    1,
+    0
+   ]
+  },
+  "line": 21285
+ },
+ {
+  "mnem": "BRCLR",
+  "operands": "#<MASK8>,X:xxxx,AA",
+  "bits": "1000 1010 0101 0100",
+  "mask": 65535,
+  "value": 35412,
+  "fields": {},
+  "line": 21290
+ },
+ {
+  "mnem": "BRCLR",
+  "operands": "#<MASK8>,X:xxxxxx,AA",
+  "bits": "1110 0AAA 0A11 AAAA",
+  "mask": 63664,
+  "value": 57392,
+  "fields": {
+   "A": [
+    10,
+    9,
+    8,
+    6,
+    3,
+    2,
+    1,
+    0
+   ]
+  },
+  "line": 21296
+ },
+ {
+  "mnem": "BRCLR",
+  "operands": "#<MASK8>,dd,AA",
+  "bits": "1000 1010 0101 00dd",
+  "mask": 65532,
+  "value": 35408,
+  "fields": {
+   "d": [
+    1,
+    0
+   ]
+  },
+  "line": 21303
+ },
+ {
+  "mnem": "BRSET",
+  "operands": "#<MASK8>,DDDDD,AA",
+  "bits": "1000 1111 010d dddd",
+  "mask": 65504,
+  "value": 36672,
+  "fields": {
+   "d": [
+    4,
+    3,
+    2,
+    1,
+    0
+   ]
+  },
+  "line": 21399
+ },
+ {
+  "mnem": "BRSET",
+  "operands": "#<MASK8>,X:(Rn),AA",
+  "bits": "1000 1110 0100 R0RR",
+  "mask": 65524,
+  "value": 36416,
+  "fields": {
+   "R": [
+    3,
+    1,
+    0
+   ]
+  },
+  "line": 21404
+ },
+ {
+  "mnem": "BRSET",
+  "operands": "#<MASK8>,X:(Rn+xxxx),AA",
+  "bits": "1000 1110 0100 R1RR",
+  "mask": 65524,
+  "value": 36420,
+  "fields": {
+   "R": [
+    3,
+    1,
+    0
+   ]
+  },
+  "line": 21409
+ },
+ {
+  "mnem": "BRSET",
+  "operands": "#<MASK8>,X:(SP\u2013xx),AA",
+  "bits": "1010 1110 11aa aaaa",
+  "mask": 65472,
+  "value": 44736,
+  "fields": {
+   "a": [
+    5,
+    4,
+    3,
+    2,
+    1,
+    0
+   ]
+  },
+  "line": 21415
+ },
+ {
+  "mnem": "BRSET",
+  "operands": "#<MASK8>,X:<<pp,AA",
+  "bits": "1010 1111 11pp pppp",
+  "mask": 65472,
+  "value": 44992,
+  "fields": {
+   "p": [
+    5,
+    4,
+    3,
+    2,
+    1,
+    0
+   ]
+  },
+  "line": 21420
+ },
+ {
+  "mnem": "BRSET",
+  "operands": "#<MASK8>,X:aa,AA",
+  "bits": "1010 1111 10pp pppp",
+  "mask": 65472,
+  "value": 44928,
+  "fields": {
+   "p": [
+    5,
+    4,
+    3,
+    2,
+    1,
+    0
+   ]
+  },
+  "line": 21426
+ },
+ {
+  "mnem": "BRSET",
+  "operands": "#<MASK8>,X:xxxx,AA",
+  "bits": "1000 1110 0101 0100",
+  "mask": 65535,
+  "value": 36436,
+  "fields": {},
+  "line": 21432
+ },
+ {
+  "mnem": "BRSET",
+  "operands": "#<MASK8>,X:xxxxxx,AA",
+  "bits": "1110 0AAA 0A11 AAAA",
+  "mask": 63664,
+  "value": 57392,
+  "fields": {
+   "A": [
+    10,
+    9,
+    8,
+    6,
+    3,
+    2,
+    1,
+    0
+   ]
+  },
+  "line": 21438
+ },
+ {
+  "mnem": "BRSET",
+  "operands": "#<MASK8>,dd,AA",
+  "bits": "1000 1110 0101 00dd",
+  "mask": 65532,
+  "value": 36432,
+  "fields": {
+   "d": [
+    1,
+    0
+   ]
+  },
+  "line": 21445
+ },
+ {
+  "mnem": "BSR",
+  "operands": "<OFFSET18>",
+  "bits": "1110 0010 0110 11AA",
+  "mask": 65532,
+  "value": 57964,
+  "fields": {
+   "A": [
+    1,
+    0
+   ]
+  },
+  "line": 21489
+ },
+ {
+  "mnem": "BSR",
+  "operands": "<OFFSET22>",
+  "bits": "1110 0AAA 0A11 AAAA",
+  "mask": 63664,
+  "value": 57392,
+  "fields": {
+   "A": [
+    10,
+    9,
+    8,
+    6,
+    3,
+    2,
+    1,
+    0
+   ]
+  },
+  "line": 21494
+ },
+ {
+  "mnem": "CLB",
+  "operands": "FFF,EEE",
+  "bits": "0111 10EE Ebbb 1011",
+  "mask": 64527,
+  "value": 30731,
+  "fields": {
+   "E": [
+    9,
+    8,
+    7
+   ],
+   "b": [
+    6,
+    5,
+    4
+   ]
+  },
+  "line": 21564
+ },
+ {
+  "mnem": "CLR",
+  "operands": "F",
+  "bits": "0111 0111 F100 0111",
+  "mask": 65407,
+  "value": 30535,
+  "fields": {
+   "F": [
+    7
+   ]
+  },
+  "line": 21683
+ },
+ {
+  "mnem": "CLR",
+  "operands": "F GGG,X:<ea_m>",
+  "bits": "0000 1GGG F011 0mRR",
+  "mask": 63608,
+  "value": 2096,
+  "fields": {
+   "G": [
+    10,
+    9,
+    8
+   ],
+   "F": [
+    7
+   ],
+   "m": [
+    2
+   ],
+   "R": [
+    1,
+    0
+   ]
+  },
+  "line": 21687
+ },
+ {
+  "mnem": "CLR",
+  "operands": "F X:<ea_m>,GGG",
+  "bits": "0010 1GGG F011 0mRR",
+  "mask": 63608,
+  "value": 10288,
+  "fields": {
+   "G": [
+    10,
+    9,
+    8
+   ],
+   "F": [
+    7
+   ],
+   "m": [
+    2
+   ],
+   "R": [
+    1,
+    0
+   ]
+  },
+  "line": 21691
+ },
+ {
+  "mnem": "CLR",
+  "operands": "F X:<ea_m>,reg1",
+  "bits": "0111 01vv Fv01 0m0v",
+  "mask": 64570,
+  "value": 29712,
+  "fields": {
+   "v": [
+    9,
+    8,
+    6,
+    0
+   ],
+   "F": [
+    7
+   ],
+   "m": [
+    2
+   ]
+  },
+  "line": 21695
+ },
+ {
+  "mnem": "CLR.B",
+  "operands": "X:(Rn+xxxx)",
+  "bits": "1101 1001 1110 R0RR",
+  "mask": 65524,
+  "value": 55776,
+  "fields": {
+   "R": [
+    3,
+    1,
+    0
+   ]
+  },
+  "line": 21739
+ },
+ {
+  "mnem": "CLR.B",
+  "operands": "X:(Rn+xxxxxx)",
+  "bits": "1110 0AAA 0A11 AAAA",
+  "mask": 63664,
+  "value": 57392,
+  "fields": {
+   "A": [
+    10,
+    9,
+    8,
+    6,
+    3,
+    2,
+    1,
+    0
+   ]
+  },
+  "line": 21744
+ },
+ {
+  "mnem": "CLR.B",
+  "operands": "X:(SP)",
+  "bits": "1101 1001 1011 1111",
+  "mask": 65535,
+  "value": 55743,
+  "fields": {},
+  "line": 21750
+ },
+ {
+  "mnem": "CLR.BP",
+  "operands": "X:(RRR+xxxx)",
+  "bits": "1101 1001 1110 N1NN",
+  "mask": 65524,
+  "value": 55780,
+  "fields": {
+   "N": [
+    3,
+    1,
+    0
+   ]
+  },
+  "line": 21810
+ },
+ {
+  "mnem": "CLR.BP",
+  "operands": "X:(RRR+xxxxxx)",
+  "bits": "1110 0AAA 0A11 AAAA",
+  "mask": 63664,
+  "value": 57392,
+  "fields": {
+   "A": [
+    10,
+    9,
+    8,
+    6,
+    3,
+    2,
+    1,
+    0
+   ]
+  },
+  "line": 21815
+ },
+ {
+  "mnem": "CLR.BP",
+  "operands": "X:<ea_MM>",
+  "bits": "1101 1001 101M NMNN",
+  "mask": 65504,
+  "value": 55712,
+  "fields": {
+   "M": [
+    4,
+    2
+   ],
+   "N": [
+    3,
+    1,
+    0
+   ]
+  },
+  "line": 21821
+ },
+ {
+  "mnem": "CLR.BP",
+  "operands": "X:xxxx",
+  "bits": "1101 1001 1111 1101",
+  "mask": 65535,
+  "value": 55805,
+  "fields": {},
+  "line": 21825
+ },
+ {
+  "mnem": "CLR.BP",
+  "operands": "X:xxxxxx",
+  "bits": "1110 0AAA 0A11 AAAA",
+  "mask": 63664,
+  "value": 57392,
+  "fields": {
+   "A": [
+    10,
+    9,
+    8,
+    6,
+    3,
+    2,
+    1,
+    0
+   ]
+  },
+  "line": 21830
+ },
+ {
+  "mnem": "CLR.L",
+  "operands": "X:(Rn+xxxx)",
+  "bits": "1101 1111 0110 R0RR",
+  "mask": 65524,
+  "value": 57184,
+  "fields": {
+   "R": [
+    3,
+    1,
+    0
+   ]
+  },
+  "line": 21891
+ },
+ {
+  "mnem": "CLR.L",
+  "operands": "X:(Rn+xxxxxx)",
+  "bits": "1110 0AAA 0A11 AAAA",
+  "mask": 63664,
+  "value": 57392,
+  "fields": {
+   "A": [
+    10,
+    9,
+    8,
+    6,
+    3,
+    2,
+    1,
+    0
+   ]
+  },
+  "line": 21896
+ },
+ {
+  "mnem": "CLR.L",
+  "operands": "X:<ea_MM>",
+  "bits": "1101 1111 001M RMRR",
+  "mask": 65504,
+  "value": 57120,
+  "fields": {
+   "M": [
+    4,
+    2
+   ],
+   "R": [
+    3,
+    1,
+    0
+   ]
+  },
+  "line": 21902
+ },
+ {
+  "mnem": "CLR.L",
+  "operands": "X:xxxx",
+  "bits": "1101 1111 0111 1101",
+  "mask": 65535,
+  "value": 57213,
+  "fields": {},
+  "line": 21906
+ },
+ {
+  "mnem": "CLR.L",
+  "operands": "X:xxxxxx",
+  "bits": "1110 0AAA 0A11 AAAA",
+  "mask": 63664,
+  "value": 57392,
+  "fields": {
+   "A": [
+    10,
+    9,
+    8,
+    6,
+    3,
+    2,
+    1,
+    0
+   ]
+  },
+  "line": 21911
+ },
+ {
+  "mnem": "CLR.W",
+  "operands": "DDDDD",
+  "bits": "1000 DDDD D000 1111",
+  "mask": 61567,
+  "value": 32783,
+  "fields": {
+   "D": [
+    11,
+    10,
+    9,
+    8,
+    7
+   ]
+  },
+  "line": 21981
+ },
+ {
+  "mnem": "CLR.W",
+  "operands": "X:(Rn)+N",
+  "bits": "1101 1111 0101 R1RR",
+  "mask": 65524,
+  "value": 57172,
+  "fields": {
+   "R": [
+    3,
+    1,
+    0
+   ]
+  },
+  "line": 21985
+ },
+ {
+  "mnem": "CLR.W",
+  "operands": "X:(Rn+xxxx)",
+  "bits": "1101 1111 0100 R0RR",
+  "mask": 65524,
+  "value": 57152,
+  "fields": {
+   "R": [
+    3,
+    1,
+    0
+   ]
+  },
+  "line": 21989
+ },
+ {
+  "mnem": "CLR.W",
+  "operands": "X:(Rn+xxxxxx)",
+  "bits": "1110 0AAA 0A11 AAAA",
+  "mask": 63664,
+  "value": 57392,
+  "fields": {
+   "A": [
+    10,
+    9,
+    8,
+    6,
+    3,
+    2,
+    1,
+    0
+   ]
+  },
+  "line": 21994
+ },
+ {
+  "mnem": "CLR.W",
+  "operands": "X:<ea_MM>",
+  "bits": "1101 1111 000M RMRR",
+  "mask": 65504,
+  "value": 57088,
+  "fields": {
+   "M": [
+    4,
+    2
+   ],
+   "R": [
+    3,
+    1,
+    0
+   ]
+  },
+  "line": 22000
+ },
+ {
+  "mnem": "CLR.W",
+  "operands": "X:<<pp",
+  "bits": "1100 1111 01pp pppp",
+  "mask": 65472,
+  "value": 53056,
+  "fields": {
+   "p": [
+    5,
+    4,
+    3,
+    2,
+    1,
+    0
+   ]
+  },
+  "line": 22004
+ },
+ {
+  "mnem": "CLR.W",
+  "operands": "X:aa",
+  "bits": "1100 1111 00pp pppp",
+  "mask": 65472,
+  "value": 52992,
+  "fields": {
+   "p": [
+    5,
+    4,
+    3,
+    2,
+    1,
+    0
+   ]
+  },
+  "line": 22009
+ },
+ {
+  "mnem": "CLR.W",
+  "operands": "X:xxxx",
+  "bits": "1101 1111 0111 1100",
+  "mask": 65535,
+  "value": 57212,
+  "fields": {},
+  "line": 22014
+ },
+ {
+  "mnem": "CLR.W",
+  "operands": "X:xxxxxx",
+  "bits": "1110 0AAA 0A11 AAAA",
+  "mask": 63664,
+  "value": 57392,
+  "fields": {
+   "A": [
+    10,
+    9,
+    8,
+    6,
+    3,
+    2,
+    1,
+    0
+   ]
+  },
+  "line": 22019
+ },
+ {
+  "mnem": "CMP",
+  "operands": "#<0\u201331>,FF",
+  "bits": "0101 110F F00B BBBB",
+  "mask": 65120,
+  "value": 23552,
+  "fields": {
+   "F": [
+    8,
+    7
+   ],
+   "B": [
+    4,
+    3,
+    2,
+    1,
+    0
+   ]
+  },
+  "line": 22140
+ },
+ {
+  "mnem": "CMP",
+  "operands": "#xxxx,FF",
+  "bits": "0101 110F F100 0000",
+  "mask": 65151,
+  "value": 23616,
+  "fields": {
+   "F": [
+    8,
+    7
+   ]
+  },
+  "line": 22144
+ },
+ {
+  "mnem": "CMP",
+  "operands": "C,F GGG,X:<ea_m>",
+  "bits": "0001 1GGG F110 0mRR",
+  "mask": 63608,
+  "value": 6240,
+  "fields": {
+   "G": [
+    10,
+    9,
+    8
+   ],
+   "F": [
+    7
+   ],
+   "m": [
+    2
+   ],
+   "R": [
+    1,
+    0
+   ]
+  },
+  "line": 22148
+ },
+ {
+  "mnem": "CMP",
+  "operands": "C,F X:<ea_m>,GGG",
+  "bits": "0011 1GGG F110 0mRR",
+  "mask": 63608,
+  "value": 14432,
+  "fields": {
+   "G": [
+    10,
+    9,
+    8
+   ],
+   "F": [
+    7
+   ],
+   "m": [
+    2
+   ],
+   "R": [
+    1,
+    0
+   ]
+  },
+  "line": 22152
+ },
+ {
+  "mnem": "CMP",
+  "operands": "DD,F GGG,X:<ea_m>",
+  "bits": "0001 1GGG FJJJ 0mRR",
+  "mask": 63496,
+  "value": 6144,
+  "fields": {
+   "G": [
+    10,
+    9,
+    8
+   ],
+   "F": [
+    7
+   ],
+   "J": [
+    6,
+    5,
+    4
+   ],
+   "m": [
+    2
+   ],
+   "R": [
+    1,
+    0
+   ]
+  },
+  "line": 22156
+ },
+ {
+  "mnem": "CMP",
+  "operands": "DD,F X:<ea_m>,GGG",
+  "bits": "0011 1GGG FJJJ 0mRR",
+  "mask": 63496,
+  "value": 14336,
+  "fields": {
+   "G": [
+    10,
+    9,
+    8
+   ],
+   "F": [
+    7
+   ],
+   "J": [
+    6,
+    5,
+    4
+   ],
+   "m": [
+    2
+   ],
+   "R": [
+    1,
+    0
+   ]
+  },
+  "line": 22160
+ },
+ {
+  "mnem": "CMP",
+  "operands": "EEE,EEE",
+  "bits": "0111 10EE Eaaa 0100",
+  "mask": 64527,
+  "value": 30724,
+  "fields": {
+   "E": [
+    9,
+    8,
+    7
+   ],
+   "a": [
+    6,
+    5,
+    4
+   ]
+  },
+  "line": 22164
+ },
+ {
+  "mnem": "CMP",
+  "operands": "X:(Rn),FF",
+  "bits": "0101 110F F101 R1RR",
+  "mask": 65140,
+  "value": 23636,
+  "fields": {
+   "F": [
+    8,
+    7
+   ],
+   "R": [
+    3,
+    1,
+    0
+   ]
+  },
+  "line": 22168
+ },
+ {
+  "mnem": "CMP",
+  "operands": "X:(Rn+xxxx),FF",
+  "bits": "0101 110F F101 R0RR",
+  "mask": 65140,
+  "value": 23632,
+  "fields": {
+   "F": [
+    8,
+    7
+   ],
+   "R": [
+    3,
+    1,
+    0
+   ]
+  },
+  "line": 22172
+ },
+ {
+  "mnem": "CMP",
+  "operands": "X:(SP\u2013xx),FF",
+  "bits": "0101 100F F1aa aaaa",
+  "mask": 65088,
+  "value": 22592,
+  "fields": {
+   "F": [
+    8,
+    7
+   ],
+   "a": [
+    5,
+    4,
+    3,
+    2,
+    1,
+    0
+   ]
+  },
+  "line": 22176
+ },
+ {
+  "mnem": "CMP",
+  "operands": "X:xxxx,FF",
+  "bits": "0101 110F F100 0100",
+  "mask": 65151,
+  "value": 23620,
+  "fields": {
+   "F": [
+    8,
+    7
+   ]
+  },
+  "line": 22180
+ },
+ {
+  "mnem": "CMP",
+  "operands": "X:xxxxxx,FF",
+  "bits": "1110 0AAA 0A11 AAAA",
+  "mask": 63664,
+  "value": 57392,
+  "fields": {
+   "A": [
+    10,
+    9,
+    8,
+    6,
+    3,
+    2,
+    1,
+    0
+   ]
+  },
+  "line": 22185
+ },
+ {
+  "mnem": "CMP",
+  "operands": "~F,F GGG,X:<ea_m>",
+  "bits": "0001 1GGG F000 0mRR",
+  "mask": 63608,
+  "value": 6144,
+  "fields": {
+   "G": [
+    10,
+    9,
+    8
+   ],
+   "F": [
+    7
+   ],
+   "m": [
+    2
+   ],
+   "R": [
+    1,
+    0
+   ]
+  },
+  "line": 22190
+ },
+ {
+  "mnem": "CMP",
+  "operands": "~F,F X:<ea_m>,GGG",
+  "bits": "0011 1GGG F000 0mRR",
+  "mask": 63608,
+  "value": 14336,
+  "fields": {
+   "G": [
+    10,
+    9,
+    8
+   ],
+   "F": [
+    7
+   ],
+   "m": [
+    2
+   ],
+   "R": [
+    1,
+    0
+   ]
+  },
+  "line": 22194
+ },
+ {
+  "mnem": "CMP.B",
+  "operands": "#<0\u201331>,EEE",
+  "bits": "0101 01EE E01B BBBB",
+  "mask": 64608,
+  "value": 21536,
+  "fields": {
+   "E": [
+    9,
+    8,
+    7
+   ],
+   "B": [
+    4,
+    3,
+    2,
+    1,
+    0
+   ]
+  },
+  "line": 22264
+ },
+ {
+  "mnem": "CMP.B",
+  "operands": "#xxx,EEE",
+  "bits": "0101 11EE E100 0010",
+  "mask": 64639,
+  "value": 23618,
+  "fields": {
+   "E": [
+    9,
+    8,
+    7
+   ]
+  },
+  "line": 22268
+ },
+ {
+  "mnem": "CMP.B",
+  "operands": "EEE,EEE",
+  "bits": "0111 10EE Eaaa 0101",
+  "mask": 64527,
+  "value": 30725,
+  "fields": {
+   "E": [
+    9,
+    8,
+    7
+   ],
+   "a": [
+    6,
+    5,
+    4
+   ]
+  },
+  "line": 22273
+ },
+ {
+  "mnem": "CMP.BP",
+  "operands": "X:xxxx,EEE",
+  "bits": "0101 11EE E100 0110",
+  "mask": 64639,
+  "value": 23622,
+  "fields": {
+   "E": [
+    9,
+    8,
+    7
+   ]
+  },
+  "line": 22353
+ },
+ {
+  "mnem": "CMP.BP",
+  "operands": "X:xxxxxx,EEE",
+  "bits": "1110 0AAA 0A11 AAAA",
+  "mask": 63664,
+  "value": 57392,
+  "fields": {
+   "A": [
+    10,
+    9,
+    8,
+    6,
+    3,
+    2,
+    1,
+    0
+   ]
+  },
+  "line": 22358
+ },
+ {
+  "mnem": "CMP.L",
+  "operands": "#xxxx,fff",
+  "bits": "0101 11ff f100 0011",
+  "mask": 64639,
+  "value": 23619,
+  "fields": {
+   "f": [
+    9,
+    8,
+    7
+   ]
+  },
+  "line": 22433
+ },
+ {
+  "mnem": "CMP.L",
+  "operands": "FFF,FFF",
+  "bits": "0111 10FF Fbbb 0111",
+  "mask": 64527,
+  "value": 30727,
+  "fields": {
+   "F": [
+    9,
+    8,
+    7
+   ],
+   "b": [
+    6,
+    5,
+    4
+   ]
+  },
+  "line": 22438
+ },
+ {
+  "mnem": "CMP.L",
+  "operands": "X:xxxx,fff",
+  "bits": "0101 11ff f100 0111",
+  "mask": 64639,
+  "value": 23623,
+  "fields": {
+   "f": [
+    9,
+    8,
+    7
+   ]
+  },
+  "line": 22442
+ },
+ {
+  "mnem": "CMP.L",
+  "operands": "X:xxxxxx,fff",
+  "bits": "1110 0AAA 0A11 AAAA",
+  "mask": 63664,
+  "value": 57392,
+  "fields": {
+   "A": [
+    10,
+    9,
+    8,
+    6,
+    3,
+    2,
+    1,
+    0
+   ]
+  },
+  "line": 22447
+ },
+ {
+  "mnem": "CMP.W",
+  "operands": "#<0\u201331>,DD",
+  "bits": "0101 111D D00B BBBB",
+  "mask": 65120,
+  "value": 24064,
+  "fields": {
+   "D": [
+    8,
+    7
+   ],
+   "B": [
+    4,
+    3,
+    2,
+    1,
+    0
+   ]
+  },
+  "line": 22537
+ },
+ {
+  "mnem": "CMP.W",
+  "operands": "#<0\u201331>,FF",
+  "bits": "0100 110F F00B BBBB",
+  "mask": 65120,
+  "value": 19456,
+  "fields": {
+   "F": [
+    8,
+    7
+   ],
+   "B": [
+    4,
+    3,
+    2,
+    1,
+    0
+   ]
+  },
+  "line": 22541
+ },
+ {
+  "mnem": "CMP.W",
+  "operands": "#xxxx,DD",
+  "bits": "0101 111D D100 0000",
+  "mask": 65151,
+  "value": 24128,
+  "fields": {
+   "D": [
+    8,
+    7
+   ]
+  },
+  "line": 22545
+ },
+ {
+  "mnem": "CMP.W",
+  "operands": "#xxxx,FF",
+  "bits": "0100 110F F100 0000",
+  "mask": 65151,
+  "value": 19520,
+  "fields": {
+   "F": [
+    8,
+    7
+   ]
+  },
+  "line": 22550
+ },
+ {
+  "mnem": "CMP.W",
+  "operands": "EEE,EEE",
+  "bits": "0111 10EE Eaaa 0110",
+  "mask": 64527,
+  "value": 30726,
+  "fields": {
+   "E": [
+    9,
+    8,
+    7
+   ],
+   "a": [
+    6,
+    5,
+    4
+   ]
+  },
+  "line": 22555
+ },
+ {
+  "mnem": "CMP.W",
+  "operands": "X:(Rn),DD",
+  "bits": "0101 111D D101 R1RR",
+  "mask": 65140,
+  "value": 24148,
+  "fields": {
+   "D": [
+    8,
+    7
+   ],
+   "R": [
+    3,
+    1,
+    0
+   ]
+  },
+  "line": 22559
+ },
+ {
+  "mnem": "CMP.W",
+  "operands": "X:(Rn),FF",
+  "bits": "0100 110F F101 R1RR",
+  "mask": 65140,
+  "value": 19540,
+  "fields": {
+   "F": [
+    8,
+    7
+   ],
+   "R": [
+    3,
+    1,
+    0
+   ]
+  },
+  "line": 22563
+ },
+ {
+  "mnem": "CMP.W",
+  "operands": "X:(Rn+xxxx),DD",
+  "bits": "0101 111D D101 R0RR",
+  "mask": 65140,
+  "value": 24144,
+  "fields": {
+   "D": [
+    8,
+    7
+   ],
+   "R": [
+    3,
+    1,
+    0
+   ]
+  },
+  "line": 22567
+ },
+ {
+  "mnem": "CMP.W",
+  "operands": "X:(Rn+xxxx),FF",
+  "bits": "0100 110F F101 R0RR",
+  "mask": 65140,
+  "value": 19536,
+  "fields": {
+   "F": [
+    8,
+    7
+   ],
+   "R": [
+    3,
+    1,
+    0
+   ]
+  },
+  "line": 22572
+ },
+ {
+  "mnem": "CMP.W",
+  "operands": "X:(SP\u2013xx),DD",
+  "bits": "0101 101D D1aa aaaa",
+  "mask": 65088,
+  "value": 23104,
+  "fields": {
+   "D": [
+    8,
+    7
+   ],
+   "a": [
+    5,
+    4,
+    3,
+    2,
+    1,
+    0
+   ]
+  },
+  "line": 22577
+ },
+ {
+  "mnem": "CMP.W",
+  "operands": "X:(SP\u2013xx),FF",
+  "bits": "0100 100F F1aa aaaa",
+  "mask": 65088,
+  "value": 18496,
+  "fields": {
+   "F": [
+    8,
+    7
+   ],
+   "a": [
+    5,
+    4,
+    3,
+    2,
+    1,
+    0
+   ]
+  },
+  "line": 22581
+ },
+ {
+  "mnem": "CMP.W",
+  "operands": "X:xxxx,DD",
+  "bits": "0101 111D D100 0100",
+  "mask": 65151,
+  "value": 24132,
+  "fields": {
+   "D": [
+    8,
+    7
+   ]
+  },
+  "line": 22585
+ },
+ {
+  "mnem": "CMP.W",
+  "operands": "X:xxxx,FF",
+  "bits": "0100 110F F100 0100",
+  "mask": 65151,
+  "value": 19524,
+  "fields": {
+   "F": [
+    8,
+    7
+   ]
+  },
+  "line": 22590
+ },
+ {
+  "mnem": "CMP.W",
+  "operands": "X:xxxxxx,FF",
+  "bits": "1110 0AAA 0A11 AAAA",
+  "mask": 63664,
+  "value": 57392,
+  "fields": {
+   "A": [
+    10,
+    9,
+    8,
+    6,
+    3,
+    2,
+    1,
+    0
+   ]
+  },
+  "line": 22602
+ },
+ {
+  "mnem": "CMP.W",
+  "operands": "X:xxxxxx,DD",
+  "bits": "1110 0AAA 0A11 AAAA",
+  "mask": 63664,
+  "value": 57392,
+  "fields": {
+   "A": [
+    10,
+    9,
+    8,
+    6,
+    3,
+    2,
+    1,
+    0
+   ]
+  },
+  "line": 22608
+ },
+ {
+  "mnem": "CMPA",
+  "operands": "Rn,Rn",
+  "bits": "1000 1111 n01n RnRR",
+  "mask": 65376,
+  "value": 36640,
+  "fields": {
+   "n": [
+    7,
+    4,
+    2
+   ],
+   "R": [
+    3,
+    1,
+    0
+   ]
+  },
+  "line": 22664
+ },
+ {
+  "mnem": "CMPA.W",
+  "operands": "Rn,Rn",
+  "bits": "1000 1110 n01n RnRR",
+  "mask": 65376,
+  "value": 36384,
+  "fields": {
+   "n": [
+    7,
+    4,
+    2
+   ],
+   "R": [
+    3,
+    1,
+    0
+   ]
+  },
+  "line": 22724
+ },
+ {
+  "mnem": "DEBUGEV",
+  "operands": "",
+  "bits": "1110 0111 0000 0011",
+  "mask": 65535,
+  "value": 59139,
+  "fields": {},
+  "line": 22753
+ },
+ {
+  "mnem": "DEBUGHLT",
+  "operands": "",
+  "bits": "1110 0111 0000 0001",
+  "mask": 65535,
+  "value": 59137,
+  "fields": {},
+  "line": 22785
+ },
+ {
+  "mnem": "DEC.BP",
+  "operands": "X:xxxx",
+  "bits": "0100 1110 0100 0110",
+  "mask": 65535,
+  "value": 20038,
+  "fields": {},
+  "line": 22862
+ },
+ {
+  "mnem": "DEC.BP",
+  "operands": "X:xxxxxx",
+  "bits": "1110 0AAA 0A11 AAAA",
+  "mask": 63664,
+  "value": 57392,
+  "fields": {
+   "A": [
+    10,
+    9,
+    8,
+    6,
+    3,
+    2,
+    1,
+    0
+   ]
+  },
+  "line": 22867
+ },
+ {
+  "mnem": "DEC.L",
+  "operands": "X:xxxx",
+  "bits": "0100 1110 0100 0111",
+  "mask": 65535,
+  "value": 20039,
+  "fields": {},
+  "line": 22941
+ },
+ {
+  "mnem": "DEC.L",
+  "operands": "X:xxxxxx",
+  "bits": "1110 0AAA 0A11 AAAA",
+  "mask": 63664,
+  "value": 57392,
+  "fields": {
+   "A": [
+    10,
+    9,
+    8,
+    6,
+    3,
+    2,
+    1,
+    0
+   ]
+  },
+  "line": 22946
+ },
+ {
+  "mnem": "DEC.L",
+  "operands": "fff",
+  "bits": "0111 00ff f001 1011",
+  "mask": 64639,
+  "value": 28699,
+  "fields": {
+   "f": [
+    9,
+    8,
+    7
+   ]
+  },
+  "line": 22952
+ },
+ {
+  "mnem": "DEC.W",
+  "operands": "EEE",
+  "bits": "0111 00EE E000 1011",
+  "mask": 64639,
+  "value": 28683,
+  "fields": {
+   "E": [
+    9,
+    8,
+    7
+   ]
+  },
+  "line": 23060
+ },
+ {
+  "mnem": "DEC.W",
+  "operands": "F GGG,X:<ea_m>",
+  "bits": "0000 0GGG F001 0mRR",
+  "mask": 63608,
+  "value": 16,
+  "fields": {
+   "G": [
+    10,
+    9,
+    8
+   ],
+   "F": [
+    7
+   ],
+   "m": [
+    2
+   ],
+   "R": [
+    1,
+    0
+   ]
+  },
+  "line": 23064
+ },
+ {
+  "mnem": "DEC.W",
+  "operands": "F X:<ea_m>,GGG",
+  "bits": "0010 0GGG F001 0mRR",
+  "mask": 63608,
+  "value": 8208,
+  "fields": {
+   "G": [
+    10,
+    9,
+    8
+   ],
+   "F": [
+    7
+   ],
+   "m": [
+    2
+   ],
+   "R": [
+    1,
+    0
+   ]
+  },
+  "line": 23068
+ },
+ {
+  "mnem": "DEC.W",
+  "operands": "X:(Rn)",
+  "bits": "0100 1110 0101 R1RR",
+  "mask": 65524,
+  "value": 20052,
+  "fields": {
+   "R": [
+    3,
+    1,
+    0
+   ]
+  },
+  "line": 23072
+ },
+ {
+  "mnem": "DEC.W",
+  "operands": "X:(Rn+xxxx)",
+  "bits": "0100 1110 0101 R0RR",
+  "mask": 65524,
+  "value": 20048,
+  "fields": {
+   "R": [
+    3,
+    1,
+    0
+   ]
+  },
+  "line": 23076
+ },
+ {
+  "mnem": "DEC.W",
+  "operands": "X:(SP\u2013xx)",
+  "bits": "0100 1010 01aa aaaa",
+  "mask": 65472,
+  "value": 19008,
+  "fields": {
+   "a": [
+    5,
+    4,
+    3,
+    2,
+    1,
+    0
+   ]
+  },
+  "line": 23081
+ },
+ {
+  "mnem": "DEC.W",
+  "operands": "X:xxxx",
+  "bits": "0100 1110 0100 0100",
+  "mask": 65535,
+  "value": 20036,
+  "fields": {},
+  "line": 23085
+ },
+ {
+  "mnem": "DEC.W",
+  "operands": "X:xxxxxx",
+  "bits": "1110 0AAA 0A11 AAAA",
+  "mask": 63664,
+  "value": 57392,
+  "fields": {
+   "A": [
+    10,
+    9,
+    8,
+    6,
+    3,
+    2,
+    1,
+    0
+   ]
+  },
+  "line": 23090
+ },
+ {
+  "mnem": "DECA",
+  "operands": "Rn",
+  "bits": "1000 0100 1011 R0RR",
+  "mask": 65524,
+  "value": 33968,
+  "fields": {
+   "R": [
+    3,
+    1,
+    0
+   ]
+  },
+  "line": 23133
+ },
+ {
+  "mnem": "DECA.L",
+  "operands": "Rn",
+  "bits": "1000 0100 1011 R1RR",
+  "mask": 65524,
+  "value": 33972,
+  "fields": {
+   "R": [
+    3,
+    1,
+    0
+   ]
+  },
+  "line": 23177
+ },
+ {
+  "mnem": "DECTSTA",
+  "operands": "Rn",
+  "bits": "1000 0100 1010 R1RR",
+  "mask": 65524,
+  "value": 33956,
+  "fields": {
+   "R": [
+    3,
+    1,
+    0
+   ]
+  },
+  "line": 23236
+ },
+ {
+  "mnem": "DIV",
+  "operands": "FFF1,fff",
+  "bits": "0111 10ff fccc 1111",
+  "mask": 64527,
+  "value": 30735,
+  "fields": {
+   "f": [
+    9,
+    8,
+    7
+   ],
+   "c": [
+    6,
+    5,
+    4
+   ]
+  },
+  "line": 23354
+ },
+ {
+  "mnem": "DO",
+  "operands": "#<1\u201363>,<ABS16>",
+  "bits": "1110 100t 00BB BBBB",
+  "mask": 65216,
+  "value": 59392,
+  "fields": {
+   "t": [
+    8
+   ],
+   "B": [
+    5,
+    4,
+    3,
+    2,
+    1,
+    0
+   ]
+  },
+  "line": 23529
+ },
+ {
+  "mnem": "DO",
+  "operands": "#<1\u201363>,<ABS21>",
+  "bits": "1110 0AAA 0A11 AAAA",
+  "mask": 63664,
+  "value": 57392,
+  "fields": {
+   "A": [
+    10,
+    9,
+    8,
+    6,
+    3,
+    2,
+    1,
+    0
+   ]
+  },
+  "line": 23534
+ },
+ {
+  "mnem": "DO",
+  "operands": "DDDDD,<ABS16>",
+  "bits": "1110 1011 000d dddd",
+  "mask": 65504,
+  "value": 60160,
+  "fields": {
+   "d": [
+    4,
+    3,
+    2,
+    1,
+    0
+   ]
+  },
+  "line": 23540
+ },
+ {
+  "mnem": "DO",
+  "operands": "DDDDD,<ABS21>",
+  "bits": "1110 0AAA 0A11 AAAA",
+  "mask": 63664,
+  "value": 57392,
+  "fields": {
+   "A": [
+    10,
+    9,
+    8,
+    6,
+    3,
+    2,
+    1,
+    0
+   ]
+  },
+  "line": 23545
+ },
+ {
+  "mnem": "DOSLC",
+  "operands": "<ABS16>",
+  "bits": "1110 0111 0001 1001",
+  "mask": 65535,
+  "value": 59161,
+  "fields": {},
+  "line": 23621
+ },
+ {
+  "mnem": "DOSLC",
+  "operands": "<ABS21>",
+  "bits": "1110 0AAA 0A11 AAAA",
+  "mask": 63664,
+  "value": 57392,
+  "fields": {
+   "A": [
+    10,
+    9,
+    8,
+    6,
+    3,
+    2,
+    1,
+    0
+   ]
+  },
+  "line": 23626
+ },
+ {
+  "mnem": "ENDDO",
+  "operands": "",
+  "bits": "1000 1111 0001 1011",
+  "mask": 65535,
+  "value": 36635,
+  "fields": {},
+  "line": 23698
+ },
+ {
+  "mnem": "EOR.L",
+  "operands": "C,F GGG,X:<ea_m>",
+  "bits": "0001 1GGG F010 0mRR",
+  "mask": 63608,
+  "value": 6176,
+  "fields": {
+   "G": [
+    10,
+    9,
+    8
+   ],
+   "F": [
+    7
+   ],
+   "m": [
+    2
+   ],
+   "R": [
+    1,
+    0
+   ]
+  },
+  "line": 23795
+ },
+ {
+  "mnem": "EOR.L",
+  "operands": "C,F X:<ea_m>,GGG",
+  "bits": "0011 1GGG F010 0mRR",
+  "mask": 63608,
+  "value": 14368,
+  "fields": {
+   "G": [
+    10,
+    9,
+    8
+   ],
+   "F": [
+    7
+   ],
+   "m": [
+    2
+   ],
+   "R": [
+    1,
+    0
+   ]
+  },
+  "line": 23799
+ },
+ {
+  "mnem": "EOR.L",
+  "operands": "FFF,fff",
+  "bits": "0111 10ff fbbb 1110",
+  "mask": 64527,
+  "value": 30734,
+  "fields": {
+   "f": [
+    9,
+    8,
+    7
+   ],
+   "b": [
+    6,
+    5,
+    4
+   ]
+  },
+  "line": 23803
+ },
+ {
+  "mnem": "EOR.W",
+  "operands": "EEE,EEE",
+  "bits": "0111 10EE Eaaa 1010",
+  "mask": 64527,
+  "value": 30730,
+  "fields": {
+   "E": [
+    9,
+    8,
+    7
+   ],
+   "a": [
+    6,
+    5,
+    4
+   ]
+  },
+  "line": 23871
+ },
+ {
+  "mnem": "FRTID",
+  "operands": "",
+  "bits": "1110 0111 0001 1010",
+  "mask": 65535,
+  "value": 59162,
+  "fields": {},
+  "line": 23958
+ },
+ {
+  "mnem": "ILLEGAL",
+  "operands": "",
+  "bits": "1110 0111 0000 1010",
+  "mask": 65535,
+  "value": 59146,
+  "fields": {},
+  "line": 24008
+ },
+ {
+  "mnem": "IMAC.L",
+  "operands": "FFF1,FFF1,fff",
+  "bits": "0110 11ff fJJJ JJ00",
+  "mask": 64515,
+  "value": 27648,
+  "fields": {
+   "f": [
+    9,
+    8,
+    7
+   ],
+   "J": [
+    6,
+    5,
+    4,
+    3,
+    2
+   ]
+  },
+  "line": 24076
+ },
+ {
+  "mnem": "IMACUS",
+  "operands": "q1.l,q2.h,Y",
+  "bits": "0111 0010 1qqq 0111",
+  "mask": 65423,
+  "value": 29319,
+  "fields": {
+   "q": [
+    6,
+    5,
+    4
+   ]
+  },
+  "line": 24131
+ },
+ {
+  "mnem": "IMACUU",
+  "operands": "q1.l,q2.h,Y",
+  "bits": "0111 0011 1qqq 0111",
+  "mask": 65423,
+  "value": 29575,
+  "fields": {
+   "q": [
+    6,
+    5,
+    4
+   ]
+  },
+  "line": 24187
+ },
+ {
+  "mnem": "IMPY.L",
+  "operands": "FFF1,FFF1,fff",
+  "bits": "0110 11ff fJJJ JJ01",
+  "mask": 64515,
+  "value": 27649,
+  "fields": {
+   "f": [
+    9,
+    8,
+    7
+   ],
+   "J": [
+    6,
+    5,
+    4,
+    3,
+    2
+   ]
+  },
+  "line": 24256
+ },
+ {
+  "mnem": "IMPY.W",
+  "operands": "Q1,Q2,FFF",
+  "bits": "0111 00FF FQQQ 1010",
+  "mask": 64527,
+  "value": 28682,
+  "fields": {
+   "F": [
+    9,
+    8,
+    7
+   ],
+   "Q": [
+    6,
+    5,
+    4
+   ]
+  },
+  "line": 24335
+ },
+ {
+  "mnem": "IMPYSU",
+  "operands": "q1.h,q2.l,Y",
+  "bits": "0111 0010 0qqq 0111",
+  "mask": 65423,
+  "value": 29191,
+  "fields": {
+   "q": [
+    6,
+    5,
+    4
+   ]
+  },
+  "line": 24390
+ },
+ {
+  "mnem": "IMPYUU",
+  "operands": "q1.l,q2.l,FF",
+  "bits": "0111 000F Fqqq 0111",
+  "mask": 65039,
+  "value": 28679,
+  "fields": {
+   "F": [
+    8,
+    7
+   ],
+   "q": [
+    6,
+    5,
+    4
+   ]
+  },
+  "line": 24463
+ },
+ {
+  "mnem": "IMPYUU",
+  "operands": "q1.h,q2.l,Y",
+  "bits": "0111 0011 0qqq 0111",
+  "mask": 65423,
+  "value": 29447,
+  "fields": {
+   "q": [
+    6,
+    5,
+    4
+   ]
+  },
+  "line": 24467
+ },
+ {
+  "mnem": "INC.BP",
+  "operands": "X:xxxx",
+  "bits": "0100 1110 1100 0110",
+  "mask": 65535,
+  "value": 20166,
+  "fields": {},
+  "line": 24542
+ },
+ {
+  "mnem": "INC.BP",
+  "operands": "X:xxxxxx",
+  "bits": "1110 0AAA 0A11 AAAA",
+  "mask": 63664,
+  "value": 57392,
+  "fields": {
+   "A": [
+    10,
+    9,
+    8,
+    6,
+    3,
+    2,
+    1,
+    0
+   ]
+  },
+  "line": 24547
+ },
+ {
+  "mnem": "INC.L",
+  "operands": "X:xxxx",
+  "bits": "0100 1110 1100 0111",
+  "mask": 65535,
+  "value": 20167,
+  "fields": {},
+  "line": 24614
+ },
+ {
+  "mnem": "INC.L",
+  "operands": "X:xxxxxx",
+  "bits": "1110 0AAA 0A11 AAAA",
+  "mask": 63664,
+  "value": 57392,
+  "fields": {
+   "A": [
+    10,
+    9,
+    8,
+    6,
+    3,
+    2,
+    1,
+    0
+   ]
+  },
+  "line": 24619
+ },
+ {
+  "mnem": "INC.L",
+  "operands": "fff",
+  "bits": "0111 00ff f001 0011",
+  "mask": 64639,
+  "value": 28691,
+  "fields": {
+   "f": [
+    9,
+    8,
+    7
+   ]
+  },
+  "line": 24625
+ },
+ {
+  "mnem": "INC.W",
+  "operands": "EEE",
+  "bits": "0111 00EE E000 0011",
+  "mask": 64639,
+  "value": 28675,
+  "fields": {
+   "E": [
+    9,
+    8,
+    7
+   ]
+  },
+  "line": 24734
+ },
+ {
+  "mnem": "INC.W",
+  "operands": "F GGG,X:<ea_m>",
+  "bits": "0000 0GGG F011 0mRR",
+  "mask": 63608,
+  "value": 48,
+  "fields": {
+   "G": [
+    10,
+    9,
+    8
+   ],
+   "F": [
+    7
+   ],
+   "m": [
+    2
+   ],
+   "R": [
+    1,
+    0
+   ]
+  },
+  "line": 24738
+ },
+ {
+  "mnem": "INC.W",
+  "operands": "F X:<ea_m>,GGG",
+  "bits": "0010 0GGG F011 0mRR",
+  "mask": 63608,
+  "value": 8240,
+  "fields": {
+   "G": [
+    10,
+    9,
+    8
+   ],
+   "F": [
+    7
+   ],
+   "m": [
+    2
+   ],
+   "R": [
+    1,
+    0
+   ]
+  },
+  "line": 24742
+ },
+ {
+  "mnem": "INC.W",
+  "operands": "X:(Rn)",
+  "bits": "0100 1110 1101 R1RR",
+  "mask": 65524,
+  "value": 20180,
+  "fields": {
+   "R": [
+    3,
+    1,
+    0
+   ]
+  },
+  "line": 24746
+ },
+ {
+  "mnem": "INC.W",
+  "operands": "X:(Rn+xxxx)",
+  "bits": "0100 1110 1101 R0RR",
+  "mask": 65524,
+  "value": 20176,
+  "fields": {
+   "R": [
+    3,
+    1,
+    0
+   ]
+  },
+  "line": 24750
+ },
+ {
+  "mnem": "INC.W",
+  "operands": "X:(SP\u2013xx)",
+  "bits": "0100 1010 11aa aaaa",
+  "mask": 65472,
+  "value": 19136,
+  "fields": {
+   "a": [
+    5,
+    4,
+    3,
+    2,
+    1,
+    0
+   ]
+  },
+  "line": 24755
+ },
+ {
+  "mnem": "INC.W",
+  "operands": "X:xxxx",
+  "bits": "0100 1110 1100 0100",
+  "mask": 65535,
+  "value": 20164,
+  "fields": {},
+  "line": 24759
+ },
+ {
+  "mnem": "INC.W",
+  "operands": "X:xxxxxx",
+  "bits": "1110 0AAA 0A11 AAAA",
+  "mask": 63664,
+  "value": 57392,
+  "fields": {
+   "A": [
+    10,
+    9,
+    8,
+    6,
+    3,
+    2,
+    1,
+    0
+   ]
+  },
+  "line": 24764
+ },
+ {
+  "mnem": "JMP",
+  "operands": "<ABS21>",
+  "bits": "1110 0AAA 0A11 AAAA",
+  "mask": 63664,
+  "value": 57392,
+  "fields": {
+   "A": [
+    10,
+    9,
+    8,
+    6,
+    3,
+    2,
+    1,
+    0
+   ]
+  },
+  "line": 24886
+ },
+ {
+  "mnem": "JMP",
+  "operands": "(N)",
+  "bits": "1110 0111 0001 1111",
+  "mask": 65535,
+  "value": 59167,
+  "fields": {},
+  "line": 24892
+ },
+ {
+  "mnem": "JMP",
+  "operands": "<ABS19>",
+  "bits": "1110 0001 0101 A1AA",
+  "mask": 65524,
+  "value": 57684,
+  "fields": {
+   "A": [
+    3,
+    1,
+    0
+   ]
+  },
+  "line": 24896
+ },
+ {
+  "mnem": "JMPD",
+  "operands": "<ABS21>",
+  "bits": "1110 0AAA 0A11 AAAA",
+  "mask": 63664,
+  "value": 57392,
+  "fields": {
+   "A": [
+    10,
+    9,
+    8,
+    6,
+    3,
+    2,
+    1,
+    0
+   ]
+  },
+  "line": 24942
+ },
+ {
+  "mnem": "JMPD",
+  "operands": "<ABS19>",
+  "bits": "1110 0011 0101 A1AA",
+  "mask": 65524,
+  "value": 58196,
+  "fields": {
+   "A": [
+    3,
+    1,
+    0
+   ]
+  },
+  "line": 24948
+ },
+ {
+  "mnem": "JSR",
+  "operands": "<ABS21>",
+  "bits": "1110 0AAA 0A11 AAAA",
+  "mask": 63664,
+  "value": 57392,
+  "fields": {
+   "A": [
+    10,
+    9,
+    8,
+    6,
+    3,
+    2,
+    1,
+    0
+   ]
+  },
+  "line": 24992
+ },
+ {
+  "mnem": "JSR",
+  "operands": "(RRR)",
+  "bits": "1110 0110 0001 N1NN",
+  "mask": 65524,
+  "value": 58900,
+  "fields": {
+   "N": [
+    3,
+    1,
+    0
+   ]
+  },
+  "line": 24998
+ },
+ {
+  "mnem": "JSR",
+  "operands": "<ABS19>",
+  "bits": "1110 0010 0101 A1AA",
+  "mask": 65524,
+  "value": 57940,
+  "fields": {
+   "A": [
+    3,
+    1,
+    0
+   ]
+  },
+  "line": 25002
+ },
+ {
+  "mnem": "LSL.W",
+  "operands": "EEE",
+  "bits": "0111 00EE E111 0011",
+  "mask": 64639,
+  "value": 28787,
+  "fields": {
+   "E": [
+    9,
+    8,
+    7
+   ]
+  },
+  "line": 25074
+ },
+ {
+  "mnem": "LSR.W",
+  "operands": "EEE",
+  "bits": "0111 00EE E111 1011",
+  "mask": 64639,
+  "value": 28795,
+  "fields": {
+   "E": [
+    9,
+    8,
+    7
+   ]
+  },
+  "line": 25147
+ },
+ {
+  "mnem": "LSR16",
+  "operands": "FFF,FFF",
+  "bits": "0111 11FF Fbbb 0111",
+  "mask": 64527,
+  "value": 31751,
+  "fields": {
+   "F": [
+    9,
+    8,
+    7
+   ],
+   "b": [
+    6,
+    5,
+    4
+   ]
+  },
+  "line": 25199
+ },
+ {
+  "mnem": "LSRA",
+  "operands": "Rn",
+  "bits": "1000 0101 0011 R1RR",
+  "mask": 65524,
+  "value": 34100,
+  "fields": {
+   "R": [
+    3,
+    1,
+    0
+   ]
+  },
+  "line": 25238
+ },
+ {
+  "mnem": "LSRAC",
+  "operands": "Q1,Q2,FF",
+  "bits": "0111 010F FQQQ 0110",
+  "mask": 65039,
+  "value": 29702,
+  "fields": {
+   "F": [
+    8,
+    7
+   ],
+   "Q": [
+    6,
+    5,
+    4
+   ]
+  },
+  "line": 25314
+ },
+ {
+  "mnem": "LSRR.L",
+  "operands": "#<0\u201331>,fff",
+  "bits": "0100 11ff f01B BBBB",
+  "mask": 64608,
+  "value": 19488,
+  "fields": {
+   "f": [
+    9,
+    8,
+    7
+   ],
+   "B": [
+    4,
+    3,
+    2,
+    1,
+    0
+   ]
+  },
+  "line": 25384
+ },
+ {
+  "mnem": "LSRR.L",
+  "operands": "EEE,FFF",
+  "bits": "0111 11FF Faaa 1101",
+  "mask": 64527,
+  "value": 31757,
+  "fields": {
+   "F": [
+    9,
+    8,
+    7
+   ],
+   "a": [
+    6,
+    5,
+    4
+   ]
+  },
+  "line": 25388
+ },
+ {
+  "mnem": "LSRR.W",
+  "operands": "#<0\u201315>,FFF",
+  "bits": "0101 11FF F010 BBBB",
+  "mask": 64624,
+  "value": 23584,
+  "fields": {
+   "F": [
+    9,
+    8,
+    7
+   ],
+   "B": [
+    3,
+    2,
+    1,
+    0
+   ]
+  },
+  "line": 25481
+ },
+ {
+  "mnem": "LSRR.W",
+  "operands": "EEE,FFF",
+  "bits": "0111 11FF Faaa 1001",
+  "mask": 64527,
+  "value": 31753,
+  "fields": {
+   "F": [
+    9,
+    8,
+    7
+   ],
+   "a": [
+    6,
+    5,
+    4
+   ]
+  },
+  "line": 25485
+ },
+ {
+  "mnem": "LSRR.W",
+  "operands": "Q1,Q2,FFF",
+  "bits": "0111 01FF FQQQ 0010",
+  "mask": 64527,
+  "value": 29698,
+  "fields": {
+   "F": [
+    9,
+    8,
+    7
+   ],
+   "Q": [
+    6,
+    5,
+    4
+   ]
+  },
+  "line": 25489
+ },
+ {
+  "mnem": "MAC",
+  "operands": "\u2013C1,Q2,F GGG,X:<ea_m>",
+  "bits": "0001 0GGG FQQQ 1mRR",
+  "mask": 63496,
+  "value": 4104,
+  "fields": {
+   "G": [
+    10,
+    9,
+    8
+   ],
+   "F": [
+    7
+   ],
+   "Q": [
+    6,
+    5,
+    4
+   ],
+   "m": [
+    2
+   ],
+   "R": [
+    1,
+    0
+   ]
+  },
+  "line": 25622
+ },
+ {
+  "mnem": "MAC",
+  "operands": "\u2013C1,Q2,F X:<ea_m>,GGG",
+  "bits": "0011 0GGG FQQQ 1mRR",
+  "mask": 63496,
+  "value": 12296,
+  "fields": {
+   "G": [
+    10,
+    9,
+    8
+   ],
+   "F": [
+    7
+   ],
+   "Q": [
+    6,
+    5,
+    4
+   ],
+   "m": [
+    2
+   ],
+   "R": [
+    1,
+    0
+   ]
+  },
+  "line": 25626
+ },
+ {
+  "mnem": "MAC",
+  "operands": "FFF1,FFF1,FFF",
+  "bits": "0110 10FF FJJJ JJ00",
+  "mask": 64515,
+  "value": 26624,
+  "fields": {
+   "F": [
+    9,
+    8,
+    7
+   ],
+   "J": [
+    6,
+    5,
+    4,
+    3,
+    2
+   ]
+  },
+  "line": 25630
+ },
+ {
+  "mnem": "MAC",
+  "operands": "Q1,Q2,F GGG,X:<ea_m>",
+  "bits": "0000 1GGG FQQQ 1mRR",
+  "mask": 63496,
+  "value": 2056,
+  "fields": {
+   "G": [
+    10,
+    9,
+    8
+   ],
+   "F": [
+    7
+   ],
+   "Q": [
+    6,
+    5,
+    4
+   ],
+   "m": [
+    2
+   ],
+   "R": [
+    1,
+    0
+   ]
+  },
+  "line": 25634
+ },
+ {
+  "mnem": "MAC",
+  "operands": "Q1,Q2,F X:<ea_m>,GGG",
+  "bits": "0010 1GGG FQQQ 1mRR",
+  "mask": 63496,
+  "value": 10248,
+  "fields": {
+   "G": [
+    10,
+    9,
+    8
+   ],
+   "F": [
+    7
+   ],
+   "Q": [
+    6,
+    5,
+    4
+   ],
+   "m": [
+    2
+   ],
+   "R": [
+    1,
+    0
+   ]
+  },
+  "line": 25638
+ },
+ {
+  "mnem": "MAC",
+  "operands": "Q3,Q4,F X:<ea_m>,reg1",
+  "bits": "0110 01vv FvQQ 1m0v",
+  "mask": 64522,
+  "value": 25608,
+  "fields": {
+   "v": [
+    9,
+    8,
+    6,
+    0
+   ],
+   "F": [
+    7
+   ],
+   "Q": [
+    5,
+    4
+   ],
+   "m": [
+    2
+   ]
+  },
+  "line": 25642
+ },
+ {
+  "mnem": "MAC",
+  "operands": "\u2013FFF1,FFF1,FFF",
+  "bits": "0110 11FF FJJJ JJ10",
+  "mask": 64515,
+  "value": 27650,
+  "fields": {
+   "F": [
+    9,
+    8,
+    7
+   ],
+   "J": [
+    6,
+    5,
+    4,
+    3,
+    2
+   ]
+  },
+  "line": 25646
+ },
+ {
+  "mnem": "MACR",
+  "operands": "FFF1,FFF1,FFF",
+  "bits": "0110 10FF FJJJ JJ10",
+  "mask": 64515,
+  "value": 26626,
+  "fields": {
+   "F": [
+    9,
+    8,
+    7
+   ],
+   "J": [
+    6,
+    5,
+    4,
+    3,
+    2
+   ]
+  },
+  "line": 25789
+ },
+ {
+  "mnem": "MACR",
+  "operands": "Q1,Q2,F GGG,X:<ea_m>",
+  "bits": "0001 1GGG FQQQ 1mRR",
+  "mask": 63496,
+  "value": 6152,
+  "fields": {
+   "G": [
+    10,
+    9,
+    8
+   ],
+   "F": [
+    7
+   ],
+   "Q": [
+    6,
+    5,
+    4
+   ],
+   "m": [
+    2
+   ],
+   "R": [
+    1,
+    0
+   ]
+  },
+  "line": 25793
+ },
+ {
+  "mnem": "MACR",
+  "operands": "Q1,Q2,F X:<ea_m>,GGG",
+  "bits": "0011 1GGG FQQQ 1mRR",
+  "mask": 63496,
+  "value": 14344,
+  "fields": {
+   "G": [
+    10,
+    9,
+    8
+   ],
+   "F": [
+    7
+   ],
+   "Q": [
+    6,
+    5,
+    4
+   ],
+   "m": [
+    2
+   ],
+   "R": [
+    1,
+    0
+   ]
+  },
+  "line": 25797
+ },
+ {
+  "mnem": "MACR",
+  "operands": "Q3,Q4,F X:<ea_m>,reg1",
+  "bits": "0111 01vv FvQQ 1m0v",
+  "mask": 64522,
+  "value": 29704,
+  "fields": {
+   "v": [
+    9,
+    8,
+    6,
+    0
+   ],
+   "F": [
+    7
+   ],
+   "Q": [
+    5,
+    4
+   ],
+   "m": [
+    2
+   ]
+  },
+  "line": 25801
+ },
+ {
+  "mnem": "MACR",
+  "operands": "\u2013FFF1,FFF1,FFF",
+  "bits": "0110 11FF FJJJ JJ11",
+  "mask": 64515,
+  "value": 27651,
+  "fields": {
+   "F": [
+    9,
+    8,
+    7
+   ],
+   "J": [
+    6,
+    5,
+    4,
+    3,
+    2
+   ]
+  },
+  "line": 25805
+ },
+ {
+  "mnem": "MACSU",
+  "operands": "Q2,Q1,EEE",
+  "bits": "0111 01EE EQQQ 1110",
+  "mask": 64527,
+  "value": 29710,
+  "fields": {
+   "E": [
+    9,
+    8,
+    7
+   ],
+   "Q": [
+    6,
+    5,
+    4
+   ]
+  },
+  "line": 25889
+ },
+ {
+  "mnem": "MOVE.B",
+  "operands": "HHH,X:(RRR+x)",
+  "bits": "1001 1hhh 00ii NiNN",
+  "mask": 63680,
+  "value": 38912,
+  "fields": {
+   "h": [
+    10,
+    9,
+    8
+   ],
+   "i": [
+    5,
+    4,
+    2
+   ],
+   "N": [
+    3,
+    1,
+    0
+   ]
+  },
+  "line": 25981
+ },
+ {
+  "mnem": "MOVE.B",
+  "operands": "HHH,X:(SP\u2013x)",
+  "bits": "1001 1hhh 00ii 1i11",
+  "mask": 63691,
+  "value": 38923,
+  "fields": {
+   "h": [
+    10,
+    9,
+    8
+   ],
+   "i": [
+    5,
+    4,
+    2
+   ]
+  },
+  "line": 25985
+ },
+ {
+  "mnem": "MOVE.B",
+  "operands": "HHH,X:(Rn+xxxx)",
+  "bits": "1101 0hhh 1110 R0RR",
+  "mask": 63732,
+  "value": 53472,
+  "fields": {
+   "h": [
+    10,
+    9,
+    8
+   ],
+   "R": [
+    3,
+    1,
+    0
+   ]
+  },
+  "line": 25989
+ },
+ {
+  "mnem": "MOVE.B",
+  "operands": "HHH,X:(Rn+xxxxxx)",
+  "bits": "1110 0AAA 0A11 AAAA",
+  "mask": 63664,
+  "value": 57392,
+  "fields": {
+   "A": [
+    10,
+    9,
+    8,
+    6,
+    3,
+    2,
+    1,
+    0
+   ]
+  },
+  "line": 25994
+ },
+ {
+  "mnem": "MOVE.B",
+  "operands": "HHH,X:(SP)",
+  "bits": "1101 0hhh 1011 1111",
+  "mask": 63743,
+  "value": 53439,
+  "fields": {
+   "h": [
+    10,
+    9,
+    8
+   ]
+  },
+  "line": 26000
+ },
+ {
+  "mnem": "MOVE.B",
+  "operands": "X:(Rn+xxxx),HHH",
+  "bits": "1111 0hhh 1110 R0RR",
+  "mask": 63732,
+  "value": 61664,
+  "fields": {
+   "h": [
+    10,
+    9,
+    8
+   ],
+   "R": [
+    3,
+    1,
+    0
+   ]
+  },
+  "line": 26004
+ },
+ {
+  "mnem": "MOVE.B",
+  "operands": "X:(Rn+xxxx),X:xxxx",
+  "bits": "1111 0110 1110 R0RR",
+  "mask": 65524,
+  "value": 63200,
+  "fields": {
+   "R": [
+    3,
+    1,
+    0
+   ]
+  },
+  "line": 26017
+ },
+ {
+  "mnem": "MOVE.B",
+  "operands": "X:(Rn+xxxx),Y",
+  "bits": "1101 0110 1110 R0RR",
+  "mask": 65524,
+  "value": 55008,
+  "fields": {
+   "R": [
+    3,
+    1,
+    0
+   ]
+  },
+  "line": 26023
+ },
+ {
+  "mnem": "MOVE.B",
+  "operands": "X:(Rn+xxxxxx),HHH",
+  "bits": "1110 0AAA 0A11 AAAA",
+  "mask": 63664,
+  "value": 57392,
+  "fields": {
+   "A": [
+    10,
+    9,
+    8,
+    6,
+    3,
+    2,
+    1,
+    0
+   ]
+  },
+  "line": 26028
+ },
+ {
+  "mnem": "MOVE.B",
+  "operands": "X:(Rn+xxxxxx),Y",
+  "bits": "1110 0AAA 0A11 AAAA",
+  "mask": 63664,
+  "value": 57392,
+  "fields": {
+   "A": [
+    10,
+    9,
+    8,
+    6,
+    3,
+    2,
+    1,
+    0
+   ]
+  },
+  "line": 26034
+ },
+ {
+  "mnem": "MOVE.B",
+  "operands": "X:(SP),HHH",
+  "bits": "1111 0hhh 1011 1111",
+  "mask": 63743,
+  "value": 61631,
+  "fields": {
+   "h": [
+    10,
+    9,
+    8
+   ]
+  },
+  "line": 26040
+ },
+ {
+  "mnem": "MOVE.B",
+  "operands": "X:(SP),Y",
+  "bits": "1101 0110 1011 1111",
+  "mask": 65535,
+  "value": 54975,
+  "fields": {},
+  "line": 26044
+ },
+ {
+  "mnem": "MOVE.BP",
+  "operands": "HHH,X:(RRR+xxxx)",
+  "bits": "1101 0hhh 1110 N1NN",
+  "mask": 63732,
+  "value": 53476,
+  "fields": {
+   "h": [
+    10,
+    9,
+    8
+   ],
+   "N": [
+    3,
+    1,
+    0
+   ]
+  },
+  "line": 26153
+ },
+ {
+  "mnem": "MOVE.BP",
+  "operands": "HHH,X:(RRR+xxxxxx)",
+  "bits": "1110 0AAA 0A11 AAAA",
+  "mask": 63664,
+  "value": 57392,
+  "fields": {
+   "A": [
+    10,
+    9,
+    8,
+    6,
+    3,
+    2,
+    1,
+    0
+   ]
+  },
+  "line": 26158
+ },
+ {
+  "mnem": "MOVE.BP",
+  "operands": "HHH,X:<ea_MM>",
+  "bits": "1101 0hhh 101M NMNN",
+  "mask": 63712,
+  "value": 53408,
+  "fields": {
+   "h": [
+    10,
+    9,
+    8
+   ],
+   "M": [
+    4,
+    2
+   ],
+   "N": [
+    3,
+    1,
+    0
+   ]
+  },
+  "line": 26164
+ },
+ {
+  "mnem": "MOVE.BP",
+  "operands": "HHH,X:xxxx",
+  "bits": "1101 0hhh 1111 1101",
+  "mask": 63743,
+  "value": 53501,
+  "fields": {
+   "h": [
+    10,
+    9,
+    8
+   ]
+  },
+  "line": 26168
+ },
+ {
+  "mnem": "MOVE.BP",
+  "operands": "HHH,X:xxxxxx",
+  "bits": "1110 0AAA 0A11 AAAA",
+  "mask": 63664,
+  "value": 57392,
+  "fields": {
+   "A": [
+    10,
+    9,
+    8,
+    6,
+    3,
+    2,
+    1,
+    0
+   ]
+  },
+  "line": 26173
+ },
+ {
+  "mnem": "MOVE.BP",
+  "operands": "X:(RRR+xxxx),HHH",
+  "bits": "1111 0hhh 1110 N1NN",
+  "mask": 63732,
+  "value": 61668,
+  "fields": {
+   "h": [
+    10,
+    9,
+    8
+   ],
+   "N": [
+    3,
+    1,
+    0
+   ]
+  },
+  "line": 26179
+ },
+ {
+  "mnem": "MOVE.BP",
+  "operands": "X:(RRR+xxxx),X:xxxx",
+  "bits": "1111 0110 1110 N1NN",
+  "mask": 65524,
+  "value": 63204,
+  "fields": {
+   "N": [
+    3,
+    1,
+    0
+   ]
+  },
+  "line": 26184
+ },
+ {
+  "mnem": "MOVE.BP",
+  "operands": "X:(RRR+xxxx),Y",
+  "bits": "1101 0110 1110 N1NN",
+  "mask": 65524,
+  "value": 55012,
+  "fields": {
+   "N": [
+    3,
+    1,
+    0
+   ]
+  },
+  "line": 26190
+ },
+ {
+  "mnem": "MOVE.BP",
+  "operands": "X:(RRR+xxxxxx),HHH",
+  "bits": "1110 0AAA 0A11 AAAA",
+  "mask": 63664,
+  "value": 57392,
+  "fields": {
+   "A": [
+    10,
+    9,
+    8,
+    6,
+    3,
+    2,
+    1,
+    0
+   ]
+  },
+  "line": 26195
+ },
+ {
+  "mnem": "MOVE.BP",
+  "operands": "X:(RRR+xxxxxx),Y",
+  "bits": "1110 0AAA 0A11 AAAA",
+  "mask": 63664,
+  "value": 57392,
+  "fields": {
+   "A": [
+    10,
+    9,
+    8,
+    6,
+    3,
+    2,
+    1,
+    0
+   ]
+  },
+  "line": 26201
+ },
+ {
+  "mnem": "MOVE.BP",
+  "operands": "X:<ea_MM>,HHH",
+  "bits": "1111 0hhh 101M NMNN",
+  "mask": 63712,
+  "value": 61600,
+  "fields": {
+   "h": [
+    10,
+    9,
+    8
+   ],
+   "M": [
+    4,
+    2
+   ],
+   "N": [
+    3,
+    1,
+    0
+   ]
+  },
+  "line": 26207
+ },
+ {
+  "mnem": "MOVE.BP",
+  "operands": "X:<ea_MM>,X:xxxx",
+  "bits": "1111 0110 101M NMNN",
+  "mask": 65504,
+  "value": 63136,
+  "fields": {
+   "M": [
+    4,
+    2
+   ],
+   "N": [
+    3,
+    1,
+    0
+   ]
+  },
+  "line": 26217
+ },
+ {
+  "mnem": "MOVE.BP",
+  "operands": "X:<ea_MM>,Y",
+  "bits": "1101 0110 101M NMNN",
+  "mask": 65504,
+  "value": 54944,
+  "fields": {
+   "M": [
+    4,
+    2
+   ],
+   "N": [
+    3,
+    1,
+    0
+   ]
+  },
+  "line": 26222
+ },
+ {
+  "mnem": "MOVE.BP",
+  "operands": "X:xxxx,HHH",
+  "bits": "1111 0hhh 1111 1101",
+  "mask": 63743,
+  "value": 61693,
+  "fields": {
+   "h": [
+    10,
+    9,
+    8
+   ]
+  },
+  "line": 26226
+ },
+ {
+  "mnem": "MOVE.BP",
+  "operands": "X:xxxx,X:xxxx",
+  "bits": "1111 0110 1111 1101",
+  "mask": 65535,
+  "value": 63229,
+  "fields": {},
+  "line": 26231
+ },
+ {
+  "mnem": "MOVE.BP",
+  "operands": "X:xxxx,Y",
+  "bits": "1101 0110 1111 1101",
+  "mask": 65535,
+  "value": 55037,
+  "fields": {},
+  "line": 26237
+ },
+ {
+  "mnem": "MOVE.BP",
+  "operands": "X:xxxxxx,HHH",
+  "bits": "1110 0AAA 0A11 AAAA",
+  "mask": 63664,
+  "value": 57392,
+  "fields": {
+   "A": [
+    10,
+    9,
+    8,
+    6,
+    3,
+    2,
+    1,
+    0
+   ]
+  },
+  "line": 26242
+ },
+ {
+  "mnem": "MOVE.BP",
+  "operands": "X:xxxxxx,Y",
+  "bits": "1110 0AAA 0A11 AAAA",
+  "mask": 63664,
+  "value": 57392,
+  "fields": {
+   "A": [
+    10,
+    9,
+    8,
+    6,
+    3,
+    2,
+    1,
+    0
+   ]
+  },
+  "line": 26248
+ },
+ {
+  "mnem": "MOVE.L",
+  "operands": "#<\u201316,15>,HHH.L",
+  "bits": "1110 111h 0hhB BBBB",
+  "mask": 65152,
+  "value": 60928,
+  "fields": {
+   "h": [
+    8,
+    6,
+    5
+   ],
+   "B": [
+    4,
+    3,
+    2,
+    1,
+    0
+   ]
+  },
+  "line": 26420
+ },
+ {
+  "mnem": "MOVE.L",
+  "operands": "#xxxx,HHH.L",
+  "bits": "1110 0100 0000 0hhh",
+  "mask": 65528,
+  "value": 58368,
+  "fields": {
+   "h": [
+    2,
+    1,
+    0
+   ]
+  },
+  "line": 26424
+ },
+ {
+  "mnem": "MOVE.L",
+  "operands": "#xxxx,RRR",
+  "bits": "1110 0100 0000 1SSS",
+  "mask": 65528,
+  "value": 58376,
+  "fields": {
+   "S": [
+    2,
+    1,
+    0
+   ]
+  },
+  "line": 26429
+ },
+ {
+  "mnem": "MOVE.L",
+  "operands": "#xxxx,X:xxxx",
+  "bits": "1110 0100 0000 0110",
+  "mask": 65535,
+  "value": 58374,
+  "fields": {},
+  "line": 26434
+ },
+ {
+  "mnem": "MOVE.L",
+  "operands": "#xxxxxx,RRR",
+  "bits": "1110 0100 0001 1SSS",
+  "mask": 65528,
+  "value": 58392,
+  "fields": {
+   "S": [
+    2,
+    1,
+    0
+   ]
+  },
+  "line": 26440
+ },
+ {
+  "mnem": "MOVE.L",
+  "operands": "#xxxxxxxx,HHH.L",
+  "bits": "1110 0100 0001 0hhh",
+  "mask": 65528,
+  "value": 58384,
+  "fields": {
+   "h": [
+    2,
+    1,
+    0
+   ]
+  },
+  "line": 26446
+ },
+ {
+  "mnem": "MOVE.L",
+  "operands": "#xxxxxxxx,X:xxxx",
+  "bits": "1110 0100 0001 0110",
+  "mask": 65535,
+  "value": 58390,
+  "fields": {},
+  "line": 26452
+ },
+ {
+  "mnem": "MOVE.L",
+  "operands": "HHH.L,RRR",
+  "bits": "1110 0hhh 0010 0SSS",
+  "mask": 63736,
+  "value": 57376,
+  "fields": {
+   "h": [
+    10,
+    9,
+    8
+   ],
+   "S": [
+    2,
+    1,
+    0
+   ]
+  },
+  "line": 26459
+ },
+ {
+  "mnem": "MOVE.L",
+  "operands": "HHHH.L,X:(Rn+xxxx)",
+  "bits": "1101 hhhh 0110 R0RR",
+  "mask": 61684,
+  "value": 53344,
+  "fields": {
+   "h": [
+    11,
+    10,
+    9,
+    8
+   ],
+   "R": [
+    3,
+    1,
+    0
+   ]
+  },
+  "line": 26463
+ },
+ {
+  "mnem": "MOVE.L",
+  "operands": "HHHH.L,X:(Rn+xxxxxx)",
+  "bits": "1110 0AAA 0A11 AAAA",
+  "mask": 63664,
+  "value": 57392,
+  "fields": {
+   "A": [
+    10,
+    9,
+    8,
+    6,
+    3,
+    2,
+    1,
+    0
+   ]
+  },
+  "line": 26468
+ },
+ {
+  "mnem": "MOVE.L",
+  "operands": "HHHH.L,X:(SP\u2013xx)",
+  "bits": "1001 hhhh 11aa aaaa",
+  "mask": 61632,
+  "value": 37056,
+  "fields": {
+   "h": [
+    11,
+    10,
+    9,
+    8
+   ],
+   "a": [
+    5,
+    4,
+    3,
+    2,
+    1,
+    0
+   ]
+  },
+  "line": 26480
+ },
+ {
+  "mnem": "MOVE.L",
+  "operands": "HHHH.L,X:<ea_MM>",
+  "bits": "1101 hhhh 001M RMRR",
+  "mask": 61664,
+  "value": 53280,
+  "fields": {
+   "h": [
+    11,
+    10,
+    9,
+    8
+   ],
+   "M": [
+    4,
+    2
+   ],
+   "R": [
+    3,
+    1,
+    0
+   ]
+  },
+  "line": 26484
+ },
+ {
+  "mnem": "MOVE.L",
+  "operands": "HHHH.L,X:xxxx",
+  "bits": "1101 hhhh 0111 1101",
+  "mask": 61695,
+  "value": 53373,
+  "fields": {
+   "h": [
+    11,
+    10,
+    9,
+    8
+   ]
+  },
+  "line": 26488
+ },
+ {
+  "mnem": "MOVE.L",
+  "operands": "HHHH.L,X:xxxxxx",
+  "bits": "1110 0AAA 0A11 AAAA",
+  "mask": 63664,
+  "value": 57392,
+  "fields": {
+   "A": [
+    10,
+    9,
+    8,
+    6,
+    3,
+    2,
+    1,
+    0
+   ]
+  },
+  "line": 26493
+ },
+ {
+  "mnem": "MOVE.L",
+  "operands": "LA2,X:(SP)+",
+  "bits": "1110 0111 0001 0101",
+  "mask": 65535,
+  "value": 59157,
+  "fields": {},
+  "line": 26499
+ },
+ {
+  "mnem": "MOVE.L",
+  "operands": "RRR,HHH.L",
+  "bits": "1110 0hhh 0110 0SSS",
+  "mask": 63736,
+  "value": 57440,
+  "fields": {
+   "h": [
+    10,
+    9,
+    8
+   ],
+   "S": [
+    2,
+    1,
+    0
+   ]
+  },
+  "line": 26503
+ },
+ {
+  "mnem": "MOVE.L",
+  "operands": "X:(Rn+xxxx),HHHH.L",
+  "bits": "1111 hhhh 0110 R0RR",
+  "mask": 61684,
+  "value": 61536,
+  "fields": {
+   "h": [
+    11,
+    10,
+    9,
+    8
+   ],
+   "R": [
+    3,
+    1,
+    0
+   ]
+  },
+  "line": 26507
+ },
+ {
+  "mnem": "MOVE.L",
+  "operands": "X:(Rn+xxxx),X:xxxx",
+  "bits": "1111 0110 0110 R0RR",
+  "mask": 65524,
+  "value": 63072,
+  "fields": {
+   "R": [
+    3,
+    1,
+    0
+   ]
+  },
+  "line": 26512
+ },
+ {
+  "mnem": "MOVE.L",
+  "operands": "X:(Rn+xxxxxx),HHHH.L",
+  "bits": "1110 0AAA 0A11 AAAA",
+  "mask": 63664,
+  "value": 57392,
+  "fields": {
+   "A": [
+    10,
+    9,
+    8,
+    6,
+    3,
+    2,
+    1,
+    0
+   ]
+  },
+  "line": 26518
+ },
+ {
+  "mnem": "MOVE.L",
+  "operands": "X:(SP\u2013xx),HHHH.L",
+  "bits": "1011 hhhh 11aa aaaa",
+  "mask": 61632,
+  "value": 45248,
+  "fields": {
+   "h": [
+    11,
+    10,
+    9,
+    8
+   ],
+   "a": [
+    5,
+    4,
+    3,
+    2,
+    1,
+    0
+   ]
+  },
+  "line": 26524
+ },
+ {
+  "mnem": "MOVE.L",
+  "operands": "X:(SP\u2013xx),X:xxxx",
+  "bits": "1011 0110 11aa aaaa",
+  "mask": 65472,
+  "value": 46784,
+  "fields": {
+   "a": [
+    5,
+    4,
+    3,
+    2,
+    1,
+    0
+   ]
+  },
+  "line": 26528
+ },
+ {
+  "mnem": "MOVE.L",
+  "operands": "X:(SP)\u2013,dddd.L",
+  "bits": "1110 0101 0001 dddd",
+  "mask": 65520,
+  "value": 58640,
+  "fields": {
+   "d": [
+    3,
+    2,
+    1,
+    0
+   ]
+  },
+  "line": 26533
+ },
+ {
+  "mnem": "MOVE.L",
+  "operands": "X:<ea_MM>,HHHH.L",
+  "bits": "1111 hhhh 001M RMRR",
+  "mask": 61664,
+  "value": 61472,
+  "fields": {
+   "h": [
+    11,
+    10,
+    9,
+    8
+   ],
+   "M": [
+    4,
+    2
+   ],
+   "R": [
+    3,
+    1,
+    0
+   ]
+  },
+  "line": 26544
+ },
+ {
+  "mnem": "MOVE.L",
+  "operands": "X:<ea_MM>,X:xxxx",
+  "bits": "1111 0110 001M RMRR",
+  "mask": 65504,
+  "value": 63008,
+  "fields": {
+   "M": [
+    4,
+    2
+   ],
+   "R": [
+    3,
+    1,
+    0
+   ]
+  },
+  "line": 26548
+ },
+ {
+  "mnem": "MOVE.L",
+  "operands": "X:xxxx,HHHH.L",
+  "bits": "1111 hhhh 0111 1101",
+  "mask": 61695,
+  "value": 61565,
+  "fields": {
+   "h": [
+    11,
+    10,
+    9,
+    8
+   ]
+  },
+  "line": 26553
+ },
+ {
+  "mnem": "MOVE.L",
+  "operands": "X:xxxx,X:xxxx",
+  "bits": "1111 0110 0111 1101",
+  "mask": 65535,
+  "value": 63101,
+  "fields": {},
+  "line": 26558
+ },
+ {
+  "mnem": "MOVE.L",
+  "operands": "X:xxxxxx,HHHH.L",
+  "bits": "1110 0AAA 0A11 AAAA",
+  "mask": 63664,
+  "value": 57392,
+  "fields": {
+   "A": [
+    10,
+    9,
+    8,
+    6,
+    3,
+    2,
+    1,
+    0
+   ]
+  },
+  "line": 26564
+ },
+ {
+  "mnem": "MOVE.L",
+  "operands": "dddd.L,X:(SP)+",
+  "bits": "1110 0101 0000 dddd",
+  "mask": 65520,
+  "value": 58624,
+  "fields": {
+   "d": [
+    3,
+    2,
+    1,
+    0
+   ]
+  },
+  "line": 26570
+ },
+ {
+  "mnem": "MOVE.L",
+  "operands": "X:(SP)\u2013,LA2",
+  "bits": "1110 0111 0001 0100",
+  "mask": 65535,
+  "value": 59156,
+  "fields": {},
+  "line": 26575
+ },
+ {
+  "mnem": "MOVE.W",
+  "operands": "#xxxx,Y",
+  "bits": "1000 0111 0100 0110",
+  "mask": 65535,
+  "value": 34630,
+  "fields": {},
+  "line": 26782
+ },
+ {
+  "mnem": "MOVE.W",
+  "operands": "DDDDD,Y",
+  "bits": "1000 0110 000d dddd",
+  "mask": 65504,
+  "value": 34304,
+  "fields": {
+   "d": [
+    4,
+    3,
+    2,
+    1,
+    0
+   ]
+  },
+  "line": 26787
+ },
+ {
+  "mnem": "MOVE.W",
+  "operands": "X:(Rn)+N,Y",
+  "bits": "1101 0110 0101 R1RR",
+  "mask": 65524,
+  "value": 54868,
+  "fields": {
+   "R": [
+    3,
+    1,
+    0
+   ]
+  },
+  "line": 26791
+ },
+ {
+  "mnem": "MOVE.W",
+  "operands": "X:(Rn+x),Y",
+  "bits": "1001 0110 00ii RiRR",
+  "mask": 65472,
+  "value": 38400,
+  "fields": {
+   "i": [
+    5,
+    4,
+    2
+   ],
+   "R": [
+    3,
+    1,
+    0
+   ]
+  },
+  "line": 26795
+ },
+ {
+  "mnem": "MOVE.W",
+  "operands": "X:(Rn+xxxx),Y",
+  "bits": "1101 0110 0100 R0RR",
+  "mask": 65524,
+  "value": 54848,
+  "fields": {
+   "R": [
+    3,
+    1,
+    0
+   ]
+  },
+  "line": 26799
+ },
+ {
+  "mnem": "MOVE.W",
+  "operands": "X:(Rn+xxxxxx),Y",
+  "bits": "1110 0AAA 0A11 AAAA",
+  "mask": 63664,
+  "value": 57392,
+  "fields": {
+   "A": [
+    10,
+    9,
+    8,
+    6,
+    3,
+    2,
+    1,
+    0
+   ]
+  },
+  "line": 26804
+ },
+ {
+  "mnem": "MOVE.W",
+  "operands": "X:(SP\u2013xx),Y",
+  "bits": "1001 0110 01aa aaaa",
+  "mask": 65472,
+  "value": 38464,
+  "fields": {
+   "a": [
+    5,
+    4,
+    3,
+    2,
+    1,
+    0
+   ]
+  },
+  "line": 26810
+ },
+ {
+  "mnem": "MOVE.W",
+  "operands": "X:<ea_MM>,Y",
+  "bits": "1101 0110 000M RMRR",
+  "mask": 65504,
+  "value": 54784,
+  "fields": {
+   "M": [
+    4,
+    2
+   ],
+   "R": [
+    3,
+    1,
+    0
+   ]
+  },
+  "line": 26814
+ },
+ {
+  "mnem": "MOVE.W",
+  "operands": "X:xxxx,Y",
+  "bits": "1101 0110 0111 1100",
+  "mask": 65535,
+  "value": 54908,
+  "fields": {},
+  "line": 26818
+ },
+ {
+  "mnem": "MOVE.W",
+  "operands": "X:xxxxxx,Y",
+  "bits": "1110 0AAA 0A11 AAAA",
+  "mask": 63664,
+  "value": 57392,
+  "fields": {
+   "A": [
+    10,
+    9,
+    8,
+    6,
+    3,
+    2,
+    1,
+    0
+   ]
+  },
+  "line": 26823
+ },
+ {
+  "mnem": "MOVE.W",
+  "operands": "#<\u201364,63>,HHHH",
+  "bits": "1110 hhhh 1BBB BBBB",
+  "mask": 61568,
+  "value": 57472,
+  "fields": {
+   "h": [
+    11,
+    10,
+    9,
+    8
+   ],
+   "B": [
+    6,
+    5,
+    4,
+    3,
+    2,
+    1,
+    0
+   ]
+  },
+  "line": 26829
+ },
+ {
+  "mnem": "MOVE.W",
+  "operands": "#<\u201364,63>,X:xxxx",
+  "bits": "1110 0110 1BBB BBBB",
+  "mask": 65408,
+  "value": 59008,
+  "fields": {
+   "B": [
+    6,
+    5,
+    4,
+    3,
+    2,
+    1,
+    0
+   ]
+  },
+  "line": 26833
+ },
+ {
+  "mnem": "MOVE.W",
+  "operands": "#<\u201364,63>,Y",
+  "bits": "1110 1111 1BBB BBBB",
+  "mask": 65408,
+  "value": 61312,
+  "fields": {
+   "B": [
+    6,
+    5,
+    4,
+    3,
+    2,
+    1,
+    0
+   ]
+  },
+  "line": 26838
+ },
+ {
+  "mnem": "MOVE.W",
+  "operands": "#xxxx,X:(Rn)",
+  "bits": "1000 0110 0100 R0RR",
+  "mask": 65524,
+  "value": 34368,
+  "fields": {
+   "R": [
+    3,
+    1,
+    0
+   ]
+  },
+  "line": 26849
+ },
+ {
+  "mnem": "MOVE.W",
+  "operands": "#xxxx,X:(Rn+xxxx)",
+  "bits": "1000 0110 0100 R1RR",
+  "mask": 65524,
+  "value": 34372,
+  "fields": {
+   "R": [
+    3,
+    1,
+    0
+   ]
+  },
+  "line": 26854
+ },
+ {
+  "mnem": "MOVE.W",
+  "operands": "#xxxx,X:(SP\u2013xx)",
+  "bits": "1010 0110 11aa aaaa",
+  "mask": 65472,
+  "value": 42688,
+  "fields": {
+   "a": [
+    5,
+    4,
+    3,
+    2,
+    1,
+    0
+   ]
+  },
+  "line": 26860
+ },
+ {
+  "mnem": "MOVE.W",
+  "operands": "#xxxx,X:<<pp",
+  "bits": "1010 0111 11pp pppp",
+  "mask": 65472,
+  "value": 42944,
+  "fields": {
+   "p": [
+    5,
+    4,
+    3,
+    2,
+    1,
+    0
+   ]
+  },
+  "line": 26865
+ },
+ {
+  "mnem": "MOVE.W",
+  "operands": "#xxxx,X:aa",
+  "bits": "1010 0111 10pp pppp",
+  "mask": 65472,
+  "value": 42880,
+  "fields": {
+   "p": [
+    5,
+    4,
+    3,
+    2,
+    1,
+    0
+   ]
+  },
+  "line": 26870
+ },
+ {
+  "mnem": "MOVE.W",
+  "operands": "#xxxx,X:xxxx",
+  "bits": "1000 0110 0101 0100",
+  "mask": 65535,
+  "value": 34388,
+  "fields": {},
+  "line": 26875
+ },
+ {
+  "mnem": "MOVE.W",
+  "operands": "#xxxx,X:xxxxxx",
+  "bits": "1110 0AAA 0A11 AAAA",
+  "mask": 63664,
+  "value": 57392,
+  "fields": {
+   "A": [
+    10,
+    9,
+    8,
+    6,
+    3,
+    2,
+    1,
+    0
+   ]
+  },
+  "line": 26880
+ },
+ {
+  "mnem": "MOVE.W",
+  "operands": "#xxxx,dd",
+  "bits": "1000 0110 0101 00dd",
+  "mask": 65532,
+  "value": 34384,
+  "fields": {
+   "d": [
+    1,
+    0
+   ]
+  },
+  "line": 26886
+ },
+ {
+  "mnem": "MOVE.W",
+  "operands": "DDDDD,X:(Rn)+N",
+  "bits": "1101 DDDD D101 R1RR",
+  "mask": 61556,
+  "value": 53332,
+  "fields": {
+   "D": [
+    11,
+    10,
+    9,
+    8,
+    7
+   ],
+   "R": [
+    3,
+    1,
+    0
+   ]
+  },
+  "line": 26891
+ },
+ {
+  "mnem": "MOVE.W",
+  "operands": "DDDDD,X:(Rn+xxxx)",
+  "bits": "1101 DDDD D100 R0RR",
+  "mask": 61556,
+  "value": 53312,
+  "fields": {
+   "D": [
+    11,
+    10,
+    9,
+    8,
+    7
+   ],
+   "R": [
+    3,
+    1,
+    0
+   ]
+  },
+  "line": 26895
+ },
+ {
+  "mnem": "MOVE.W",
+  "operands": "DDDDD,X:(Rn+xxxxxx)",
+  "bits": "1110 0AAA 0A11 AAAA",
+  "mask": 63664,
+  "value": 57392,
+  "fields": {
+   "A": [
+    10,
+    9,
+    8,
+    6,
+    3,
+    2,
+    1,
+    0
+   ]
+  },
+  "line": 26907
+ },
+ {
+  "mnem": "MOVE.W",
+  "operands": "DDDDD,X:<ea_MM>",
+  "bits": "1101 DDDD D00M RMRR",
+  "mask": 61536,
+  "value": 53248,
+  "fields": {
+   "D": [
+    11,
+    10,
+    9,
+    8,
+    7
+   ],
+   "M": [
+    4,
+    2
+   ],
+   "R": [
+    3,
+    1,
+    0
+   ]
+  },
+  "line": 26913
+ },
+ {
+  "mnem": "MOVE.W",
+  "operands": "DDDDD,X:xxxx",
+  "bits": "1101 DDDD D111 1100",
+  "mask": 61567,
+  "value": 53372,
+  "fields": {
+   "D": [
+    11,
+    10,
+    9,
+    8,
+    7
+   ]
+  },
+  "line": 26918
+ },
+ {
+  "mnem": "MOVE.W",
+  "operands": "DDDDD,X:xxxxxx",
+  "bits": "1110 0AAA 0A11 AAAA",
+  "mask": 63664,
+  "value": 57392,
+  "fields": {
+   "A": [
+    10,
+    9,
+    8,
+    6,
+    3,
+    2,
+    1,
+    0
+   ]
+  },
+  "line": 26923
+ },
+ {
+  "mnem": "MOVE.W",
+  "operands": "GGGG,P:<ea_m>",
+  "bits": "1000 GGGG 0110 0mRR",
+  "mask": 61688,
+  "value": 32864,
+  "fields": {
+   "G": [
+    11,
+    10,
+    9,
+    8
+   ],
+   "m": [
+    2
+   ],
+   "R": [
+    1,
+    0
+   ]
+  },
+  "line": 26929
+ },
+ {
+  "mnem": "MOVE.W",
+  "operands": "GGGG,X:<<pp",
+  "bits": "1100 GGGG 01pp pppp",
+  "mask": 61632,
+  "value": 49216,
+  "fields": {
+   "G": [
+    11,
+    10,
+    9,
+    8
+   ],
+   "p": [
+    5,
+    4,
+    3,
+    2,
+    1,
+    0
+   ]
+  },
+  "line": 26933
+ },
+ {
+  "mnem": "MOVE.W",
+  "operands": "GGGG,X:aa",
+  "bits": "1100 GGGG 00pp pppp",
+  "mask": 61632,
+  "value": 49152,
+  "fields": {
+   "G": [
+    11,
+    10,
+    9,
+    8
+   ],
+   "p": [
+    5,
+    4,
+    3,
+    2,
+    1,
+    0
+   ]
+  },
+  "line": 26937
+ },
+ {
+  "mnem": "MOVE.W",
+  "operands": "HHH,RRR",
+  "bits": "1110 0hhh 0010 1SSS",
+  "mask": 63736,
+  "value": 57384,
+  "fields": {
+   "h": [
+    10,
+    9,
+    8
+   ],
+   "S": [
+    2,
+    1,
+    0
+   ]
+  },
+  "line": 26941
+ },
+ {
+  "mnem": "MOVE.W",
+  "operands": "HHH,X:(Rn+x)",
+  "bits": "1001 0hhh 00ii RiRR",
+  "mask": 63680,
+  "value": 36864,
+  "fields": {
+   "h": [
+    10,
+    9,
+    8
+   ],
+   "i": [
+    5,
+    4,
+    2
+   ],
+   "R": [
+    3,
+    1,
+    0
+   ]
+  },
+  "line": 26945
+ },
+ {
+  "mnem": "MOVE.W",
+  "operands": "HHHH,X:(SP\u2013xx)",
+  "bits": "1001 hhhh 01aa aaaa",
+  "mask": 61632,
+  "value": 36928,
+  "fields": {
+   "h": [
+    11,
+    10,
+    9,
+    8
+   ],
+   "a": [
+    5,
+    4,
+    3,
+    2,
+    1,
+    0
+   ]
+  },
+  "line": 26949
+ },
+ {
+  "mnem": "MOVE.W",
+  "operands": "P:<ea_m>,GGG",
+  "bits": "1000 0GGG 0110 1mRR",
+  "mask": 63736,
+  "value": 32872,
+  "fields": {
+   "G": [
+    10,
+    9,
+    8
+   ],
+   "m": [
+    2
+   ],
+   "R": [
+    1,
+    0
+   ]
+  },
+  "line": 26953
+ },
+ {
+  "mnem": "MOVE.W",
+  "operands": "X:(Rn)+N,X:xxxx",
+  "bits": "1111 0110 0101 R1RR",
+  "mask": 65524,
+  "value": 63060,
+  "fields": {
+   "R": [
+    3,
+    1,
+    0
+   ]
+  },
+  "line": 26957
+ },
+ {
+  "mnem": "MOVE.W",
+  "operands": "X:(Rn+x),X:xxxx",
+  "bits": "1011 0110 00ii RiRR",
+  "mask": 65472,
+  "value": 46592,
+  "fields": {
+   "i": [
+    5,
+    4,
+    2
+   ],
+   "R": [
+    3,
+    1,
+    0
+   ]
+  },
+  "line": 26969
+ },
+ {
+  "mnem": "MOVE.W",
+  "operands": "X:(Rn+xxxx),X:xxxx",
+  "bits": "1111 0110 0100 R0RR",
+  "mask": 65524,
+  "value": 63040,
+  "fields": {
+   "R": [
+    3,
+    1,
+    0
+   ]
+  },
+  "line": 26973
+ },
+ {
+  "mnem": "MOVE.W",
+  "operands": "X:(SP\u2013xx),X:xxxx",
+  "bits": "1011 0110 01aa aaaa",
+  "mask": 65472,
+  "value": 46656,
+  "fields": {
+   "a": [
+    5,
+    4,
+    3,
+    2,
+    1,
+    0
+   ]
+  },
+  "line": 26978
+ },
+ {
+  "mnem": "MOVE.W",
+  "operands": "X:<ea_MM>,X:xxxx",
+  "bits": "1111 0110 000M RMRR",
+  "mask": 65504,
+  "value": 62976,
+  "fields": {
+   "M": [
+    4,
+    2
+   ],
+   "R": [
+    3,
+    1,
+    0
+   ]
+  },
+  "line": 26983
+ },
+ {
+  "mnem": "MOVE.W",
+  "operands": "X:<ea_m>,reg1",
+  "bits": "0110 01vv 0v00 0m0v",
+  "mask": 64698,
+  "value": 25600,
+  "fields": {
+   "v": [
+    9,
+    8,
+    6,
+    0
+   ],
+   "m": [
+    2
+   ]
+  },
+  "line": 26988
+ },
+ {
+  "mnem": "MOVE.W",
+  "operands": "X:<<pp,GGG",
+  "bits": "1100 0GGG 11pp pppp",
+  "mask": 63680,
+  "value": 49344,
+  "fields": {
+   "G": [
+    10,
+    9,
+    8
+   ],
+   "p": [
+    5,
+    4,
+    3,
+    2,
+    1,
+    0
+   ]
+  },
+  "line": 26992
+ },
+ {
+  "mnem": "MOVE.W",
+  "operands": "X:aa,GGG",
+  "bits": "1100 0GGG 10pp pppp",
+  "mask": 63680,
+  "value": 49280,
+  "fields": {
+   "G": [
+    10,
+    9,
+    8
+   ],
+   "p": [
+    5,
+    4,
+    3,
+    2,
+    1,
+    0
+   ]
+  },
+  "line": 26996
+ },
+ {
+  "mnem": "MOVE.W",
+  "operands": "X:xxxx,X:xxxx",
+  "bits": "1111 0110 0111 1100",
+  "mask": 65535,
+  "value": 63100,
+  "fields": {},
+  "line": 27000
+ },
+ {
+  "mnem": "MOVE.W",
+  "operands": "X:(Rn+x),HHH",
+  "bits": "1011 0hhh 00ii RiRR",
+  "mask": 63680,
+  "value": 45056,
+  "fields": {
+   "h": [
+    10,
+    9,
+    8
+   ],
+   "i": [
+    5,
+    4,
+    2
+   ],
+   "R": [
+    3,
+    1,
+    0
+   ]
+  },
+  "line": 27015
+ },
+ {
+  "mnem": "MOVE.W",
+  "operands": "#xxxx,HHHHH",
+  "bits": "1000 0111 010d dddd",
+  "mask": 65504,
+  "value": 34624,
+  "fields": {
+   "d": [
+    4,
+    3,
+    2,
+    1,
+    0
+   ]
+  },
+  "line": 27019
+ },
+ {
+  "mnem": "MOVE.W",
+  "operands": "DDDDD,HHHHH",
+  "bits": "1000 DDDD D00d dddd",
+  "mask": 61536,
+  "value": 32768,
+  "fields": {
+   "D": [
+    11,
+    10,
+    9,
+    8,
+    7
+   ],
+   "d": [
+    4,
+    3,
+    2,
+    1,
+    0
+   ]
+  },
+  "line": 27024
+ },
+ {
+  "mnem": "MOVE.W",
+  "operands": "X:(SP\u2013xx),HHH",
+  "bits": "1011 0hhh 01aa aaaa",
+  "mask": 63680,
+  "value": 45120,
+  "fields": {
+   "h": [
+    10,
+    9,
+    8
+   ],
+   "a": [
+    5,
+    4,
+    3,
+    2,
+    1,
+    0
+   ]
+  },
+  "line": 27028
+ },
+ {
+  "mnem": "MOVE.W",
+  "operands": "X:(Rn)+N,HHHHH",
+  "bits": "1111 dddd d101 R1RR",
+  "mask": 61556,
+  "value": 61524,
+  "fields": {
+   "d": [
+    11,
+    10,
+    9,
+    8,
+    7
+   ],
+   "R": [
+    3,
+    1,
+    0
+   ]
+  },
+  "line": 27032
+ },
+ {
+  "mnem": "MOVE.W",
+  "operands": "X:(Rn+xxxx),HHHHH",
+  "bits": "1111 dddd d100 R0RR",
+  "mask": 61556,
+  "value": 61504,
+  "fields": {
+   "d": [
+    11,
+    10,
+    9,
+    8,
+    7
+   ],
+   "R": [
+    3,
+    1,
+    0
+   ]
+  },
+  "line": 27036
+ },
+ {
+  "mnem": "MOVE.W",
+  "operands": "X:(Rn+xxxxxx),HHHHH",
+  "bits": "1110 0AAA 0A11 AAAA",
+  "mask": 63664,
+  "value": 57392,
+  "fields": {
+   "A": [
+    10,
+    9,
+    8,
+    6,
+    3,
+    2,
+    1,
+    0
+   ]
+  },
+  "line": 27041
+ },
+ {
+  "mnem": "MOVE.W",
+  "operands": "X:<ea_MM>,HHHHH",
+  "bits": "1111 dddd d00M RMRR",
+  "mask": 61536,
+  "value": 61440,
+  "fields": {
+   "d": [
+    11,
+    10,
+    9,
+    8,
+    7
+   ],
+   "M": [
+    4,
+    2
+   ],
+   "R": [
+    3,
+    1,
+    0
+   ]
+  },
+  "line": 27047
+ },
+ {
+  "mnem": "MOVE.W",
+  "operands": "X:xxxx,HHHHH",
+  "bits": "1111 dddd d111 1100",
+  "mask": 61567,
+  "value": 61564,
+  "fields": {
+   "d": [
+    11,
+    10,
+    9,
+    8,
+    7
+   ]
+  },
+  "line": 27051
+ },
+ {
+  "mnem": "MOVE.W",
+  "operands": "X:xxxxxx,HHHHH",
+  "bits": "1110 0AAA 0A11 AAAA",
+  "mask": 63664,
+  "value": 57392,
+  "fields": {
+   "A": [
+    10,
+    9,
+    8,
+    6,
+    3,
+    2,
+    1,
+    0
+   ]
+  },
+  "line": 27056
+ },
+ {
+  "mnem": "MOVEU.B",
+  "operands": "X:(RRR+x),HHH",
+  "bits": "1011 1hhh 00ii NiNN",
+  "mask": 63680,
+  "value": 47104,
+  "fields": {
+   "h": [
+    10,
+    9,
+    8
+   ],
+   "i": [
+    5,
+    4,
+    2
+   ],
+   "N": [
+    3,
+    1,
+    0
+   ]
+  },
+  "line": 27142
+ },
+ {
+  "mnem": "MOVEU.B",
+  "operands": "X:(RRR+x),X:xxxx",
+  "bits": "1011 1110 00ii NiNN",
+  "mask": 65472,
+  "value": 48640,
+  "fields": {
+   "i": [
+    5,
+    4,
+    2
+   ],
+   "N": [
+    3,
+    1,
+    0
+   ]
+  },
+  "line": 27146
+ },
+ {
+  "mnem": "MOVEU.B",
+  "operands": "X:(RRR+x),Y",
+  "bits": "1001 1110 00ii NiNN",
+  "mask": 65472,
+  "value": 40448,
+  "fields": {
+   "i": [
+    5,
+    4,
+    2
+   ],
+   "N": [
+    3,
+    1,
+    0
+   ]
+  },
+  "line": 27151
+ },
+ {
+  "mnem": "MOVEU.B",
+  "operands": "X:(Rn+xxxx),HHH",
+  "bits": "1111 1hhh 1110 R0RR",
+  "mask": 63732,
+  "value": 63712,
+  "fields": {
+   "h": [
+    10,
+    9,
+    8
+   ],
+   "R": [
+    3,
+    1,
+    0
+   ]
+  },
+  "line": 27155
+ },
+ {
+  "mnem": "MOVEU.B",
+  "operands": "X:(Rn+xxxx),Y",
+  "bits": "1101 1010 1110 R0RR",
+  "mask": 65524,
+  "value": 56032,
+  "fields": {
+   "R": [
+    3,
+    1,
+    0
+   ]
+  },
+  "line": 27160
+ },
+ {
+  "mnem": "MOVEU.B",
+  "operands": "X:(Rn+xxxxxx),HHH",
+  "bits": "1110 0AAA 0A11 AAAA",
+  "mask": 63664,
+  "value": 57392,
+  "fields": {
+   "A": [
+    10,
+    9,
+    8,
+    6,
+    3,
+    2,
+    1,
+    0
+   ]
+  },
+  "line": 27165
+ },
+ {
+  "mnem": "MOVEU.B",
+  "operands": "X:(Rn+xxxxxx),Y",
+  "bits": "1110 0AAA 0A11 AAAA",
+  "mask": 63664,
+  "value": 57392,
+  "fields": {
+   "A": [
+    10,
+    9,
+    8,
+    6,
+    3,
+    2,
+    1,
+    0
+   ]
+  },
+  "line": 27171
+ },
+ {
+  "mnem": "MOVEU.B",
+  "operands": "X:(SP),HHH",
+  "bits": "1111 1hhh 1011 1111",
+  "mask": 63743,
+  "value": 63679,
+  "fields": {
+   "h": [
+    10,
+    9,
+    8
+   ]
+  },
+  "line": 27184
+ },
+ {
+  "mnem": "MOVEU.B",
+  "operands": "X:(SP),Y",
+  "bits": "1101 1010 1011 1111",
+  "mask": 65535,
+  "value": 55999,
+  "fields": {},
+  "line": 27188
+ },
+ {
+  "mnem": "MOVEU.B",
+  "operands": "X:(SP\u2013x),HHH",
+  "bits": "1011 1hhh 00ii 1i11",
+  "mask": 63691,
+  "value": 47115,
+  "fields": {
+   "h": [
+    10,
+    9,
+    8
+   ],
+   "i": [
+    5,
+    4,
+    2
+   ]
+  },
+  "line": 27192
+ },
+ {
+  "mnem": "MOVEU.B",
+  "operands": "X:(SP\u2013x),X:xxxx",
+  "bits": "1011 1110 00ii 1i11",
+  "mask": 65483,
+  "value": 48651,
+  "fields": {
+   "i": [
+    5,
+    4,
+    2
+   ]
+  },
+  "line": 27196
+ },
+ {
+  "mnem": "MOVEU.B",
+  "operands": "X:(SP\u2013x),Y",
+  "bits": "1001 1110 00ii 1i11",
+  "mask": 65483,
+  "value": 40459,
+  "fields": {
+   "i": [
+    5,
+    4,
+    2
+   ]
+  },
+  "line": 27201
+ },
+ {
+  "mnem": "MOVEU.B",
+  "operands": "X:(SP),X:xxxx",
+  "bits": "1111 0110 1011 1111",
+  "mask": 65535,
+  "value": 63167,
+  "fields": {},
+  "line": 27205
+ },
+ {
+  "mnem": "MOVEU.BP",
+  "operands": "X:(RRR+xxxx),HHH",
+  "bits": "1111 1hhh 1110 N1NN",
+  "mask": 63732,
+  "value": 63716,
+  "fields": {
+   "h": [
+    10,
+    9,
+    8
+   ],
+   "N": [
+    3,
+    1,
+    0
+   ]
+  },
+  "line": 27300
+ },
+ {
+  "mnem": "MOVEU.BP",
+  "operands": "X:(RRR+xxxx),Y",
+  "bits": "1101 1010 1110 N1NN",
+  "mask": 65524,
+  "value": 56036,
+  "fields": {
+   "N": [
+    3,
+    1,
+    0
+   ]
+  },
+  "line": 27305
+ },
+ {
+  "mnem": "MOVEU.BP",
+  "operands": "X:(RRR+xxxxxx),HHH",
+  "bits": "1110 0AAA 0A11 AAAA",
+  "mask": 63664,
+  "value": 57392,
+  "fields": {
+   "A": [
+    10,
+    9,
+    8,
+    6,
+    3,
+    2,
+    1,
+    0
+   ]
+  },
+  "line": 27310
+ },
+ {
+  "mnem": "MOVEU.BP",
+  "operands": "X:(RRR+xxxxxx),Y",
+  "bits": "1110 0AAA 0A11 AAAA",
+  "mask": 63664,
+  "value": 57392,
+  "fields": {
+   "A": [
+    10,
+    9,
+    8,
+    6,
+    3,
+    2,
+    1,
+    0
+   ]
+  },
+  "line": 27316
+ },
+ {
+  "mnem": "MOVEU.BP",
+  "operands": "X:<ea_MM>,HHH",
+  "bits": "1111 1hhh 101M NMNN",
+  "mask": 63712,
+  "value": 63648,
+  "fields": {
+   "h": [
+    10,
+    9,
+    8
+   ],
+   "M": [
+    4,
+    2
+   ],
+   "N": [
+    3,
+    1,
+    0
+   ]
+  },
+  "line": 27321
+ },
+ {
+  "mnem": "MOVEU.BP",
+  "operands": "X:<ea_MM>,Y",
+  "bits": "1101 1010 101M NMNN",
+  "mask": 65504,
+  "value": 55968,
+  "fields": {
+   "M": [
+    4,
+    2
+   ],
+   "N": [
+    3,
+    1,
+    0
+   ]
+  },
+  "line": 27325
+ },
+ {
+  "mnem": "MOVEU.BP",
+  "operands": "X:xxxx,HHH",
+  "bits": "1111 1hhh 1111 1101",
+  "mask": 63743,
+  "value": 63741,
+  "fields": {
+   "h": [
+    10,
+    9,
+    8
+   ]
+  },
+  "line": 27329
+ },
+ {
+  "mnem": "MOVEU.BP",
+  "operands": "X:xxxx,Y",
+  "bits": "1101 1010 1111 1101",
+  "mask": 65535,
+  "value": 56061,
+  "fields": {},
+  "line": 27334
+ },
+ {
+  "mnem": "MOVEU.BP",
+  "operands": "X:xxxxxx,HHH",
+  "bits": "1110 0AAA 0A11 AAAA",
+  "mask": 63664,
+  "value": 57392,
+  "fields": {
+   "A": [
+    10,
+    9,
+    8,
+    6,
+    3,
+    2,
+    1,
+    0
+   ]
+  },
+  "line": 27339
+ },
+ {
+  "mnem": "MOVEU.BP",
+  "operands": "X:xxxxxx,Y",
+  "bits": "1110 0AAA 0A11 AAAA",
+  "mask": 63664,
+  "value": 57392,
+  "fields": {
+   "A": [
+    10,
+    9,
+    8,
+    6,
+    3,
+    2,
+    1,
+    0
+   ]
+  },
+  "line": 27345
+ },
+ {
+  "mnem": "MOVEU.W",
+  "operands": "P:<ea_m>,SSS",
+  "bits": "1000 1SSS 0110 1mRR",
+  "mask": 63736,
+  "value": 34920,
+  "fields": {
+   "S": [
+    10,
+    9,
+    8
+   ],
+   "m": [
+    2
+   ],
+   "R": [
+    1,
+    0
+   ]
+  },
+  "line": 27443
+ },
+ {
+  "mnem": "MOVEU.W",
+  "operands": "X:<<pp,SSS",
+  "bits": "1100 1SSS 11pp pppp",
+  "mask": 63680,
+  "value": 51392,
+  "fields": {
+   "S": [
+    10,
+    9,
+    8
+   ],
+   "p": [
+    5,
+    4,
+    3,
+    2,
+    1,
+    0
+   ]
+  },
+  "line": 27447
+ },
+ {
+  "mnem": "MOVEU.W",
+  "operands": "X:aa,SSS",
+  "bits": "1100 1SSS 10pp pppp",
+  "mask": 63680,
+  "value": 51328,
+  "fields": {
+   "S": [
+    10,
+    9,
+    8
+   ],
+   "p": [
+    5,
+    4,
+    3,
+    2,
+    1,
+    0
+   ]
+  },
+  "line": 27451
+ },
+ {
+  "mnem": "MOVEU.W",
+  "operands": "#xxxx,SSSS",
+  "bits": "1000 0111 010d dddd",
+  "mask": 65504,
+  "value": 34624,
+  "fields": {
+   "d": [
+    4,
+    3,
+    2,
+    1,
+    0
+   ]
+  },
+  "line": 27456
+ },
+ {
+  "mnem": "MOVEU.W",
+  "operands": "DDDDD,SSSS",
+  "bits": "1000 DDDD D00d dddd",
+  "mask": 61536,
+  "value": 32768,
+  "fields": {
+   "D": [
+    11,
+    10,
+    9,
+    8,
+    7
+   ],
+   "d": [
+    4,
+    3,
+    2,
+    1,
+    0
+   ]
+  },
+  "line": 27461
+ },
+ {
+  "mnem": "MOVEU.W",
+  "operands": "X:(SP\u2013xx),SSS",
+  "bits": "1011 hhhh 01aa aaaa",
+  "mask": 61632,
+  "value": 45120,
+  "fields": {
+   "h": [
+    11,
+    10,
+    9,
+    8
+   ],
+   "a": [
+    5,
+    4,
+    3,
+    2,
+    1,
+    0
+   ]
+  },
+  "line": 27465
+ },
+ {
+  "mnem": "MOVEU.W",
+  "operands": "X:(Rn)+N,SSSS",
+  "bits": "1111 DDDD D101 R1RR",
+  "mask": 61556,
+  "value": 61524,
+  "fields": {
+   "D": [
+    11,
+    10,
+    9,
+    8,
+    7
+   ],
+   "R": [
+    3,
+    1,
+    0
+   ]
+  },
+  "line": 27469
+ },
+ {
+  "mnem": "MOVEU.W",
+  "operands": "X:(Rn+xxxx),SSSS",
+  "bits": "1111 DDDD D100 R0RR",
+  "mask": 61556,
+  "value": 61504,
+  "fields": {
+   "D": [
+    11,
+    10,
+    9,
+    8,
+    7
+   ],
+   "R": [
+    3,
+    1,
+    0
+   ]
+  },
+  "line": 27473
+ },
+ {
+  "mnem": "MOVEU.W",
+  "operands": "X:<ea_MM>,SSSS",
+  "bits": "1111 DDDD D00M RMRR",
+  "mask": 61536,
+  "value": 61440,
+  "fields": {
+   "D": [
+    11,
+    10,
+    9,
+    8,
+    7
+   ],
+   "M": [
+    4,
+    2
+   ],
+   "R": [
+    3,
+    1,
+    0
+   ]
+  },
+  "line": 27478
+ },
+ {
+  "mnem": "MOVEU.W",
+  "operands": "X:xxxx,SSSS",
+  "bits": "1111 DDDD D111 1100",
+  "mask": 61567,
+  "value": 61564,
+  "fields": {
+   "D": [
+    11,
+    10,
+    9,
+    8,
+    7
+   ]
+  },
+  "line": 27482
+ },
+ {
+  "mnem": "MOVEU.W",
+  "operands": "X:(Rn+xxxxxx),SSSS",
+  "bits": "1110 0AAA 0A11 AAAA",
+  "mask": 63664,
+  "value": 57392,
+  "fields": {
+   "A": [
+    10,
+    9,
+    8,
+    6,
+    3,
+    2,
+    1,
+    0
+   ]
+  },
+  "line": 27487
+ },
+ {
+  "mnem": "MOVEU.W",
+  "operands": "X:xxxxxx,SSSS",
+  "bits": "1110 0AAA 0A11 AAAA",
+  "mask": 63664,
+  "value": 57392,
+  "fields": {
+   "A": [
+    10,
+    9,
+    8,
+    6,
+    3,
+    2,
+    1,
+    0
+   ]
+  },
+  "line": 27492
+ },
+ {
+  "mnem": "MPY",
+  "operands": "FFF1,FFF1,FFF",
+  "bits": "0110 10FF FJJJ JJ01",
+  "mask": 64515,
+  "value": 26625,
+  "fields": {
+   "F": [
+    9,
+    8,
+    7
+   ],
+   "J": [
+    6,
+    5,
+    4,
+    3,
+    2
+   ]
+  },
+  "line": 27634
+ },
+ {
+  "mnem": "MPY",
+  "operands": "Q1,Q2,F GGG,X:<ea_m>",
+  "bits": "0000 0GGG FQQQ 1mRR",
+  "mask": 63496,
+  "value": 8,
+  "fields": {
+   "G": [
+    10,
+    9,
+    8
+   ],
+   "F": [
+    7
+   ],
+   "Q": [
+    6,
+    5,
+    4
+   ],
+   "m": [
+    2
+   ],
+   "R": [
+    1,
+    0
+   ]
+  },
+  "line": 27638
+ },
+ {
+  "mnem": "MPY",
+  "operands": "Q1,Q2,F X:<ea_m>,GGG",
+  "bits": "0010 0GGG FQQQ 1mRR",
+  "mask": 63496,
+  "value": 8200,
+  "fields": {
+   "G": [
+    10,
+    9,
+    8
+   ],
+   "F": [
+    7
+   ],
+   "Q": [
+    6,
+    5,
+    4
+   ],
+   "m": [
+    2
+   ],
+   "R": [
+    1,
+    0
+   ]
+  },
+  "line": 27642
+ },
+ {
+  "mnem": "MPY",
+  "operands": "Q3,Q4,F X:<ea_m>,reg1",
+  "bits": "0110 00vv FvQQ 1m0v",
+  "mask": 64522,
+  "value": 24584,
+  "fields": {
+   "v": [
+    9,
+    8,
+    6,
+    0
+   ],
+   "F": [
+    7
+   ],
+   "Q": [
+    5,
+    4
+   ],
+   "m": [
+    2
+   ]
+  },
+  "line": 27646
+ },
+ {
+  "mnem": "MPY",
+  "operands": "\u2013Q1,Q2,FFF",
+  "bits": "0111 01FF FQQQ 0011",
+  "mask": 64527,
+  "value": 29699,
+  "fields": {
+   "F": [
+    9,
+    8,
+    7
+   ],
+   "Q": [
+    6,
+    5,
+    4
+   ]
+  },
+  "line": 27650
+ },
+ {
+  "mnem": "MPYR",
+  "operands": "FFF1,FFF1,FFF",
+  "bits": "0110 10FF FJJJ JJ11",
+  "mask": 64515,
+  "value": 26627,
+  "fields": {
+   "F": [
+    9,
+    8,
+    7
+   ],
+   "J": [
+    6,
+    5,
+    4,
+    3,
+    2
+   ]
+  },
+  "line": 27798
+ },
+ {
+  "mnem": "MPYR",
+  "operands": "Q1,Q2,F GGG,X:<ea_m>",
+  "bits": "0001 0GGG FQQQ 1mRR",
+  "mask": 63496,
+  "value": 4104,
+  "fields": {
+   "G": [
+    10,
+    9,
+    8
+   ],
+   "F": [
+    7
+   ],
+   "Q": [
+    6,
+    5,
+    4
+   ],
+   "m": [
+    2
+   ],
+   "R": [
+    1,
+    0
+   ]
+  },
+  "line": 27802
+ },
+ {
+  "mnem": "MPYR",
+  "operands": "Q1,Q2,F X:<ea_m>,GGG",
+  "bits": "0011 0GGG FQQQ 1mRR",
+  "mask": 63496,
+  "value": 12296,
+  "fields": {
+   "G": [
+    10,
+    9,
+    8
+   ],
+   "F": [
+    7
+   ],
+   "Q": [
+    6,
+    5,
+    4
+   ],
+   "m": [
+    2
+   ],
+   "R": [
+    1,
+    0
+   ]
+  },
+  "line": 27806
+ },
+ {
+  "mnem": "MPYR",
+  "operands": "Q3,Q4,F X:<ea_m>,reg1",
+  "bits": "0111 00vv FvQQ 1m0v",
+  "mask": 64522,
+  "value": 28680,
+  "fields": {
+   "v": [
+    9,
+    8,
+    6,
+    0
+   ],
+   "F": [
+    7
+   ],
+   "Q": [
+    5,
+    4
+   ],
+   "m": [
+    2
+   ]
+  },
+  "line": 27810
+ },
+ {
+  "mnem": "MPYR",
+  "operands": "\u2013Q1,Q2,FFF",
+  "bits": "0111 01FF FQQQ 1011",
+  "mask": 64527,
+  "value": 29707,
+  "fields": {
+   "F": [
+    9,
+    8,
+    7
+   ],
+   "Q": [
+    6,
+    5,
+    4
+   ]
+  },
+  "line": 27814
+ },
+ {
+  "mnem": "MPYSU",
+  "operands": "Q2,Q1,EEE",
+  "bits": "0111 01EE EQQQ 1010",
+  "mask": 64527,
+  "value": 29706,
+  "fields": {
+   "E": [
+    9,
+    8,
+    7
+   ],
+   "Q": [
+    6,
+    5,
+    4
+   ]
+  },
+  "line": 27898
+ },
+ {
+  "mnem": "NEG",
+  "operands": "F GGG,X:<ea_m>",
+  "bits": "0000 1GGG F001 0mRR",
+  "mask": 63608,
+  "value": 2064,
+  "fields": {
+   "G": [
+    10,
+    9,
+    8
+   ],
+   "F": [
+    7
+   ],
+   "m": [
+    2
+   ],
+   "R": [
+    1,
+    0
+   ]
+  },
+  "line": 27998
+ },
+ {
+  "mnem": "NEG",
+  "operands": "F X:<ea_m>,GGG",
+  "bits": "0010 1GGG F001 0mRR",
+  "mask": 63608,
+  "value": 10256,
+  "fields": {
+   "G": [
+    10,
+    9,
+    8
+   ],
+   "F": [
+    7
+   ],
+   "m": [
+    2
+   ],
+   "R": [
+    1,
+    0
+   ]
+  },
+  "line": 28002
+ },
+ {
+  "mnem": "NEG",
+  "operands": "FFF",
+  "bits": "0111 11FF Fbbb 1111",
+  "mask": 64527,
+  "value": 31759,
+  "fields": {
+   "F": [
+    9,
+    8,
+    7
+   ],
+   "b": [
+    6,
+    5,
+    4
+   ]
+  },
+  "line": 28006
+ },
+ {
+  "mnem": "NEG.BP",
+  "operands": "X:xxxx",
+  "bits": "0100 1111 0100 0110",
+  "mask": 65535,
+  "value": 20294,
+  "fields": {},
+  "line": 28082
+ },
+ {
+  "mnem": "NEG.BP",
+  "operands": "X:xxxxxx",
+  "bits": "1110 0AAA 0A11 AAAA",
+  "mask": 63664,
+  "value": 57392,
+  "fields": {
+   "A": [
+    10,
+    9,
+    8,
+    6,
+    3,
+    2,
+    1,
+    0
+   ]
+  },
+  "line": 28087
+ },
+ {
+  "mnem": "NEG.L",
+  "operands": "X:xxxx",
+  "bits": "0100 1111 0100 0111",
+  "mask": 65535,
+  "value": 20295,
+  "fields": {},
+  "line": 28162
+ },
+ {
+  "mnem": "NEG.L",
+  "operands": "X:xxxxxx",
+  "bits": "1110 0AAA 0A11 AAAA",
+  "mask": 63664,
+  "value": 57392,
+  "fields": {
+   "A": [
+    10,
+    9,
+    8,
+    6,
+    3,
+    2,
+    1,
+    0
+   ]
+  },
+  "line": 28167
+ },
+ {
+  "mnem": "NEG.W",
+  "operands": "X:(Rn)",
+  "bits": "0100 1111 0101 R1RR",
+  "mask": 65524,
+  "value": 20308,
+  "fields": {
+   "R": [
+    3,
+    1,
+    0
+   ]
+  },
+  "line": 28246
+ },
+ {
+  "mnem": "NEG.W",
+  "operands": "X:(Rn+xxxx)",
+  "bits": "0100 1111 0101 R0RR",
+  "mask": 65524,
+  "value": 20304,
+  "fields": {
+   "R": [
+    3,
+    1,
+    0
+   ]
+  },
+  "line": 28250
+ },
+ {
+  "mnem": "NEG.W",
+  "operands": "X:(SP\u2013xx)",
+  "bits": "0100 1011 01aa aaaa",
+  "mask": 65472,
+  "value": 19264,
+  "fields": {
+   "a": [
+    5,
+    4,
+    3,
+    2,
+    1,
+    0
+   ]
+  },
+  "line": 28255
+ },
+ {
+  "mnem": "NEG.W",
+  "operands": "X:xxxx",
+  "bits": "0100 1111 0100 0100",
+  "mask": 65535,
+  "value": 20292,
+  "fields": {},
+  "line": 28259
+ },
+ {
+  "mnem": "NEG.W",
+  "operands": "X:xxxxxx",
+  "bits": "1110 0AAA 0A11 AAAA",
+  "mask": 63664,
+  "value": 57392,
+  "fields": {
+   "A": [
+    10,
+    9,
+    8,
+    6,
+    3,
+    2,
+    1,
+    0
+   ]
+  },
+  "line": 28264
+ },
+ {
+  "mnem": "NEGA",
+  "operands": "Rn",
+  "bits": "1000 0101 0010 R1RR",
+  "mask": 65524,
+  "value": 34084,
+  "fields": {
+   "R": [
+    3,
+    1,
+    0
+   ]
+  },
+  "line": 28304
+ },
+ {
+  "mnem": "NOP",
+  "operands": "",
+  "bits": "1110 0111 0000 0000",
+  "mask": 65535,
+  "value": 59136,
+  "fields": {},
+  "line": 28336
+ },
+ {
+  "mnem": "NORM",
+  "operands": "R0,F",
+  "bits": "0111 0101 F000 0111",
+  "mask": 65407,
+  "value": 29959,
+  "fields": {
+   "F": [
+    7
+   ]
+  },
+  "line": 28420
+ },
+ {
+  "mnem": "NOT.W",
+  "operands": "EEE",
+  "bits": "0111 00EE E100 0011",
+  "mask": 64639,
+  "value": 28739,
+  "fields": {
+   "E": [
+    9,
+    8,
+    7
+   ]
+  },
+  "line": 28475
+ },
+ {
+  "mnem": "OR.L",
+  "operands": "FFF,fff",
+  "bits": "0111 10ff fbbb 1101",
+  "mask": 64527,
+  "value": 30733,
+  "fields": {
+   "f": [
+    9,
+    8,
+    7
+   ],
+   "b": [
+    6,
+    5,
+    4
+   ]
+  },
+  "line": 28591
+ },
+ {
+  "mnem": "OR.W",
+  "operands": "EEE,EEE",
+  "bits": "0111 10EE Eaaa 1001",
+  "mask": 64527,
+  "value": 30729,
+  "fields": {
+   "E": [
+    9,
+    8,
+    7
+   ],
+   "a": [
+    6,
+    5,
+    4
+   ]
+  },
+  "line": 28650
+ },
+ {
+  "mnem": "REP",
+  "operands": "#<0\u201363>",
+  "bits": "1110 1010 00BB BBBB",
+  "mask": 65472,
+  "value": 59904,
+  "fields": {
+   "B": [
+    5,
+    4,
+    3,
+    2,
+    1,
+    0
+   ]
+  },
+  "line": 28834
+ },
+ {
+  "mnem": "REP",
+  "operands": "DDDDD",
+  "bits": "1110 1011 001d dddd",
+  "mask": 65504,
+  "value": 60192,
+  "fields": {
+   "d": [
+    4,
+    3,
+    2,
+    1,
+    0
+   ]
+  },
+  "line": 28838
+ },
+ {
+  "mnem": "RND",
+  "operands": "F GGG,X:<ea_m>",
+  "bits": "0001 0GGG F001 0mRR",
+  "mask": 63608,
+  "value": 4112,
+  "fields": {
+   "G": [
+    10,
+    9,
+    8
+   ],
+   "F": [
+    7
+   ],
+   "m": [
+    2
+   ],
+   "R": [
+    1,
+    0
+   ]
+  },
+  "line": 28947
+ },
+ {
+  "mnem": "RND",
+  "operands": "F X:<ea_m>,GGG",
+  "bits": "0011 0GGG F001 0mRR",
+  "mask": 63608,
+  "value": 12304,
+  "fields": {
+   "G": [
+    10,
+    9,
+    8
+   ],
+   "F": [
+    7
+   ],
+   "m": [
+    2
+   ],
+   "R": [
+    1,
+    0
+   ]
+  },
+  "line": 28951
+ },
+ {
+  "mnem": "RND",
+  "operands": "fff",
+  "bits": "0111 00ff f100 1011",
+  "mask": 64639,
+  "value": 28747,
+  "fields": {
+   "f": [
+    9,
+    8,
+    7
+   ]
+  },
+  "line": 28955
+ },
+ {
+  "mnem": "ROL.L",
+  "operands": "F",
+  "bits": "0111 0110 F000 0111",
+  "mask": 65407,
+  "value": 30215,
+  "fields": {
+   "F": [
+    7
+   ]
+  },
+  "line": 29021
+ },
+ {
+  "mnem": "ROL.W",
+  "operands": "EEE",
+  "bits": "0111 00EE E101 0011",
+  "mask": 64639,
+  "value": 28755,
+  "fields": {
+   "E": [
+    9,
+    8,
+    7
+   ]
+  },
+  "line": 29092
+ },
+ {
+  "mnem": "ROR.L",
+  "operands": "F",
+  "bits": "0111 0110 F100 0111",
+  "mask": 65407,
+  "value": 30279,
+  "fields": {
+   "F": [
+    7
+   ]
+  },
+  "line": 29161
+ },
+ {
+  "mnem": "ROR.W",
+  "operands": "EEE",
+  "bits": "0111 00EE E101 1011",
+  "mask": 64639,
+  "value": 28763,
+  "fields": {
+   "E": [
+    9,
+    8,
+    7
+   ]
+  },
+  "line": 29235
+ },
+ {
+  "mnem": "RTI",
+  "operands": "",
+  "bits": "1110 0111 0000 1001",
+  "mask": 65535,
+  "value": 59145,
+  "fields": {},
+  "line": 29294
+ },
+ {
+  "mnem": "RTID",
+  "operands": "",
+  "bits": "1110 0111 0000 1101",
+  "mask": 65535,
+  "value": 59149,
+  "fields": {},
+  "line": 29365
+ },
+ {
+  "mnem": "RTS",
+  "operands": "",
+  "bits": "1110 0111 0000 1000",
+  "mask": 65535,
+  "value": 59144,
+  "fields": {},
+  "line": 29420
+ },
+ {
+  "mnem": "RTSD",
+  "operands": "",
+  "bits": "1110 0111 0000 1100",
+  "mask": 65535,
+  "value": 59148,
+  "fields": {},
+  "line": 29490
+ },
+ {
+  "mnem": "SAT",
+  "operands": "F,Y0 GGG,X:<ea_m>",
+  "bits": "0000 0GGG F010 0mRR",
+  "mask": 63608,
+  "value": 32,
+  "fields": {
+   "G": [
+    10,
+    9,
+    8
+   ],
+   "F": [
+    7
+   ],
+   "m": [
+    2
+   ],
+   "R": [
+    1,
+    0
+   ]
+  },
+  "line": 29602
+ },
+ {
+  "mnem": "SAT",
+  "operands": "F,Y0 X:<ea_m>,GGG",
+  "bits": "0010 0GGG F010 0mRR",
+  "mask": 63608,
+  "value": 8224,
+  "fields": {
+   "G": [
+    10,
+    9,
+    8
+   ],
+   "F": [
+    7
+   ],
+   "m": [
+    2
+   ],
+   "R": [
+    1,
+    0
+   ]
+  },
+  "line": 29606
+ },
+ {
+  "mnem": "SAT",
+  "operands": "FF,FFF",
+  "bits": "0111 11FF F0bb 0100",
+  "mask": 64591,
+  "value": 31748,
+  "fields": {
+   "F": [
+    9,
+    8,
+    7
+   ],
+   "b": [
+    5,
+    4
+   ]
+  },
+  "line": 29610
+ },
+ {
+  "mnem": "SBC",
+  "operands": "Y,F",
+  "bits": "0111 0100 F100 0111",
+  "mask": 65407,
+  "value": 29767,
+  "fields": {
+   "F": [
+    7
+   ]
+  },
+  "line": 29687
+ },
+ {
+  "mnem": "STOP",
+  "operands": "",
+  "bits": "1110 0111 0001 1100",
+  "mask": 65535,
+  "value": 59164,
+  "fields": {},
+  "line": 29739
+ },
+ {
+  "mnem": "SUB",
+  "operands": "C,F GGG,X:<ea_m>",
+  "bits": "0001 0GGG F110 0mRR",
+  "mask": 63608,
+  "value": 4192,
+  "fields": {
+   "G": [
+    10,
+    9,
+    8
+   ],
+   "F": [
+    7
+   ],
+   "m": [
+    2
+   ],
+   "R": [
+    1,
+    0
+   ]
+  },
+  "line": 29894
+ },
+ {
+  "mnem": "SUB",
+  "operands": "C,F X:<ea_m>,GGG",
+  "bits": "0011 0GGG F110 0mRR",
+  "mask": 63608,
+  "value": 12384,
+  "fields": {
+   "G": [
+    10,
+    9,
+    8
+   ],
+   "F": [
+    7
+   ],
+   "m": [
+    2
+   ],
+   "R": [
+    1,
+    0
+   ]
+  },
+  "line": 29898
+ },
+ {
+  "mnem": "SUB",
+  "operands": "DD,F GGG,X:<ea_m>",
+  "bits": "0001 0GGG FJJJ 0mRR",
+  "mask": 63496,
+  "value": 4096,
+  "fields": {
+   "G": [
+    10,
+    9,
+    8
+   ],
+   "F": [
+    7
+   ],
+   "J": [
+    6,
+    5,
+    4
+   ],
+   "m": [
+    2
+   ],
+   "R": [
+    1,
+    0
+   ]
+  },
+  "line": 29902
+ },
+ {
+  "mnem": "SUB",
+  "operands": "DD,F X:<ea_m>,GGG",
+  "bits": "0011 0GGG FJJJ 0mRR",
+  "mask": 63496,
+  "value": 12288,
+  "fields": {
+   "G": [
+    10,
+    9,
+    8
+   ],
+   "F": [
+    7
+   ],
+   "J": [
+    6,
+    5,
+    4
+   ],
+   "m": [
+    2
+   ],
+   "R": [
+    1,
+    0
+   ]
+  },
+  "line": 29906
+ },
+ {
+  "mnem": "SUB",
+  "operands": "DD,F X:<ea_m>,reg1",
+  "bits": "0111 00vv FvJJ 0m0v",
+  "mask": 64522,
+  "value": 28672,
+  "fields": {
+   "v": [
+    9,
+    8,
+    6,
+    0
+   ],
+   "F": [
+    7
+   ],
+   "J": [
+    5,
+    4
+   ],
+   "m": [
+    2
+   ]
+  },
+  "line": 29910
+ },
+ {
+  "mnem": "SUB",
+  "operands": "FFF,FFF",
+  "bits": "0111 10FF Fbbb 0001",
+  "mask": 64527,
+  "value": 30721,
+  "fields": {
+   "F": [
+    9,
+    8,
+    7
+   ],
+   "b": [
+    6,
+    5,
+    4
+   ]
+  },
+  "line": 29914
+ },
+ {
+  "mnem": "SUB",
+  "operands": "~F,F GGG,X:<ea_m>",
+  "bits": "0001 0GGG F000 0mRR",
+  "mask": 63608,
+  "value": 4096,
+  "fields": {
+   "G": [
+    10,
+    9,
+    8
+   ],
+   "F": [
+    7
+   ],
+   "m": [
+    2
+   ],
+   "R": [
+    1,
+    0
+   ]
+  },
+  "line": 29918
+ },
+ {
+  "mnem": "SUB",
+  "operands": "~F,F X:<ea_m>,GGG",
+  "bits": "0011 0GGG F000 0mRR",
+  "mask": 63608,
+  "value": 12288,
+  "fields": {
+   "G": [
+    10,
+    9,
+    8
+   ],
+   "F": [
+    7
+   ],
+   "m": [
+    2
+   ],
+   "R": [
+    1,
+    0
+   ]
+  },
+  "line": 29922
+ },
+ {
+  "mnem": "SUB",
+  "operands": "~F,F X:<ea_m>,reg1",
+  "bits": "0111 00vv Fv10 0m0v",
+  "mask": 64570,
+  "value": 28704,
+  "fields": {
+   "v": [
+    9,
+    8,
+    6,
+    0
+   ],
+   "F": [
+    7
+   ],
+   "m": [
+    2
+   ]
+  },
+  "line": 29926
+ },
+ {
+  "mnem": "SUB.B",
+  "operands": "#xxx,EEE",
+  "bits": "0101 01EE E100 0010",
+  "mask": 64639,
+  "value": 21570,
+  "fields": {
+   "E": [
+    9,
+    8,
+    7
+   ]
+  },
+  "line": 29993
+ },
+ {
+  "mnem": "SUB.BP",
+  "operands": "X:xxxx,EEE",
+  "bits": "0101 01EE E100 0110",
+  "mask": 64639,
+  "value": 21574,
+  "fields": {
+   "E": [
+    9,
+    8,
+    7
+   ]
+  },
+  "line": 30065
+ },
+ {
+  "mnem": "SUB.BP",
+  "operands": "X:xxxxxx,EEE",
+  "bits": "1110 0AAA 0A11 AAAA",
+  "mask": 63664,
+  "value": 57392,
+  "fields": {
+   "A": [
+    10,
+    9,
+    8,
+    6,
+    3,
+    2,
+    1,
+    0
+   ]
+  },
+  "line": 30070
+ },
+ {
+  "mnem": "SUB.L",
+  "operands": "#xxxx,fff",
+  "bits": "0101 01ff f100 0011",
+  "mask": 64639,
+  "value": 21571,
+  "fields": {
+   "f": [
+    9,
+    8,
+    7
+   ]
+  },
+  "line": 30140
+ },
+ {
+  "mnem": "SUB.L",
+  "operands": "X:xxxx,fff",
+  "bits": "0101 01ff f100 0111",
+  "mask": 64639,
+  "value": 21575,
+  "fields": {
+   "f": [
+    9,
+    8,
+    7
+   ]
+  },
+  "line": 30145
+ },
+ {
+  "mnem": "SUB.L",
+  "operands": "X:xxxxxx,fff",
+  "bits": "1110 0AAA 0A11 AAAA",
+  "mask": 63664,
+  "value": 57392,
+  "fields": {
+   "A": [
+    10,
+    9,
+    8,
+    6,
+    3,
+    2,
+    1,
+    0
+   ]
+  },
+  "line": 30150
+ },
+ {
+  "mnem": "SUB.W",
+  "operands": "#<0\u201331>,EEE",
+  "bits": "0101 01EE E00B BBBB",
+  "mask": 64608,
+  "value": 21504,
+  "fields": {
+   "E": [
+    9,
+    8,
+    7
+   ],
+   "B": [
+    4,
+    3,
+    2,
+    1,
+    0
+   ]
+  },
+  "line": 30228
+ },
+ {
+  "mnem": "SUB.W",
+  "operands": "#xxxx,EEE",
+  "bits": "0101 01EE E100 0000",
+  "mask": 64639,
+  "value": 21568,
+  "fields": {
+   "E": [
+    9,
+    8,
+    7
+   ]
+  },
+  "line": 30232
+ },
+ {
+  "mnem": "SUB.W",
+  "operands": "X:(Rn),EEE",
+  "bits": "0101 01EE E101 R1RR",
+  "mask": 64628,
+  "value": 21588,
+  "fields": {
+   "E": [
+    9,
+    8,
+    7
+   ],
+   "R": [
+    3,
+    1,
+    0
+   ]
+  },
+  "line": 30237
+ },
+ {
+  "mnem": "SUB.W",
+  "operands": "X:(Rn+xxxx),EEE",
+  "bits": "0101 01EE E101 R0RR",
+  "mask": 64628,
+  "value": 21584,
+  "fields": {
+   "E": [
+    9,
+    8,
+    7
+   ],
+   "R": [
+    3,
+    1,
+    0
+   ]
+  },
+  "line": 30241
+ },
+ {
+  "mnem": "SUB.W",
+  "operands": "X:(SP\u2013xx),EEE",
+  "bits": "0101 00EE E1aa aaaa",
+  "mask": 64576,
+  "value": 20544,
+  "fields": {
+   "E": [
+    9,
+    8,
+    7
+   ],
+   "a": [
+    5,
+    4,
+    3,
+    2,
+    1,
+    0
+   ]
+  },
+  "line": 30246
+ },
+ {
+  "mnem": "SUB.W",
+  "operands": "X:xxxx,EEE",
+  "bits": "0101 01EE E100 0100",
+  "mask": 64639,
+  "value": 21572,
+  "fields": {
+   "E": [
+    9,
+    8,
+    7
+   ]
+  },
+  "line": 30250
+ },
+ {
+  "mnem": "SUB.W",
+  "operands": "X:xxxxxx,EEE",
+  "bits": "1110 0AAA 0A11 AAAA",
+  "mask": 63664,
+  "value": 57392,
+  "fields": {
+   "A": [
+    10,
+    9,
+    8,
+    6,
+    3,
+    2,
+    1,
+    0
+   ]
+  },
+  "line": 30255
+ },
+ {
+  "mnem": "SUBA",
+  "operands": "Rn,Rn",
+  "bits": "1000 1011 n01n RnRR",
+  "mask": 65376,
+  "value": 35616,
+  "fields": {
+   "n": [
+    7,
+    4,
+    2
+   ],
+   "R": [
+    3,
+    1,
+    0
+   ]
+  },
+  "line": 30306
+ },
+ {
+  "mnem": "SUBA",
+  "operands": "#<1\u201364>,SP",
+  "bits": "1001 1111 01aa aaaa",
+  "mask": 65472,
+  "value": 40768,
+  "fields": {
+   "a": [
+    5,
+    4,
+    3,
+    2,
+    1,
+    0
+   ]
+  },
+  "line": 30310
+ },
+ {
+  "mnem": "SUBL",
+  "operands": "A,D,B X:(R1)+,AD",
+  "bits": "0111 0100 1001 0111",
+  "mask": 65535,
+  "value": 29847,
+  "fields": {},
+  "line": 30366
+ },
+ {
+  "mnem": "SWAP",
+  "operands": "SHADOWS",
+  "bits": "1110 0111 0000 0110",
+  "mask": 65535,
+  "value": 59142,
+  "fields": {},
+  "line": 30406
+ },
+ {
+  "mnem": "SWI",
+  "operands": "",
+  "bits": "1110 0110 0000 0011",
+  "mask": 65535,
+  "value": 58883,
+  "fields": {},
+  "line": 30447
+ },
+ {
+  "mnem": "SWI",
+  "operands": "#0",
+  "bits": "1110 0110 0000 0000",
+  "mask": 65535,
+  "value": 58880,
+  "fields": {},
+  "line": 30451
+ },
+ {
+  "mnem": "SWI",
+  "operands": "#1",
+  "bits": "1110 0110 0000 0001",
+  "mask": 65535,
+  "value": 58881,
+  "fields": {},
+  "line": 30455
+ },
+ {
+  "mnem": "SWI",
+  "operands": "#2",
+  "bits": "1110 0110 0000 0010",
+  "mask": 65535,
+  "value": 58882,
+  "fields": {},
+  "line": 30459
+ },
+ {
+  "mnem": "SWILP",
+  "operands": "",
+  "bits": "1110 0110 0000 1011",
+  "mask": 65535,
+  "value": 58891,
+  "fields": {},
+  "line": 30494
+ },
+ {
+  "mnem": "SXT.B",
+  "operands": "FFF,FFF",
+  "bits": "0111 11FF Fbbb 0011",
+  "mask": 64527,
+  "value": 31747,
+  "fields": {
+   "F": [
+    9,
+    8,
+    7
+   ],
+   "b": [
+    6,
+    5,
+    4
+   ]
+  },
+  "line": 30548
+ },
+ {
+  "mnem": "SXT.L",
+  "operands": "FF,FFF",
+  "bits": "0111 11FF F0FF 0001",
+  "mask": 64591,
+  "value": 31745,
+  "fields": {
+   "F": [
+    9,
+    8,
+    7,
+    5,
+    4
+   ]
+  },
+  "line": 30602
+ },
+ {
+  "mnem": "SXTA.B",
+  "operands": "Rn",
+  "bits": "1000 0101 1011 R1RR",
+  "mask": 65524,
+  "value": 34228,
+  "fields": {
+   "R": [
+    3,
+    1,
+    0
+   ]
+  },
+  "line": 30641
+ },
+ {
+  "mnem": "SXTA.W",
+  "operands": "Rn",
+  "bits": "1000 0101 1010 R1RR",
+  "mask": 65524,
+  "value": 34212,
+  "fields": {
+   "R": [
+    3,
+    1,
+    0
+   ]
+  },
+  "line": 30679
+ },
+ {
+  "mnem": "TFR",
+  "operands": "C,F GGG,X:<ea_m>",
+  "bits": "0000 1GGG F110 0mRR",
+  "mask": 63608,
+  "value": 2144,
+  "fields": {
+   "G": [
+    10,
+    9,
+    8
+   ],
+   "F": [
+    7
+   ],
+   "m": [
+    2
+   ],
+   "R": [
+    1,
+    0
+   ]
+  },
+  "line": 30920
+ },
+ {
+  "mnem": "TFR",
+  "operands": "C,F X:<ea_m>,GGG",
+  "bits": "0010 1GGG F110 0mRR",
+  "mask": 63608,
+  "value": 10336,
+  "fields": {
+   "G": [
+    10,
+    9,
+    8
+   ],
+   "F": [
+    7
+   ],
+   "m": [
+    2
+   ],
+   "R": [
+    1,
+    0
+   ]
+  },
+  "line": 30924
+ },
+ {
+  "mnem": "TFR",
+  "operands": "DD,F X:<ea_m>,GGG",
+  "bits": "0010 1GGG FJJJ 0mRR",
+  "mask": 63496,
+  "value": 10240,
+  "fields": {
+   "G": [
+    10,
+    9,
+    8
+   ],
+   "F": [
+    7
+   ],
+   "J": [
+    6,
+    5,
+    4
+   ],
+   "m": [
+    2
+   ],
+   "R": [
+    1,
+    0
+   ]
+  },
+  "line": 30928
+ },
+ {
+  "mnem": "TFR",
+  "operands": "DD,F GGG,X:<ea_m>",
+  "bits": "0000 1GGG FJJJ 0mRR",
+  "mask": 63496,
+  "value": 2048,
+  "fields": {
+   "G": [
+    10,
+    9,
+    8
+   ],
+   "F": [
+    7
+   ],
+   "J": [
+    6,
+    5,
+    4
+   ],
+   "m": [
+    2
+   ],
+   "R": [
+    1,
+    0
+   ]
+  },
+  "line": 30932
+ },
+ {
+  "mnem": "TFR",
+  "operands": "FFF,fff",
+  "bits": "0111 11ff fbbb 0000",
+  "mask": 64527,
+  "value": 31744,
+  "fields": {
+   "f": [
+    9,
+    8,
+    7
+   ],
+   "b": [
+    6,
+    5,
+    4
+   ]
+  },
+  "line": 30936
+ },
+ {
+  "mnem": "TFR",
+  "operands": "~F,F GGG,X:<ea_m>",
+  "bits": "0000 1GGG F000 0mRR",
+  "mask": 63608,
+  "value": 2048,
+  "fields": {
+   "G": [
+    10,
+    9,
+    8
+   ],
+   "F": [
+    7
+   ],
+   "m": [
+    2
+   ],
+   "R": [
+    1,
+    0
+   ]
+  },
+  "line": 30940
+ },
+ {
+  "mnem": "TFR",
+  "operands": "~F,F X:<ea_m>,GGG",
+  "bits": "0010 1GGG F000 0mRR",
+  "mask": 63608,
+  "value": 10240,
+  "fields": {
+   "G": [
+    10,
+    9,
+    8
+   ],
+   "F": [
+    7
+   ],
+   "m": [
+    2
+   ],
+   "R": [
+    1,
+    0
+   ]
+  },
+  "line": 30944
+ },
+ {
+  "mnem": "TFR",
+  "operands": "~F,F X:<ea_m>,reg1",
+  "bits": "0111 01vv Fv00 0m0v",
+  "mask": 64570,
+  "value": 29696,
+  "fields": {
+   "v": [
+    9,
+    8,
+    6,
+    0
+   ],
+   "F": [
+    7
+   ],
+   "m": [
+    2
+   ]
+  },
+  "line": 30948
+ },
+ {
+  "mnem": "TFRA",
+  "operands": "Rn,Rn",
+  "bits": "1000 0001 n01n RnRR",
+  "mask": 65376,
+  "value": 33056,
+  "fields": {
+   "n": [
+    7,
+    4,
+    2
+   ],
+   "R": [
+    3,
+    1,
+    0
+   ]
+  },
+  "line": 30989
+ },
+ {
+  "mnem": "TST",
+  "operands": "F GGG,X:<ea_m>",
+  "bits": "0001 1GGG F001 0mRR",
+  "mask": 63608,
+  "value": 6160,
+  "fields": {
+   "G": [
+    10,
+    9,
+    8
+   ],
+   "F": [
+    7
+   ],
+   "m": [
+    2
+   ],
+   "R": [
+    1,
+    0
+   ]
+  },
+  "line": 31083
+ },
+ {
+  "mnem": "TST",
+  "operands": "F X:<ea_m>,GGG",
+  "bits": "0011 1GGG F001 0mRR",
+  "mask": 63608,
+  "value": 14352,
+  "fields": {
+   "G": [
+    10,
+    9,
+    8
+   ],
+   "F": [
+    7
+   ],
+   "m": [
+    2
+   ],
+   "R": [
+    1,
+    0
+   ]
+  },
+  "line": 31087
+ },
+ {
+  "mnem": "TST",
+  "operands": "FF",
+  "bits": "0111 000F F011 1011",
+  "mask": 65151,
+  "value": 28731,
+  "fields": {
+   "F": [
+    8,
+    7
+   ]
+  },
+  "line": 31091
+ },
+ {
+  "mnem": "TST.B",
+  "operands": "EEE",
+  "bits": "0111 00EE E010 0011",
+  "mask": 64639,
+  "value": 28707,
+  "fields": {
+   "E": [
+    9,
+    8,
+    7
+   ]
+  },
+  "line": 31160
+ },
+ {
+  "mnem": "TST.B",
+  "operands": "X:(Rn+xxxx)",
+  "bits": "1101 1000 1110 R0RR",
+  "mask": 65524,
+  "value": 55520,
+  "fields": {
+   "R": [
+    3,
+    1,
+    0
+   ]
+  },
+  "line": 31164
+ },
+ {
+  "mnem": "TST.B",
+  "operands": "X:(Rn+xxxxxx)",
+  "bits": "1110 0AAA 0A11 AAAA",
+  "mask": 63664,
+  "value": 57392,
+  "fields": {
+   "A": [
+    10,
+    9,
+    8,
+    6,
+    3,
+    2,
+    1,
+    0
+   ]
+  },
+  "line": 31169
+ },
+ {
+  "mnem": "TST.B",
+  "operands": "X:(SP)",
+  "bits": "1101 1000 1011 1111",
+  "mask": 65535,
+  "value": 55487,
+  "fields": {},
+  "line": 31175
+ },
+ {
+  "mnem": "TST.BP",
+  "operands": "X:<ea_MM>",
+  "bits": "1101 1000 101M NMNN",
+  "mask": 65504,
+  "value": 55456,
+  "fields": {
+   "M": [
+    4,
+    2
+   ],
+   "N": [
+    3,
+    1,
+    0
+   ]
+  },
+  "line": 31255
+ },
+ {
+  "mnem": "TST.BP",
+  "operands": "X:xxxx",
+  "bits": "1101 1000 1111 1101",
+  "mask": 65535,
+  "value": 55549,
+  "fields": {},
+  "line": 31259
+ },
+ {
+  "mnem": "TST.BP",
+  "operands": "X:xxxxxx",
+  "bits": "1110 0AAA 0A11 AAAA",
+  "mask": 63664,
+  "value": 57392,
+  "fields": {
+   "A": [
+    10,
+    9,
+    8,
+    6,
+    3,
+    2,
+    1,
+    0
+   ]
+  },
+  "line": 31264
+ },
+ {
+  "mnem": "TST.BP",
+  "operands": "X:(RRR+xxxx)",
+  "bits": "1101 1000 1110 N1NN",
+  "mask": 65524,
+  "value": 55524,
+  "fields": {
+   "N": [
+    3,
+    1,
+    0
+   ]
+  },
+  "line": 31270
+ },
+ {
+  "mnem": "TST.BP",
+  "operands": "X:(RRR+xxxxxx)",
+  "bits": "1110 0AAA 0A11 AAAA",
+  "mask": 63664,
+  "value": 57392,
+  "fields": {
+   "A": [
+    10,
+    9,
+    8,
+    6,
+    3,
+    2,
+    1,
+    0
+   ]
+  },
+  "line": 31275
+ },
+ {
+  "mnem": "TST.L",
+  "operands": "X:(Rn+xxxx)",
+  "bits": "1111 1111 0110 R0RR",
+  "mask": 65524,
+  "value": 65376,
+  "fields": {
+   "R": [
+    3,
+    1,
+    0
+   ]
+  },
+  "line": 31352
+ },
+ {
+  "mnem": "TST.L",
+  "operands": "X:(Rn+xxxxxx)",
+  "bits": "1110 0AAA 0A11 AAAA",
+  "mask": 63664,
+  "value": 57392,
+  "fields": {
+   "A": [
+    10,
+    9,
+    8,
+    6,
+    3,
+    2,
+    1,
+    0
+   ]
+  },
+  "line": 31357
+ },
+ {
+  "mnem": "TST.L",
+  "operands": "X:(SP\u2013xx)",
+  "bits": "1011 1111 11aa aaaa",
+  "mask": 65472,
+  "value": 49088,
+  "fields": {
+   "a": [
+    5,
+    4,
+    3,
+    2,
+    1,
+    0
+   ]
+  },
+  "line": 31363
+ },
+ {
+  "mnem": "TST.L",
+  "operands": "X:<ea_MM>",
+  "bits": "1111 1111 001M RMRR",
+  "mask": 65504,
+  "value": 65312,
+  "fields": {
+   "M": [
+    4,
+    2
+   ],
+   "R": [
+    3,
+    1,
+    0
+   ]
+  },
+  "line": 31367
+ },
+ {
+  "mnem": "TST.L",
+  "operands": "X:xxxx",
+  "bits": "1111 1111 0111 1101",
+  "mask": 65535,
+  "value": 65405,
+  "fields": {},
+  "line": 31371
+ },
+ {
+  "mnem": "TST.L",
+  "operands": "X:xxxxxx",
+  "bits": "1110 0AAA 0A11 AAAA",
+  "mask": 63664,
+  "value": 57392,
+  "fields": {
+   "A": [
+    10,
+    9,
+    8,
+    6,
+    3,
+    2,
+    1,
+    0
+   ]
+  },
+  "line": 31376
+ },
+ {
+  "mnem": "TST.L",
+  "operands": "fff",
+  "bits": "0111 00ff f011 0011",
+  "mask": 64639,
+  "value": 28723,
+  "fields": {
+   "f": [
+    9,
+    8,
+    7
+   ]
+  },
+  "line": 31382
+ },
+ {
+  "mnem": "TST.W",
+  "operands": "DDDDD",
+  "bits": "1000 1111 000d dddd",
+  "mask": 65504,
+  "value": 36608,
+  "fields": {
+   "d": [
+    4,
+    3,
+    2,
+    1,
+    0
+   ]
+  },
+  "line": 31464
+ },
+ {
+  "mnem": "TST.W",
+  "operands": "FF",
+  "bits": "0111 000F F010 1011",
+  "mask": 65151,
+  "value": 28715,
+  "fields": {
+   "F": [
+    8,
+    7
+   ]
+  },
+  "line": 31468
+ },
+ {
+  "mnem": "TST.W",
+  "operands": "X:(Rn)+N",
+  "bits": "1111 1111 0101 R1RR",
+  "mask": 65524,
+  "value": 65364,
+  "fields": {
+   "R": [
+    3,
+    1,
+    0
+   ]
+  },
+  "line": 31472
+ },
+ {
+  "mnem": "TST.W",
+  "operands": "X:(Rn+xxxx)",
+  "bits": "1111 1111 0100 R0RR",
+  "mask": 65524,
+  "value": 65344,
+  "fields": {
+   "R": [
+    3,
+    1,
+    0
+   ]
+  },
+  "line": 31476
+ },
+ {
+  "mnem": "TST.W",
+  "operands": "X:(Rn+xxxxxx)",
+  "bits": "1110 0AAA 0A11 AAAA",
+  "mask": 63664,
+  "value": 57392,
+  "fields": {
+   "A": [
+    10,
+    9,
+    8,
+    6,
+    3,
+    2,
+    1,
+    0
+   ]
+  },
+  "line": 31481
+ },
+ {
+  "mnem": "TST.W",
+  "operands": "X:(SP\u2013xx)",
+  "bits": "1011 1111 01aa aaaa",
+  "mask": 65472,
+  "value": 48960,
+  "fields": {
+   "a": [
+    5,
+    4,
+    3,
+    2,
+    1,
+    0
+   ]
+  },
+  "line": 31487
+ },
+ {
+  "mnem": "TST.W",
+  "operands": "X:<ea_MM>",
+  "bits": "1111 1111 000M RMRR",
+  "mask": 65504,
+  "value": 65280,
+  "fields": {
+   "M": [
+    4,
+    2
+   ],
+   "R": [
+    3,
+    1,
+    0
+   ]
+  },
+  "line": 31491
+ },
+ {
+  "mnem": "TST.W",
+  "operands": "X:<<pp",
+  "bits": "1100 1111 11pp pppp",
+  "mask": 65472,
+  "value": 53184,
+  "fields": {
+   "p": [
+    5,
+    4,
+    3,
+    2,
+    1,
+    0
+   ]
+  },
+  "line": 31495
+ },
+ {
+  "mnem": "TST.W",
+  "operands": "X:aa",
+  "bits": "1100 1111 10pp pppp",
+  "mask": 65472,
+  "value": 53120,
+  "fields": {
+   "p": [
+    5,
+    4,
+    3,
+    2,
+    1,
+    0
+   ]
+  },
+  "line": 31499
+ },
+ {
+  "mnem": "TST.W",
+  "operands": "X:xxxx",
+  "bits": "1111 1111 0111 1100",
+  "mask": 65535,
+  "value": 65404,
+  "fields": {},
+  "line": 31503
+ },
+ {
+  "mnem": "TST.W",
+  "operands": "X:xxxxxx",
+  "bits": "1110 0AAA 0A11 AAAA",
+  "mask": 63664,
+  "value": 57392,
+  "fields": {
+   "A": [
+    10,
+    9,
+    8,
+    6,
+    3,
+    2,
+    1,
+    0
+   ]
+  },
+  "line": 31508
+ },
+ {
+  "mnem": "TSTA.B",
+  "operands": "Rn",
+  "bits": "1000 0100 0010 R1RR",
+  "mask": 65524,
+  "value": 33828,
+  "fields": {
+   "R": [
+    3,
+    1,
+    0
+   ]
+  },
+  "line": 31567
+ },
+ {
+  "mnem": "TSTA.L",
+  "operands": "Rn",
+  "bits": "1000 0100 0011 R1RR",
+  "mask": 65524,
+  "value": 33844,
+  "fields": {
+   "R": [
+    3,
+    1,
+    0
+   ]
+  },
+  "line": 31622
+ },
+ {
+  "mnem": "TSTA.W",
+  "operands": "Rn",
+  "bits": "1000 0100 0011 R0RR",
+  "mask": 65524,
+  "value": 33840,
+  "fields": {
+   "R": [
+    3,
+    1,
+    0
+   ]
+  },
+  "line": 31677
+ },
+ {
+  "mnem": "TSTDECA.W",
+  "operands": "Rn",
+  "bits": "1000 0100 1010 R0RR",
+  "mask": 65524,
+  "value": 33952,
+  "fields": {
+   "R": [
+    3,
+    1,
+    0
+   ]
+  },
+  "line": 31751
+ },
+ {
+  "mnem": "WAIT",
+  "operands": "",
+  "bits": "1110 0111 0001 1101",
+  "mask": 65535,
+  "value": 59165,
+  "fields": {},
+  "line": 31799
+ },
+ {
+  "mnem": "ZXT.B",
+  "operands": "FFF,FFF",
+  "bits": "0111 11FF Fbbb 0010",
+  "mask": 64527,
+  "value": 31746,
+  "fields": {
+   "F": [
+    9,
+    8,
+    7
+   ],
+   "b": [
+    6,
+    5,
+    4
+   ]
+  },
+  "line": 31853
+ },
+ {
+  "mnem": "ZXTA.B",
+  "operands": "Rn",
+  "bits": "1000 0101 1011 R0RR",
+  "mask": 65524,
+  "value": 34224,
+  "fields": {
+   "R": [
+    3,
+    1,
+    0
+   ]
+  },
+  "line": 31892
+ },
+ {
+  "mnem": "ZXTA.W",
+  "operands": "Rn",
+  "bits": "1000 0101 1010 R0RR",
+  "mask": 65524,
+  "value": 34208,
+  "fields": {
+   "R": [
+    3,
+    1,
+    0
+   ]
+  },
+  "line": 31931
+ }
+]
