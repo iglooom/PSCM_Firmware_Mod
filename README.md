@@ -42,6 +42,23 @@ python3 work/lca_resume/build_lca_final_vbf.py
 python3 work/lca_resume/verify_lca_final_vbf_independent.py   # 43/43, separate code path
 ```
 
+**Ported to `HV6T-14C217-AC` (2018).** Same five-edit fix, same checksum
+algorithms (word A CRC-16/MCRF4XX gapped, word B `sum16le` whole-module) — only
+the code offsets and a fixed RAM-cell delta differ, so each site was relocated
+structurally and re-asserted. Built and independently verified; not yet driven.
+
+```text
+HV6T-14C217-AC_LCA_ENABLED.VBF
+sha256 fb2003871bd8fffb0534e2bf6cbd97b63a38d6d7980a9d3134f3f3554d45c6df
+23 bytes differ from stock: 9 patch words + 2 internal checksum words
+```
+
+```bash
+python3 work/lca_resume/build_lca_hv6t_vbf.py --selftest
+python3 work/lca_resume/build_lca_hv6t_vbf.py
+python3 work/lca_resume/verify_lca_hv6t_independent.py        # 30/30, separate code path
+```
+
 **Known limitation, not a PSCM bug:** lane assist stops steering after ~3.7 s
 and re-arms. That cap is imposed by the IPMA (camera) while the PSCM is still
 granting permission, and cannot be changed from `14C217`.

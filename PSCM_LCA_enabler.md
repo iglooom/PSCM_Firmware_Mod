@@ -3,6 +3,9 @@
 Reference for enabling working LCA (Lane Centering Aid) steering torque on a
 Ford PSCM (electric power steering module) running `CV6T-14C217-AR`.
 
+> Also ported to the later `HV6T-14C217-AC` (2018) revision — same fix, same
+> checksum algorithms, relocated offsets. See §6a.
+
 Stock behaviour: LCA displays on the dash, the PSCM accepts the camera's
 command and reports itself available, but applies no usable steering torque.
 LKA (Lane Keeping Aid) works normally.
@@ -33,6 +36,14 @@ to LKA (measured ratio 1.19).
 CV6T-14C217-AR.VBF  sha256 cc68d97b1b8ca3ff9449d8e42ffa6ec16280f640f8b7928af4080b40592b96f5
 CV6T-14C218-AX.VBF  sha256 6fdc0ad81727fd39db98a486f2ec2b4de928100138fc93b8c3e5c2a8e307c5f7
 ```
+
+Supported revisions (identical topology, MCU, diagnostic IDs and checksum
+algorithms; §6a covers the port and per-revision offsets):
+
+| Application | Paired calibration | Status |
+|---|---|---|
+| `CV6T-14C217-AR` | `CV6T-14C218-AX` | flashed and driven |
+| `HV6T-14C217-AC` (2018) | `HV6T-14C218-AD` | built + verified, not yet driven |
 
 ### P-space memory map
 
@@ -315,6 +326,60 @@ vbflasher.py dtc PSCM
 ```
 
 Reverting is a normal flash of the stock `CV6T-14C217-AR.VBF`.
+
+---
+
+## 6a. Porting to another revision — HV6T-14C217-AC
+
+The same enabler applies to the later `HV6T-14C217-AC` (2018) revision. **The
+checksum layer is fully compatible** — no algorithm change was needed:
+
+| Layer | Reproduces stock on HV6T-AC? |
+|---|---|
+| word A (CRC-16/MCRF4XX, gapped, `START`=`0x1800`) | yes → stored `B022` |
+| word B (`sum16le` whole-module incl. `14C218`, end `0x7FFEC`) | yes → stored `D35E` |
+| paired-cal self-sum sanity (`14C218-AD` = `0xFFFF`) | yes |
+| container CRC-16/CCITT + file CRC-32 | yes |
+
+What **did** change is the code layout: HV6T-AC is an isomorphic revision — the
+lane-assist code is instruction-for-instruction identical, but flash addresses
+shifted and the RAM cells moved by a fixed delta (`X:$2DDE→2E38`,
+`X:$2DC1→2E1B`, `X:$2DB9→2E13`, torque cells `2D46→2DA0` etc., cal gate
+`0904→090A`; the `X:$03B0` tuning knob is unchanged). Every patch site was
+relocated structurally (opcode-pattern + cell-wildcard search) and its stock
+words re-asserted:
+
+| # | HV6T-AC blk1 off | Stock | Patched | (CV6T-AR off) |
+|---|---|---|---|---|
+| 1 | `0x39144` | `F07C 090A 4C01 A203` | `E700 E700 E700 E700` | `0x38F00` |
+| 2 | `0x39A3A` | `FF7C 2E1B A209` | `E700 E700 E700` | `0x397F6` |
+| 3 | `0x3B3A4` | `A303` | `E700` | `0x3B160` |
+| 4 | `0x3A1A0` | `B104` | `B0FA` | `0x39F5C` |
+| 5 | `0x3A2A2` | `B170` | `B153` | `0x3A05E` |
+
+Patches 4/5 are dispatcher entry-5 repoints exactly as on CV6T: d1 code-5→code-4
+arm (`B104→B0FA`), d2 code-5→code-1/build arm (`B170→B153`); entries 0–4 and the
+stride words are frozen in both tables.
+
+```text
+HV6T-14C217-AC.VBF            sha256 0915dfde81f2f76d8740e8a1b0cf6497b65b521be431f04843c2380c0f0f9bc6
+HV6T-14C218-AD.VBF (paired)   sha256 fff77d9eaf25da53df9b42381cb5cbba1d9801b770ba279548c340288c3a4179
+HV6T-14C217-AC_LCA_ENABLED.VBF sha256 fb2003871bd8fffb0534e2bf6cbd97b63a38d6d7980a9d3134f3f3554d45c6df
+```
+
+The output differs from stock in exactly **23 bytes** (nine patch words — two
+differing in the low byte only — plus the two internal checksum words); blocks 0
+and 2 are byte-identical. Build and independently verify:
+
+```bash
+python3 work/lca_resume/build_lca_hv6t_vbf.py --selftest
+python3 work/lca_resume/build_lca_hv6t_vbf.py
+python3 work/lca_resume/verify_lca_hv6t_independent.py   # separate impl, recomputes A+B
+```
+
+> Not yet flashed to a vehicle. The control-path logic is proven on CV6T-AR;
+> the HV6T-AC relocation is structurally verified but the on-car drive test
+> (§4 measured result) has not been repeated on this revision.
 
 ---
 

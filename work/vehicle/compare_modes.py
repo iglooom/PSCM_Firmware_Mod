@@ -42,10 +42,16 @@ F_A5 = {
     'LaHandsOffDet':      (12, 1),
 }
 # ---- 0x140 fields (PSCM readback) ------------------------------------
+# Start bits per CAN-HS.dbc BO_ 320 PSCM_h_FrP01 (Motorola, @0+).
+# Corrected: LaActDeny was 57 and LaHandsOff was 56 here, both wrong.
+# The DBC gives 60 and 61; the byte-7 mapping is confirmed independently by
+# LaActAvail == (byte[7] >> 2) & 3 agreeing on 11,449/11,449 raw frames
+# (PSCM_LCA_investigation.md). Any earlier run of this script decoded those
+# two bits from the wrong positions.
 F_140 = {
     'LaActAvail_D_Actl': (59, 2),
-    'LaActDeny_B_Actl':  (57, 1),
-    'LaHandsOff_B_Actl': (56, 1),
+    'LaActDeny_B_Actl':  (60, 1),
+    'LaHandsOff_B_Actl': (61, 1),
 }
 
 
