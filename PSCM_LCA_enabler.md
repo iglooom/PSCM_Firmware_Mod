@@ -430,6 +430,12 @@ This is the expected regulatory pattern for hands-on lane keeping. The PSCM is
 the compliant party — no change to `14C217` can extend an intervention the
 camera stops requesting.
 
+**Update — the IPMA-side constant has since been located and is patchable.**
+It is `tag 30A01058 +0x178 = 3.7` (float32 **seconds**) in the IPMA calibration
+`CV4T-14F398-AF`, marshalled to u16 milliseconds at app `0x0542D0` and counted
+down at `0x058F20`. So the cap is fixable — just not from here. See
+`../../IPMA/Research/IPMA_LKA_hold_time.md`.
+
 ---
 
 ## 9. Optional: runtime telemetry

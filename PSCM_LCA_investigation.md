@@ -41,7 +41,9 @@ at 3.70–3.72 s (0.00 s spread within a drive), the PSCM held
 `LaActAvail=3, LaActDeny=0` in 51 of 53, and all 65 episodes end in
 `Suppr L+R` — never `Idle` — so the camera still tracks the lane and
 suppresses *itself*. Not fixable in the PSCM — no change to `14C217` can
-extend an intervention the camera stops requesting.
+extend an intervention the camera stops requesting. **The IPMA-side constant
+has since been found and is patchable there**: `tag 30A01058 +0x178 = 3.7`
+seconds — see `../../IPMA/Research/IPMA_LKA_hold_time.md`.
 
 Method, for re-derivation: from any `candump` log decode the IPMA request
 (`0x0A5`, bits 30|3), PSCM availability (`0x140`, 59|2) and PSCM deny
